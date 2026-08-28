@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="ru">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Digital-маркетинг для бизнеса и личных брендов: SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.">
+<meta name="description" content="Marketing digital para negocios y marcas personales: SMM, publicidad en Google Ads, Meta Ads y TikTok Ads, marca personal y consultoria.">
 <meta name="theme-color" content="#F0EFEA">
 <link rel="canonical" href="https://www.bravemarketing.es/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026%2026%22%3E%3Crect%20width%3D%2226%22%20height%3D%2226%22%20rx%3D%226%22%20fill%3D%22%2323221E%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222.1%22%3E%3Cellipse%20cx%3D%2213%22%20cy%3D%2213%22%20rx%3D%225%22%20ry%3D%229.4%22%20transform%3D%22rotate(-32%2013%2013)%22%20stroke%3D%22%23F6F5F1%22%2F%3E%3Cellipse%20cx%3D%2213%22%20cy%3D%2213%22%20rx%3D%225%22%20ry%3D%229.4%22%20transform%3D%22rotate(32%2013%2013)%22%20stroke%3D%22%23F0522B%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="ru_RU">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_GB">
 <meta property="og:site_name" content="Brave Marketing">
-<meta property="og:title" content="Brave Marketing — digital-маркетинг для бизнеса и личных брендов">
-<meta property="og:description" content="SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.">
+<meta property="og:title" content="Brave Marketing — marketing digital para negocios y marcas personales">
+<meta property="og:description" content="SMM, publicidad en Google Ads, Meta Ads y TikTok Ads, marca personal y consultoria.">
 <meta property="og:url" content="https://www.bravemarketing.es/">
 <meta name="twitter:card" content="summary_large_image">
 <title>Brave Marketing</title>
@@ -73,10 +75,14 @@ nav.main{display:flex;gap:4px;margin-left:auto;background:var(--surface);border-
 nav.main a{text-decoration:none;font-size:13.5px;font-weight:500;color:var(--ink-2);padding:9px 15px;border-radius:100px;transition:background .18s,color .18s;white-space:nowrap}
 nav.main a:hover{color:var(--ink);background:var(--ground-2)}
 nav.main a.on{background:var(--char);color:#F6F5F1}
-@media(max-width:1040px){nav.main{display:none}}
-.hd .btn{flex:none;margin-left:auto}
-nav.main ~ .btn{margin-left:0}
-@media(max-width:460px){.hd .btn{display:none}}
+@media(max-width:1080px){nav.main{display:none}}
+.tools{display:flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border-radius:100px;padding:6px;box-shadow:var(--shadow);flex:none}
+nav.main ~ .tools{margin-left:0}
+.lang{display:flex;gap:2px}
+.lang button{font-size:11.5px;font-weight:600;letter-spacing:.08em;background:none;border:0;padding:8px 10px;cursor:pointer;color:var(--ink-3);border-radius:100px;transition:background .16s,color .16s}
+.lang button:hover{color:var(--ink)}
+.lang button[aria-pressed="true"]{background:var(--verm);color:#fff}
+@media(max-width:520px){.tools .btn{display:none}}
 
 /* ============ BUTTONS ============ */
 .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;cursor:pointer;font-size:12.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:14px 24px;border-radius:100px;border:1.5px solid var(--char);background:var(--char);color:#F6F5F1;transition:transform .18s,background .18s,border-color .18s,color .18s}
@@ -231,7 +237,7 @@ h2{font-size:clamp(30px,5vw,62px);max-width:18ch}
 @media(max-width:900px){.ck{display:none}}
 .ways{display:flex;flex-direction:column;gap:10px;margin-top:26px;position:relative;z-index:1}
 .way{display:flex;align-items:center;gap:15px;text-decoration:none;background:rgba(255,255,255,.06);border-radius:100px;padding:14px 20px;transition:background .2s}
-.way:hover{background:rgba(255,255,255,.13)}
+a.way:hover{background:rgba(255,255,255,.13)}
 .way .ic{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;flex:none;color:var(--sand)}
 .way .ic svg{width:17px;height:17px}
 .way .k{font-size:9.5px;font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:#9C9891;display:block}
@@ -291,19 +297,19 @@ footer.site{padding:70px 0 34px}
 }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Brave Marketing","description":"Digital-маркетинг для бизнеса и личных брендов: SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.","url":"https://www.bravemarketing.es/","email":"hola@bravemarketing.es","areaServed":"ES","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsAbout":["SMM","Google Ads","Meta Ads","TikTok Ads","Личный бренд","Digital-маркетинг"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги","itemListElement":[
-{"@type":"Offer","name":"SMM и ведение социальных сетей","price":"990","priceCurrency":"EUR","description":"Стратегия продвижения и комплексное ведение социальных сетей, ежемесячно."},
-{"@type":"Offer","name":"Настройка рекламных кампаний","price":"490","priceCurrency":"EUR","description":"Настройка кампаний в Google Ads, Meta Ads и TikTok Ads под бизнес и бюджет."},
-{"@type":"Offer","name":"Консультация по digital-маркетингу и онлайн-продажам","price":"60","priceCurrency":"EUR","description":"Час консультации: стратегия, реклама, воронка продаж и точки роста."},
-{"@type":"Offer","name":"Ведение и продвижение социальных сетей для частных лиц","price":"690","priceCurrency":"EUR","description":"Ведение Instagram и Twitter, контент, образ и рост аудитории, ежемесячно."},
-{"@type":"Offer","name":"Создание личного бренда в Instagram","price":"990","priceCurrency":"EUR","description":"Позиционирование, упаковка эксперта, контент-стратегия и таргетированная реклама."},
-{"@type":"Offer","name":"Консультация по монетизации блога и развитию личного бренда","price":"50","priceCurrency":"EUR","description":"Час консультации: позиционирование, площадки, монетизация аудитории."}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Brave Marketing","description":"Marketing digital para negocios y marcas personales: SMM, publicidad en Google Ads, Meta Ads y TikTok Ads, marca personal y consultoria.","url":"https://www.bravemarketing.es/","email":"hola@bravemarketing.es","areaServed":"ES","availableLanguage":["es","ca","en"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsAbout":["SMM","Google Ads","Meta Ads","TikTok Ads","Marca personal","Marketing digital"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios","itemListElement":[
+{"@type":"Offer","name":"SMM y gestion de redes sociales","price":"990","priceCurrency":"EUR","description":"Estrategia de promocion y gestion integral de redes sociales, mensual."},
+{"@type":"Offer","name":"Configuracion de campanas publicitarias","price":"490","priceCurrency":"EUR","description":"Configuracion de campanas en Google Ads, Meta Ads y TikTok Ads segun negocio y presupuesto."},
+{"@type":"Offer","name":"Consultoria de marketing digital y ventas online","price":"60","priceCurrency":"EUR","description":"Hora de consultoria: estrategia, publicidad, embudo de ventas y puntos de crecimiento."},
+{"@type":"Offer","name":"Gestion y promocion de redes sociales para particulares","price":"690","priceCurrency":"EUR","description":"Gestion de Instagram y Twitter, contenido, imagen y crecimiento de audiencia, mensual."},
+{"@type":"Offer","name":"Creacion de marca personal en Instagram","price":"990","priceCurrency":"EUR","description":"Posicionamiento, presentacion como experto, estrategia de contenidos y publicidad segmentada."},
+{"@type":"Offer","name":"Consultoria de monetizacion de blog y marca personal","price":"50","priceCurrency":"EUR","description":"Hora de consultoria: posicionamiento, plataformas y monetizacion de audiencia."}
 ]}}
 </script>
 </head>
 <body>
 
-<a class="sr" href="#uslugi">Перейти к услугам</a>
+<a class="sr" href="#servicios">Ir a los servicios</a>
 
 <!-- ================= HEADER ================= -->
 <header id="top">
@@ -316,12 +322,19 @@ footer.site{padding:70px 0 34px}
       <span class="wm"><b>Brave</b><i>Marketing</i></span>
     </a>
     <nav class="main">
-      <a href="#uslugi" data-i18n="nav.services">Услуги</a>
-      <a href="#preimushchestva" data-i18n="nav.adv">Преимущества</a>
-      <a href="#o-mne" data-i18n="nav.about">Обо мне</a>
-      <a href="#kontakty" data-i18n="nav.contact">Контакты</a>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#ventajas" data-i18n="nav.adv">Ventajas</a>
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
-    <a class="btn sm" href="#kontakty" data-i18n="cta.short">Связаться</a>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Idioma / Llengua / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="ca" aria-pressed="false">CA</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn sm" href="#contacto" data-i18n="cta.short">Contactar</a>
+    </div>
   </div>
 </header>
 
@@ -335,18 +348,18 @@ footer.site{padding:70px 0 34px}
   <div class="wrap hero-in">
     <div class="tagline">
       <span class="dot"></span>
-      <span class="lab" data-i18n="hero.tag">SMM · Реклама · Личный бренд</span>
+      <span class="lab" data-i18n="hero.tag">SMM · Publicidad · Marca personal</span>
     </div>
 
     <h1 class="dsp">
-      <span data-i18n="hero.h1a">Digital-маркетинг для бизнеса и </span><span class="v" data-i18n="hero.h1b">личных брендов</span>
+      <span data-i18n="hero.h1a">Marketing digital para negocios y </span><span class="v" data-i18n="hero.h1b">marcas personales</span>
     </h1>
 
-    <p class="sub" data-i18n="hero.sub">18 лет в интернет-проектах: реклама, социальные сети, личный бренд. Главное — понять, чего именно вы хотите добиться, и выстроить под эту цель работающую систему.</p>
+    <p class="sub" data-i18n="hero.sub">18 años en proyectos digitales: publicidad, redes sociales y marca personal. Lo importante es entender qué quieres conseguir y construir un sistema que funcione para ese objetivo.</p>
 
     <div class="hero-cta">
-      <a class="btn" href="#kontakty" data-i18n="cta.talk">Обсудить проект</a>
-      <a class="btn ghost" href="#uslugi" data-i18n="cta.services">Услуги и цены</a>
+      <a class="btn" href="#contacto" data-i18n="cta.talk">Hablemos del proyecto</a>
+      <a class="btn ghost" href="#servicios" data-i18n="cta.services">Servicios y precios</a>
     </div>
 
     <div class="hero-foot">
@@ -365,36 +378,36 @@ footer.site{padding:70px 0 34px}
 <div class="wrap">
   <div class="strip rv">
     <div class="strip-in">
-      <div><span class="k" data-i18n="st.k1">Опыт</span><span class="v" data-i18n="st.v1"><em>18 лет</em> в digital, с 2008 года</span></div>
-      <div><span class="k" data-i18n="st.k2">Для кого</span><span class="v" data-i18n="st.v2">Компании и частные лица</span></div>
-      <div><span class="k" data-i18n="st.k3">Реклама</span><span class="v" data-i18n="st.v3">Google Ads · Meta Ads · TikTok Ads</span></div>
-      <div><span class="k" data-i18n="st.k4">Формат</span><span class="v" data-i18n="st.v4">Подписка, проект или консультация</span></div>
+      <div><span class="k" data-i18n="st.k1">Experiencia</span><span class="v"><em data-i18n="st.v1a">18 años</em> <span data-i18n="st.v1b">en digital, desde 2008</span></span></div>
+      <div><span class="k" data-i18n="st.k2">Para quién</span><span class="v" data-i18n="st.v2">Empresas y particulares</span></div>
+      <div><span class="k" data-i18n="st.k3">Publicidad</span><span class="v" data-i18n="st.v3">Google Ads · Meta Ads · TikTok Ads</span></div>
+      <div><span class="k" data-i18n="st.k4">Formato</span><span class="v" data-i18n="st.v4">Suscripción, proyecto o consultoría</span></div>
     </div>
   </div>
 </div>
 
-<!-- ================= УСЛУГИ ================= -->
-<section id="uslugi">
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
   <div class="wrap">
     <div class="shead rv">
       <div>
-        <div class="lab" data-i18n="lab.services">Услуги</div>
-        <h2 class="dsp" data-i18n="sv.h2">Что я делаю и сколько это стоит</h2>
+        <div class="lab" data-i18n="lab.services">Servicios</div>
+        <h2 class="dsp" data-i18n="sv.h2">Qué hago y cuánto cuesta</h2>
       </div>
-      <p data-i18n="sv.p">Услуги разделены на два направления: для компаний и для частных лиц. Каждую можно взять отдельно.</p>
+      <p data-i18n="sv.p">Los servicios están divididos en dos líneas: para empresas y para particulares. Cada uno se puede contratar por separado.</p>
     </div>
 
-    <!-- ---------- 01 ДЛЯ КОМПАНИЙ ---------- -->
+    <!-- ---------- 01 PARA EMPRESAS ---------- -->
     <div class="sgrp rv">
       <div class="sgrp-hd">
         <span class="n">01</span>
-        <h3 data-i18n="g1.t">Для компаний</h3>
-        <p data-i18n="g1.p">Продвижение бизнеса: соцсети, реклама и разбор точек роста.</p>
+        <h3 data-i18n="g1.t">Para empresas</h3>
+        <p data-i18n="g1.p">Promoción de negocio: redes sociales, publicidad y análisis de los puntos de crecimiento.</p>
       </div>
 
       <div class="srv-grid">
 
-        <!-- C1 — SMM -->
+        <!-- C1 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -402,34 +415,34 @@ footer.site{padding:70px 0 34px}
               <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>
             </svg>
           </div>
-          <h3 data-i18n="c1.t">SMM и ведение социальных сетей</h3>
-          <div class="price"><b>€990</b><span data-i18n="c1.u">в месяц</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="c1.d">Разработаем стратегию продвижения и возьмём на себя комплексное ведение ваших социальных сетей — от создания контента до взаимодействия с аудиторией.</p>
+          <h3 data-i18n="c1.t">SMM y gestión de redes sociales</h3>
+          <div class="price"><b>€990</b><span data-i18n="c1.u">al mes</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="c1.d">Desarrollamos la estrategia de promoción y asumimos la gestión integral de tus redes sociales: desde la creación de contenido hasta la interacción con la audiencia.</p>
           <div class="acc">
             <details>
-              <summary data-i18n="c1.s">Что включено</summary>
-              <p data-i18n="c1.p1">Анализируем вашу аудиторию и особенности бизнеса, создаём контент-план, готовим и публикуем контент, работаем над вовлечённостью и развитием аккаунта.</p>
-              <p data-i18n="c1.p2">Поможем привлечь новую аудиторию, повысить узнаваемость бренда и превратить социальные сети в эффективный инструмент продвижения и продаж.</p>
+              <summary data-i18n="c1.s">Qué incluye</summary>
+              <p data-i18n="c1.p1">Analizamos tu audiencia y las particularidades de tu negocio, creamos el plan de contenidos, preparamos y publicamos el contenido, y trabajamos la interacción y el crecimiento de la cuenta.</p>
+              <p data-i18n="c1.p2">Te ayudamos a atraer nueva audiencia, aumentar el reconocimiento de marca y convertir las redes sociales en una herramienta eficaz de promoción y ventas.</p>
             </details>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
 
-        <!-- C2 — Реклама -->
+        <!-- C2 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/>
             </svg>
           </div>
-          <h3 data-i18n="c2.t">Настройка рекламных кампаний</h3>
-          <div class="price"><b>€490</b><span data-i18n="c2.u">разово</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="c2.d">Создадим и настроим рекламную кампанию под ваш бизнес и бюджет, чтобы вы могли самостоятельно управлять рекламой и контролировать результаты.</p>
+          <h3 data-i18n="c2.t">Configuración de campañas publicitarias</h3>
+          <div class="price"><b>€490</b><span data-i18n="c2.u">pago único</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="c2.d">Creamos y configuramos la campaña publicitaria para tu negocio y tu presupuesto, para que puedas gestionar la publicidad por tu cuenta y controlar los resultados.</p>
           <div class="chips">
             <span class="chip">Google Ads</span>
             <span class="chip">Meta Ads</span>
@@ -437,72 +450,72 @@ footer.site{padding:70px 0 34px}
           </div>
           <div class="acc">
             <details>
-              <summary data-i18n="c2.s">Что включено</summary>
+              <summary data-i18n="c2.s">Qué incluye</summary>
               <ul>
-                <li data-i18n="c2.b1">анализ бизнеса и целевой аудитории</li>
-                <li data-i18n="c2.b2">разработка рекламной стратегии</li>
-                <li data-i18n="c2.b3">настройка рекламного кабинета и кампаний</li>
-                <li data-i18n="c2.b4">определение целевой аудитории</li>
-                <li data-i18n="c2.b5">создание структуры кампаний</li>
-                <li data-i18n="c2.b6">подготовка рекламных текстов и креативов</li>
-                <li data-i18n="c2.b7">настройка целей и конверсий</li>
-                <li data-i18n="c2.b8">запуск и первоначальная проверка кампании</li>
+                <li data-i18n="c2.b1">análisis del negocio y del público objetivo</li>
+                <li data-i18n="c2.b2">desarrollo de la estrategia publicitaria</li>
+                <li data-i18n="c2.b3">configuración de la cuenta publicitaria y de las campañas</li>
+                <li data-i18n="c2.b4">definición del público objetivo</li>
+                <li data-i18n="c2.b5">creación de la estructura de campañas</li>
+                <li data-i18n="c2.b6">preparación de textos y creatividades</li>
+                <li data-i18n="c2.b7">configuración de objetivos y conversiones</li>
+                <li data-i18n="c2.b8">lanzamiento y primera revisión de la campaña</li>
               </ul>
             </details>
 
             <div class="addon">
-              <span class="k" data-i18n="c2.ak">Дополнительно</span>
-              <h4 data-i18n="c2.at">Ведение рекламных кампаний</h4>
-              <p data-i18n="c2.ad">Хотите, чтобы мы продолжали управлять рекламой после настройки?</p>
-              <p class="fee" data-i18n="c2.af">10% от рекламного бюджета в месяц</p>
+              <span class="k" data-i18n="c2.ak">Adicional</span>
+              <h4 data-i18n="c2.at">Gestión de campañas publicitarias</h4>
+              <p data-i18n="c2.ad">¿Quieres que sigamos gestionando la publicidad después de la configuración?</p>
+              <p class="fee" data-i18n="c2.af">10% del presupuesto publicitario al mes</p>
               <details>
-                <summary data-i18n="c2.as">Что входит в ведение</summary>
+                <summary data-i18n="c2.as">Qué incluye la gestión</summary>
                 <ul>
-                  <li data-i18n="c2.c1">постоянный контроль эффективности</li>
-                  <li data-i18n="c2.c2">анализ результатов и конверсий</li>
-                  <li data-i18n="c2.c3">оптимизация рекламных кампаний</li>
-                  <li data-i18n="c2.c4">корректировка таргетинга и бюджета</li>
-                  <li data-i18n="c2.c5">создание новых креативов</li>
-                  <li data-i18n="c2.c6">обновление рекламных текстов</li>
-                  <li data-i18n="c2.c7">отключение неэффективных объявлений</li>
-                  <li data-i18n="c2.c8">тестирование новых подходов</li>
+                  <li data-i18n="c2.c1">control continuo del rendimiento</li>
+                  <li data-i18n="c2.c2">análisis de resultados y conversiones</li>
+                  <li data-i18n="c2.c3">optimización de las campañas</li>
+                  <li data-i18n="c2.c4">ajuste de la segmentación y del presupuesto</li>
+                  <li data-i18n="c2.c5">creación de nuevas creatividades</li>
+                  <li data-i18n="c2.c6">actualización de los textos publicitarios</li>
+                  <li data-i18n="c2.c7">desactivación de los anuncios poco eficaces</li>
+                  <li data-i18n="c2.c8">prueba de nuevos enfoques</li>
                 </ul>
               </details>
             </div>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
 
-        <!-- C3 — Консультация -->
+        <!-- C3 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M21 4v5h-5"/><path d="M12 8v4l3 2"/>
             </svg>
           </div>
-          <h3 data-i18n="c3.t">Консультация по digital-маркетингу и онлайн-продажам</h3>
-          <div class="price"><b>€60</b><span data-i18n="c3.u">в час</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="c3.d">Разберём ваш бизнес, текущие результаты и точки роста, чтобы найти способы увеличить онлайн-продажи и эффективность digital-маркетинга.</p>
-          <p class="out" data-i18n="c3.o">В результате вы получите конкретные рекомендации и понятный план дальнейших действий.</p>
+          <h3 data-i18n="c3.t">Consultoría de marketing digital y ventas online</h3>
+          <div class="price"><b>€60</b><span data-i18n="c3.u">por hora</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="c3.d">Analizamos tu negocio, los resultados actuales y los puntos de crecimiento para encontrar formas de aumentar las ventas online y la eficacia del marketing digital.</p>
+          <p class="out" data-i18n="c3.o">Como resultado te llevas recomendaciones concretas y un plan de acción claro.</p>
           <div class="acc">
             <details>
-              <summary data-i18n="c3.s">Что разберём</summary>
+              <summary data-i18n="c3.s">Qué analizamos</summary>
               <ul>
-                <li data-i18n="c3.b1">стратегию продвижения</li>
-                <li data-i18n="c3.b2">рекламу и привлечение клиентов</li>
-                <li data-i18n="c3.b3">социальные сети и контент</li>
-                <li data-i18n="c3.b4">воронку продаж и конверсии</li>
-                <li data-i18n="c3.b5">сайт и онлайн-продажи</li>
-                <li data-i18n="c3.b6">конкретные задачи и проблемы вашего бизнеса</li>
+                <li data-i18n="c3.b1">la estrategia de promoción</li>
+                <li data-i18n="c3.b2">la publicidad y la captación de clientes</li>
+                <li data-i18n="c3.b3">las redes sociales y el contenido</li>
+                <li data-i18n="c3.b4">el embudo de ventas y las conversiones</li>
+                <li data-i18n="c3.b5">la web y las ventas online</li>
+                <li data-i18n="c3.b6">las tareas y los problemas concretos de tu negocio</li>
               </ul>
             </details>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
@@ -510,93 +523,93 @@ footer.site{padding:70px 0 34px}
       </div>
     </div>
 
-    <!-- ---------- 02 ДЛЯ ЧАСТНЫХ ЛИЦ ---------- -->
+    <!-- ---------- 02 PARA PARTICULARES ---------- -->
     <div class="sgrp rv">
       <div class="sgrp-hd">
         <span class="n">02</span>
-        <h3 data-i18n="g2.t">Для частных лиц</h3>
-        <p data-i18n="g2.p">Личные аккаунты и личный бренд: контент, образ и заявки на ваши услуги.</p>
+        <h3 data-i18n="g2.t">Para particulares</h3>
+        <p data-i18n="g2.p">Cuentas personales y marca personal: contenido, imagen y solicitudes para tus servicios.</p>
       </div>
 
       <div class="srv-grid">
 
-        <!-- P1 — Ведение соцсетей -->
+        <!-- P1 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/>
             </svg>
           </div>
-          <h3 data-i18n="p1.t">Ведение и продвижение социальных сетей</h3>
-          <div class="price"><b>€690</b><span data-i18n="p1.u">в месяц</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="p1.d">Возьмём на себя развитие ваших Instagram и Twitter — от создания контента и формирования образа до привлечения новой аудитории и продвижения аккаунтов.</p>
+          <h3 data-i18n="p1.t">Gestión y promoción de redes sociales</h3>
+          <div class="price"><b>€690</b><span data-i18n="p1.u">al mes</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="p1.d">Asumimos el desarrollo de tus cuentas de Instagram y Twitter: desde la creación de contenido y la construcción de tu imagen hasta la captación de nueva audiencia y la promoción de los perfiles.</p>
           <div class="acc">
             <details>
-              <summary data-i18n="p1.s">Что включено</summary>
-              <p data-i18n="p1.p1">В услугу входит регулярная публикация контента с использованием ваших существующих фото- и видеоархивов, а также одна небольшая фотосессия в месяц с нашим фотографом для создания нового материала.</p>
-              <p data-i18n="p1.p2">Мы также поможем сформировать и развивать ваш образ в социальных сетях, разработаем контент-стратегию, найдём возможности для взаимного пиара и коллабораций с блогерами из нашей базы и будем постоянно работать над ростом аудитории и вовлечённости.</p>
-              <p data-i18n="p1.p3">Ваша задача — создавать контент вместе с нами. Всё остальное мы берём на себя.</p>
+              <summary data-i18n="p1.s">Qué incluye</summary>
+              <p data-i18n="p1.p1">El servicio incluye la publicación regular de contenido a partir de tus archivos de fotos y vídeos existentes, además de una sesión de fotos breve al mes con nuestro fotógrafo para generar material nuevo.</p>
+              <p data-i18n="p1.p2">También te ayudamos a construir y desarrollar tu imagen en redes sociales, elaboramos la estrategia de contenidos, buscamos oportunidades de colaboración cruzada con blogueros de nuestra base y trabajamos de forma continua en el crecimiento de la audiencia y la interacción.</p>
+              <p data-i18n="p1.p3">Tu tarea es crear el contenido junto a nosotros. Del resto nos encargamos nosotros.</p>
             </details>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
 
-        <!-- P2 — Личный бренд -->
+        <!-- P2 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/>
             </svg>
           </div>
-          <h3 data-i18n="p2.t">Создание личного бренда в Instagram</h3>
-          <div class="price"><b>€990</b><span data-i18n="p2.u">разово</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="p2.d">Поможем превратить Instagram в инструмент продвижения ваших услуг и привлечения новых клиентов.</p>
+          <h3 data-i18n="p2.t">Creación de marca personal en Instagram</h3>
+          <div class="price"><b>€990</b><span data-i18n="p2.u">pago único</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="p2.d">Te ayudamos a convertir Instagram en una herramienta para promocionar tus servicios y captar nuevos clientes.</p>
           <div class="acc">
             <details>
-              <summary data-i18n="p2.s">Что включено</summary>
-              <p data-i18n="p2.p1">Определим ваши сильные стороны и позиционирование, упакуем вас как эксперта, оформим аккаунт и разработаем контент-стратегию. Создадим путь клиента от первого знакомства с вами до заявки на услугу: вовлекающий контент, продающая воронка через Instagram и WhatsApp и автоматизация коммуникации.</p>
-              <p data-i18n="p2.p2">Также настроим таргетированную рекламу под ваш бюджет, чтобы привлекать целевую аудиторию и получать реальные заявки на ваши услуги.</p>
+              <summary data-i18n="p2.s">Qué incluye</summary>
+              <p data-i18n="p2.p1">Definimos tus puntos fuertes y tu posicionamiento, te presentamos como experto, damos formato al perfil y elaboramos la estrategia de contenidos. Creamos el recorrido del cliente desde el primer contacto contigo hasta la solicitud del servicio: contenido que engancha, un embudo de venta a través de Instagram y WhatsApp, y automatización de la comunicación.</p>
+              <p data-i18n="p2.p2">También configuramos la publicidad segmentada según tu presupuesto para atraer al público adecuado y conseguir solicitudes reales de tus servicios.</p>
             </details>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
 
-        <!-- P3 — Консультация -->
+        <!-- P3 -->
         <article class="srv">
           <div class="ico" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9.5 18h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.6l.1.6h5.2l.1-.6c.1-.6.4-1.2.9-1.6A6 6 0 0 0 12 3z"/>
             </svg>
           </div>
-          <h3 data-i18n="p3.t">Консультация по монетизации блога и развитию личного бренда</h3>
-          <div class="price"><b>€50</b><span data-i18n="p3.u">в час</span></div>
-          <div class="vat" data-i18n="vat">НДС не включён</div>
-          <p data-i18n="p3.d">Для тех, кто хочет самостоятельно развивать свой блог, личный бренд и зарабатывать на своей аудитории, но не знает, с чего начать или как выстроить эффективную стратегию.</p>
-          <p class="out" data-i18n="p3.o">Вы получите практические рекомендации и понятный план действий, который сможете реализовать самостоятельно.</p>
+          <h3 data-i18n="p3.t">Consultoría de monetización de blog y marca personal</h3>
+          <div class="price"><b>€50</b><span data-i18n="p3.u">por hora</span></div>
+          <div class="vat" data-i18n="vat">IVA no incluido</div>
+          <p data-i18n="p3.d">Para quien quiere desarrollar por su cuenta su blog y su marca personal y ganar con su audiencia, pero no sabe por dónde empezar ni cómo construir una estrategia eficaz.</p>
+          <p class="out" data-i18n="p3.o">Te llevas recomendaciones prácticas y un plan de acción claro que puedes ejecutar por tu cuenta.</p>
           <div class="acc">
             <details>
-              <summary data-i18n="p3.s">Что разберём</summary>
+              <summary data-i18n="p3.s">Qué analizamos</summary>
               <ul>
-                <li data-i18n="p3.b1">позиционирование и создание личного бренда</li>
-                <li data-i18n="p3.b2">выбор подходящих площадок и форматов контента</li>
-                <li data-i18n="p3.b3">способы монетизации аудитории</li>
-                <li data-i18n="p3.b4">продвижение и привлечение новых подписчиков</li>
-                <li data-i18n="p3.b5">создание контента, который помогает продавать</li>
-                <li data-i18n="p3.b6">поиск рекламных интеграций и других источников дохода</li>
-                <li data-i18n="p3.b7">конкретные вопросы и задачи вашего проекта</li>
+                <li data-i18n="p3.b1">posicionamiento y creación de marca personal</li>
+                <li data-i18n="p3.b2">elección de plataformas y formatos de contenido</li>
+                <li data-i18n="p3.b3">formas de monetizar la audiencia</li>
+                <li data-i18n="p3.b4">promoción y captación de nuevos seguidores</li>
+                <li data-i18n="p3.b5">creación de contenido que ayuda a vender</li>
+                <li data-i18n="p3.b6">búsqueda de colaboraciones publicitarias y otras fuentes de ingresos</li>
+                <li data-i18n="p3.b7">preguntas y tareas concretas de tu proyecto</li>
               </ul>
             </details>
           </div>
-          <a class="go" href="#kontakty">
-            <span data-i18n="cta.card">Обсудить</span>
+          <a class="go" href="#contacto">
+            <span data-i18n="cta.card">Consultar</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
         </article>
@@ -605,75 +618,75 @@ footer.site{padding:70px 0 34px}
     </div>
 
     <div class="svc-note rv">
-      <p data-i18n="sv.note">Это не все наши возможности. Если вам нужно что-то особенное — свяжитесь с нами, обсудим задачу и предложим решение.</p>
-      <a class="btn" href="#kontakty" data-i18n="cta.task">Обсудить задачу</a>
+      <p data-i18n="sv.note">Estos no son todos nuestros servicios. Si necesitas algo específico, escríbenos: hablamos de la tarea y te proponemos una solución.</p>
+      <a class="btn" href="#contacto" data-i18n="cta.task">Plantear una tarea</a>
     </div>
-    <p class="vat-all" data-i18n="sv.vat">Все цены указаны без НДС.</p>
+    <p class="vat-all" data-i18n="sv.vat">Todos los precios se indican sin IVA.</p>
   </div>
 </section>
 
-<!-- ================= ПРЕИМУЩЕСТВА ================= -->
-<section id="preimushchestva">
+<!-- ================= VENTAJAS ================= -->
+<section id="ventajas">
   <div class="wrap">
     <div class="shead rv">
       <div>
-        <div class="lab" data-i18n="lab.adv">Преимущества</div>
-        <h2 class="dsp" data-i18n="ad.h2">Почему со мной работают</h2>
+        <div class="lab" data-i18n="lab.adv">Ventajas</div>
+        <h2 class="dsp" data-i18n="ad.h2">Por qué trabajan conmigo</h2>
       </div>
     </div>
 
     <div class="advs rv">
       <article class="adv">
         <span class="n">01</span>
-        <h3 data-i18n="a1.t">Личное участие</h3>
-        <p data-i18n="a1.d">Я лично погружаюсь в ваш проект, разбираюсь в специфике бизнеса или личного бренда и контролирую ключевые этапы работы.</p>
+        <h3 data-i18n="a1.t">Implicación personal</h3>
+        <p data-i18n="a1.d">Me implico personalmente en tu proyecto, entiendo las particularidades del negocio o de la marca personal y superviso las etapas clave del trabajo.</p>
       </article>
       <article class="adv">
         <span class="n">02</span>
-        <h3 data-i18n="a2.t">Комплексный подход</h3>
-        <p data-i18n="a2.d">Не просто выполняем отдельные задачи, а выстраиваем полноценную систему: от стратегии и упаковки до продвижения, привлечения аудитории и продаж.</p>
+        <h3 data-i18n="a2.t">Enfoque integral</h3>
+        <p data-i18n="a2.d">No nos limitamos a ejecutar tareas sueltas: construimos un sistema completo, desde la estrategia y la presentación hasta la promoción, la captación de audiencia y las ventas.</p>
       </article>
       <article class="adv">
         <span class="n">03</span>
-        <h3 data-i18n="a3.t">Фокус на результат</h3>
-        <p data-i18n="a3.d">Все решения принимаются с учётом конкретных целей проекта — роста аудитории, узнаваемости, заявок или продаж. Мы анализируем результаты и корректируем стратегию по мере необходимости.</p>
+        <h3 data-i18n="a3.t">Foco en el resultado</h3>
+        <p data-i18n="a3.d">Todas las decisiones se toman en función de los objetivos concretos del proyecto: crecimiento de audiencia, reconocimiento, solicitudes o ventas. Analizamos los resultados y ajustamos la estrategia cuando hace falta.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ================= ОБО МНЕ ================= -->
-<section id="o-mne">
+<!-- ================= SOBRE MÍ ================= -->
+<section id="sobre-mi">
   <div class="wrap">
     <div class="shead rv">
       <div>
-        <div class="lab" data-i18n="lab.about">Обо мне</div>
-        <h2 class="dsp" data-i18n="ab.h2">Кто ведёт ваш проект</h2>
+        <div class="lab" data-i18n="lab.about">Sobre mí</div>
+        <h2 class="dsp" data-i18n="ab.h2">Quién lleva tu proyecto</h2>
       </div>
     </div>
 
     <div class="about rv">
       <div class="bio">
-        <h3 class="dsp" data-i18n="ab.lead">18 лет в digital</h3>
-        <p data-i18n="ab.p1">Я занимаюсь созданием, продвижением и развитием интернет-проектов с 2008 года — ещё в те времена, когда интернет был далеко не в каждом доме, а первые iPhone только начинали становиться частью повседневной жизни.</p>
-        <p data-i18n="ab.p2">За эти годы я работал с совершенно разными проектами: запускал и продвигал интернет-сервисы, выстраивал рекламные кампании, развивал социальные сети, работал с блогерами и помогал специалистам создавать личные бренды и превращать аудиторию в источник дохода.</p>
-        <p data-i18n="ab.p3">Сегодня я глубоко разбираюсь в digital-маркетинге и рекламных инструментах — от Google Ads и Meta Ads до TikTok Ads и других платформ. Но для меня технологии и инструменты — это только средства. Главное — понять, чего именно вы хотите добиться, и выстроить под эту цель работающую систему.</p>
-        <p data-i18n="ab.p4">Я также много работал с блогерами, экспертами и специалистами, помогая им находить своё позиционирование, развивать личный бренд и монетизировать аудиторию. Возможно, некоторых людей, с которыми я работал, вы уже знаете или видели в социальных сетях.</p>
+        <h3 class="dsp" data-i18n="ab.lead">18 años en digital</h3>
+        <p data-i18n="ab.p1">Me dedico a crear, promocionar y desarrollar proyectos de internet desde 2008, cuando internet todavía no estaba en todas las casas y los primeros iPhone apenas empezaban a formar parte del día a día.</p>
+        <p data-i18n="ab.p2">En estos años he trabajado con proyectos muy distintos: he lanzado y promocionado servicios online, he montado campañas publicitarias, he desarrollado redes sociales, he trabajado con blogueros y he ayudado a profesionales a crear su marca personal y a convertir su audiencia en una fuente de ingresos.</p>
+        <p data-i18n="ab.p3">Hoy conozco a fondo el marketing digital y las herramientas publicitarias, desde Google Ads y Meta Ads hasta TikTok Ads y otras plataformas. Pero para mí la tecnología y las herramientas son solo medios. Lo importante es entender qué quieres conseguir exactamente y construir un sistema que funcione para ese objetivo.</p>
+        <p data-i18n="ab.p4">También he trabajado mucho con blogueros, expertos y profesionales, ayudándoles a encontrar su posicionamiento, desarrollar su marca personal y monetizar su audiencia. Es posible que a algunas de las personas con las que he trabajado ya las conozcas o las hayas visto en redes sociales.</p>
 
-        <h4 data-i18n="ab.h4">Я не беру проекты ради самого проекта</h4>
-        <p data-i18n="ab.p5">Мне неинтересно просто продать вам услугу, выставить счёт и исчезнуть. Моя задача — разобраться в вашем проекте, понять ваши цели и найти решение, которое действительно поможет их достичь.</p>
-        <p data-i18n="ab.p6">Если я вижу, что могу быть полезен и привести проект к результату — я берусь за работу. Если не вижу такой возможности, я предпочту честно сказать об этом ещё до начала сотрудничества.</p>
+        <h4 data-i18n="ab.h4">No acepto proyectos por aceptar proyectos</h4>
+        <p data-i18n="ab.p5">No me interesa venderte un servicio, emitir la factura y desaparecer. Mi trabajo es entender tu proyecto, comprender tus objetivos y encontrar una solución que realmente ayude a alcanzarlos.</p>
+        <p data-i18n="ab.p6">Si veo que puedo aportar y llevar el proyecto a un resultado, me pongo a trabajar. Si no lo veo, prefiero decirlo con honestidad antes de empezar a colaborar.</p>
 
-        <p class="fin" data-i18n="ab.fin">Ваш результат — это и есть результат моей работы.</p>
+        <p class="fin" data-i18n="ab.fin">Tu resultado es el resultado de mi trabajo.</p>
       </div>
 
       <div>
-        <!-- ФОТО: замените блок .photo на <div class="photo"><img src="foto.jpg" alt="..."></div> -->
+        <!-- FOTO: sustituir por <div class="photo"><img src="foto.jpg" alt="..."></div> -->
         <div class="photo">
-          <span class="hint"><b data-i18n="ab.ph.k">Фото</b><span data-i18n="ab.ph.v">Здесь будет фотография — пришлите файл, вставлю на это место.</span></span>
+          <span class="hint"><b data-i18n="ab.ph.k">Foto</b><span data-i18n="ab.ph.v">Aquí irá una fotografía — envíame el archivo y la coloco en este espacio.</span></span>
         </div>
         <div class="panel" style="margin-top:16px">
-          <h4 data-i18n="ab.tools">Рекламные платформы</h4>
+          <h4 data-i18n="ab.tools">Plataformas publicitarias</h4>
           <div class="chips">
             <span class="chip">Google Ads</span>
             <span class="chip">Meta Ads</span>
@@ -685,17 +698,17 @@ footer.site{padding:70px 0 34px}
   </div>
 </section>
 
-<!-- ================= КОНТАКТЫ ================= -->
-<section id="kontakty">
+<!-- ================= CONTACTO ================= -->
+<section id="contacto">
   <div class="wrap">
     <div class="contact rv">
       <canvas class="ck" id="k4" aria-hidden="true"></canvas>
 
       <div>
         <div class="shead">
-          <div class="lab" data-i18n="lab.contact">Контакты</div>
-          <h2 class="dsp" data-i18n="co.h2">Расскажите о проекте</h2>
-          <p data-i18n="co.p">Напишите, чем вы занимаетесь и чего хотите добиться. Если я вижу, что могу быть полезен и привести проект к результату — берусь за работу.</p>
+          <div class="lab" data-i18n="lab.contact">Contacto</div>
+          <h2 class="dsp" data-i18n="co.h2">Cuéntame tu proyecto</h2>
+          <p data-i18n="co.p">Escríbeme a qué te dedicas y qué quieres conseguir. Si veo que puedo aportar y llevar el proyecto a un resultado, me pongo a trabajar.</p>
         </div>
 
         <div class="ways">
@@ -703,40 +716,44 @@ footer.site{padding:70px 0 34px}
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 5 8-5"/></svg></span>
             <span><span class="k" data-i18n="co.k1">Email</span><span class="v">hola@bravemarketing.es</span></span>
           </a>
-          <!-- TODO: подставить реальный номер вместо прочерков (здесь и в футере) -->
-          <a class="way" href="#kontakty">
+          <!-- TODO: sustituir los guiones por el número real (aquí y en el pie) -->
+          <a class="way" href="#contacto">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15.5v3a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19 19 0 0 1-6-6A19.5 19.5 0 0 1 1.3 3 2 2 0 0 1 3.3 1h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7.4 8.8a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.5 2z"/></svg></span>
             <span><span class="k" data-i18n="co.k2">WhatsApp</span><span class="v">+34 ___ ___ ___</span></span>
           </a>
-          <a class="way" href="#kontakty">
+          <a class="way" href="#contacto">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4L3 11l5 2 2 6 3-4 5 4z"/><path d="M8 13l9-6"/></svg></span>
             <span><span class="k" data-i18n="co.k3">Telegram</span><span class="v">@bravemarketing</span></span>
           </a>
+          <div class="way">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg></span>
+            <span><span class="k" data-i18n="co.k4">Idiomas de trabajo</span><span class="v" data-i18n="co.v4">Español · Català · English</span></span>
+          </div>
         </div>
       </div>
 
       <form id="cform" novalidate>
         <div class="f-two">
-          <div class="f-row"><label for="f-name" data-i18n="fm.name">Имя</label><input id="f-name" type="text" required></div>
+          <div class="f-row"><label for="f-name" data-i18n="fm.name">Nombre</label><input id="f-name" type="text" required></div>
           <div class="f-row"><label for="f-mail" data-i18n="fm.mail">Email</label><input id="f-mail" type="email" required></div>
         </div>
         <div class="f-row">
-          <label for="f-type" data-i18n="fm.type">Что вас интересует</label>
+          <label for="f-type" data-i18n="fm.type">Qué te interesa</label>
           <select id="f-type">
-            <option>SMM и ведение социальных сетей</option>
-            <option>Настройка рекламных кампаний</option>
-            <option>Консультация по digital-маркетингу</option>
-            <option>Ведение соцсетей для частных лиц</option>
-            <option>Создание личного бренда в Instagram</option>
-            <option>Консультация по монетизации блога</option>
-            <option>Другая задача</option>
+            <option data-i18n="fm.o1">SMM y gestión de redes sociales</option>
+            <option data-i18n="fm.o2">Configuración de campañas publicitarias</option>
+            <option data-i18n="fm.o3">Consultoría de marketing digital</option>
+            <option data-i18n="fm.o4">Redes sociales para particulares</option>
+            <option data-i18n="fm.o5">Marca personal en Instagram</option>
+            <option data-i18n="fm.o6">Consultoría de monetización de blog</option>
+            <option data-i18n="fm.o7">Otra tarea</option>
           </select>
         </div>
-        <div class="f-row"><label for="f-link" data-i18n="fm.link">Ссылка на профиль или сайт</label><input id="f-link" type="text" placeholder="instagram.com/..."></div>
-        <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Расскажите о задаче</label><textarea id="f-msg"></textarea></div>
-        <label class="consent"><input type="checkbox" id="f-ok" required><span data-i18n="fm.consent">Я прочитал(а) и принимаю Política de Privacidad и обработку моих данных для ответа на это обращение.</span></label>
-        <button class="btn" type="submit" style="width:100%;justify-content:center" data-i18n="fm.send">Отправить</button>
-        <div class="sent" id="fsent" data-i18n="fm.sent">Откроется ваша почтовая программа с готовым письмом. Если этого не произошло — напишите напрямую на hola@bravemarketing.es</div>
+        <div class="f-row"><label for="f-link" data-i18n="fm.link">Enlace a tu perfil o web</label><input id="f-link" type="text" placeholder="instagram.com/..."></div>
+        <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Cuéntame tu situación</label><textarea id="f-msg"></textarea></div>
+        <label class="consent"><input type="checkbox" id="f-ok" required><span data-i18n="fm.consent">He leído y acepto la Política de Privacidad y el tratamiento de mis datos para responder a esta consulta.</span></label>
+        <button class="btn" type="submit" style="width:100%;justify-content:center" data-i18n="fm.send">Enviar consulta</button>
+        <div class="sent" id="fsent" data-i18n="fm.sent">Se abrirá tu programa de correo con el mensaje preparado. Si no ocurre, escribe directamente a hola@bravemarketing.es</div>
       </form>
     </div>
   </div>
@@ -754,23 +771,23 @@ footer.site{padding:70px 0 34px}
           </svg>
           <span class="wm"><b>Brave</b><i>Marketing</i></span>
         </a>
-        <p class="blurb" data-i18n="ft.blurb">Digital-маркетинг для бизнеса и личных брендов: соцсети, реклама и личный бренд.</p>
+        <p class="blurb" data-i18n="ft.blurb">Marketing digital para negocios y marcas personales: redes sociales, publicidad y marca personal.</p>
       </div>
       <div>
-        <h4 data-i18n="ft.sections">Разделы</h4>
+        <h4 data-i18n="ft.sections">Secciones</h4>
         <ul>
-          <li><a href="#uslugi" data-i18n="nav.services">Услуги</a></li>
-          <li><a href="#preimushchestva" data-i18n="nav.adv">Преимущества</a></li>
-          <li><a href="#o-mne" data-i18n="nav.about">Обо мне</a></li>
-          <li><a href="#kontakty" data-i18n="nav.contact">Контакты</a></li>
+          <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#ventajas" data-i18n="nav.adv">Ventajas</a></li>
+          <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="ft.contacts">Контакты</h4>
+        <h4 data-i18n="ft.contacts">Contacto</h4>
         <ul>
           <li><a href="mailto:hola@bravemarketing.es">hola@bravemarketing.es</a></li>
-          <li><a href="#kontakty">+34 ___ ___ ___</a></li>
-          <li><a href="#kontakty">@bravemarketing</a></li>
+          <li><a href="#contacto">+34 ___ ___ ___</a></li>
+          <li><a href="#contacto">@bravemarketing</a></li>
         </ul>
       </div>
     </div>
@@ -778,7 +795,7 @@ footer.site{padding:70px 0 34px}
     <div class="ftbig" aria-hidden="true">Brave</div>
 
     <div class="legal">
-      <span data-i18n="ft.copy">© 2026 Brave Marketing</span>
+      <span>&#169; <span id="yr">2026</span> Brave Marketing</span>
       <span class="grp">
         <button type="button" data-doc="aviso">Aviso Legal</button>
         <button type="button" data-doc="priv">Política de Privacidad</button>
@@ -798,7 +815,7 @@ footer.site{padding:70px 0 34px}
 
 <script>
 /* ==================================================================
-   1. Torus knot renderer (фоновая графика)
+   1. Torus knot renderer (gráfica de fondo)
    ================================================================== */
 function hexRgb(h){h=h.replace("#","");return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
 function mixRgb(a,b,t){return "rgb("+Math.round(a[0]+(b[0]-a[0])*t)+","+Math.round(a[1]+(b[1]-a[1])*t)+","+Math.round(a[2]+(b[2]-a[2])*t)+")";}
@@ -876,7 +893,7 @@ function frame(){
   }
 }
 
-/* пауза анимации, когда герой ушёл из вида */
+/* pausar la animación cuando el hero sale de pantalla */
 if("IntersectionObserver" in window){
   var heroEl=document.querySelector(".hero");
   if(heroEl){
@@ -893,7 +910,261 @@ window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(resiz
 if(document.fonts&&document.fonts.ready){document.fonts.ready.then(resizeAll);}
 
 /* ==================================================================
-   2. Scrollspy + reveal + форма
+   2. i18n — ES (base en el HTML), CA, EN
+   ================================================================== */
+var I18N={es:{},ca:{},en:{}};
+
+I18N.ca={
+"nav.services":"Serveis","nav.adv":"Avantatges","nav.about":"Sobre mi","nav.contact":"Contacte",
+"cta.short":"Contactar","cta.talk":"Parlem del projecte","cta.services":"Serveis i preus","cta.card":"Consultar","cta.task":"Plantejar una tasca",
+"hero.tag":"SMM · Publicitat · Marca personal",
+"hero.h1a":"Màrqueting digital per a negocis i ","hero.h1b":"marques personals",
+"hero.sub":"18 anys en projectes digitals: publicitat, xarxes socials i marca personal. L'important és entendre què vols aconseguir i construir un sistema que funcioni per a aquest objectiu.",
+"st.k1":"Experiència","st.v1a":"18 anys","st.v1b":"en digital, des del 2008",
+"st.k2":"Per a qui","st.v2":"Empreses i particulars",
+"st.k3":"Publicitat",
+"st.k4":"Format","st.v4":"Subscripció, projecte o consultoria",
+"lab.services":"Serveis","lab.adv":"Avantatges","lab.about":"Sobre mi","lab.contact":"Contacte",
+"sv.h2":"Què faig i quant costa",
+"sv.p":"Els serveis estan dividits en dues línies: per a empreses i per a particulars. Cadascun es pot contractar per separat.",
+"sv.note":"Aquests no són tots els nostres serveis. Si necessites alguna cosa específica, escriu-nos: en parlem i et proposem una solució.",
+"sv.vat":"Tots els preus s'indiquen sense IVA.",
+"vat":"IVA no inclòs",
+"g1.t":"Per a empreses","g1.p":"Promoció de negoci: xarxes socials, publicitat i anàlisi dels punts de creixement.",
+"c1.t":"SMM i gestió de xarxes socials","c1.u":"al mes",
+"c1.d":"Desenvolupem l'estratègia de promoció i assumim la gestió integral de les teves xarxes socials: des de la creació de contingut fins a la interacció amb l'audiència.",
+"c1.s":"Què inclou",
+"c1.p1":"Analitzem la teva audiència i les particularitats del teu negoci, creem el pla de continguts, preparem i publiquem el contingut, i treballem la interacció i el creixement del compte.",
+"c1.p2":"T'ajudem a atreure nova audiència, augmentar el reconeixement de marca i convertir les xarxes socials en una eina eficaç de promoció i vendes.",
+"c2.t":"Configuració de campanyes publicitàries","c2.u":"pagament únic",
+"c2.d":"Creem i configurem la campanya publicitària per al teu negoci i el teu pressupost, perquè puguis gestionar la publicitat pel teu compte i controlar els resultats.",
+"c2.s":"Què inclou",
+"c2.b1":"anàlisi del negoci i del públic objectiu",
+"c2.b2":"desenvolupament de l'estratègia publicitària",
+"c2.b3":"configuració del compte publicitari i de les campanyes",
+"c2.b4":"definició del públic objectiu",
+"c2.b5":"creació de l'estructura de campanyes",
+"c2.b6":"preparació de textos i creativitats",
+"c2.b7":"configuració d'objectius i conversions",
+"c2.b8":"llançament i primera revisió de la campanya",
+"c2.ak":"Addicional","c2.at":"Gestió de campanyes publicitàries",
+"c2.ad":"Vols que continuem gestionant la publicitat després de la configuració?",
+"c2.af":"10% del pressupost publicitari al mes",
+"c2.as":"Què inclou la gestió",
+"c2.c1":"control continu del rendiment",
+"c2.c2":"anàlisi de resultats i conversions",
+"c2.c3":"optimització de les campanyes",
+"c2.c4":"ajust de la segmentació i del pressupost",
+"c2.c5":"creació de noves creativitats",
+"c2.c6":"actualització dels textos publicitaris",
+"c2.c7":"desactivació dels anuncis poc eficaços",
+"c2.c8":"prova de nous enfocaments",
+"c3.t":"Consultoria de màrqueting digital i vendes en línia","c3.u":"per hora",
+"c3.d":"Analitzem el teu negoci, els resultats actuals i els punts de creixement per trobar maneres d'augmentar les vendes en línia i l'eficàcia del màrqueting digital.",
+"c3.o":"Com a resultat t'emportes recomanacions concretes i un pla d'acció clar.",
+"c3.s":"Què analitzem",
+"c3.b1":"l'estratègia de promoció",
+"c3.b2":"la publicitat i la captació de clients",
+"c3.b3":"les xarxes socials i el contingut",
+"c3.b4":"l'embut de vendes i les conversions",
+"c3.b5":"el web i les vendes en línia",
+"c3.b6":"les tasques i els problemes concrets del teu negoci",
+"g2.t":"Per a particulars","g2.p":"Comptes personals i marca personal: contingut, imatge i sol·licituds per als teus serveis.",
+"p1.t":"Gestió i promoció de xarxes socials","p1.u":"al mes",
+"p1.d":"Assumim el desenvolupament dels teus comptes d'Instagram i Twitter: des de la creació de contingut i la construcció de la teva imatge fins a la captació de nova audiència i la promoció dels perfils.",
+"p1.s":"Què inclou",
+"p1.p1":"El servei inclou la publicació regular de contingut a partir dels teus arxius de fotos i vídeos existents, a més d'una sessió de fotos breu al mes amb el nostre fotògraf per generar material nou.",
+"p1.p2":"També t'ajudem a construir i desenvolupar la teva imatge a les xarxes socials, elaborem l'estratègia de continguts, busquem oportunitats de col·laboració creuada amb blogaires de la nostra base i treballem de manera contínua en el creixement de l'audiència i la interacció.",
+"p1.p3":"La teva tasca és crear el contingut amb nosaltres. De la resta ens encarreguem nosaltres.",
+"p2.t":"Creació de marca personal a Instagram","p2.u":"pagament únic",
+"p2.d":"T'ajudem a convertir Instagram en una eina per promocionar els teus serveis i captar nous clients.",
+"p2.s":"Què inclou",
+"p2.p1":"Definim els teus punts forts i el teu posicionament, et presentem com a expert, donem format al perfil i elaborem l'estratègia de continguts. Creem el recorregut del client des del primer contacte amb tu fins a la sol·licitud del servei: contingut que enganxa, un embut de venda a través d'Instagram i WhatsApp, i automatització de la comunicació.",
+"p2.p2":"També configurem la publicitat segmentada segons el teu pressupost per atreure el públic adequat i aconseguir sol·licituds reals dels teus serveis.",
+"p3.t":"Consultoria de monetització de blog i marca personal","p3.u":"per hora",
+"p3.d":"Per a qui vol desenvolupar pel seu compte el seu blog i la seva marca personal i guanyar amb la seva audiència, però no sap per on començar ni com construir una estratègia eficaç.",
+"p3.o":"T'emportes recomanacions pràctiques i un pla d'acció clar que pots executar pel teu compte.",
+"p3.s":"Què analitzem",
+"p3.b1":"posicionament i creació de marca personal",
+"p3.b2":"elecció de plataformes i formats de contingut",
+"p3.b3":"maneres de monetitzar l'audiència",
+"p3.b4":"promoció i captació de nous seguidors",
+"p3.b5":"creació de contingut que ajuda a vendre",
+"p3.b6":"cerca de col·laboracions publicitàries i altres fonts d'ingressos",
+"p3.b7":"preguntes i tasques concretes del teu projecte",
+"ad.h2":"Per què treballen amb mi",
+"a1.t":"Implicació personal",
+"a1.d":"M'implico personalment en el teu projecte, entenc les particularitats del negoci o de la marca personal i superviso les etapes clau del treball.",
+"a2.t":"Enfocament integral",
+"a2.d":"No ens limitem a executar tasques soltes: construïm un sistema complet, des de l'estratègia i la presentació fins a la promoció, la captació d'audiència i les vendes.",
+"a3.t":"Focus en el resultat",
+"a3.d":"Totes les decisions es prenen en funció dels objectius concrets del projecte: creixement d'audiència, reconeixement, sol·licituds o vendes. Analitzem els resultats i ajustem l'estratègia quan cal.",
+"ab.h2":"Qui porta el teu projecte","ab.lead":"18 anys en digital",
+"ab.p1":"Em dedico a crear, promocionar i desenvolupar projectes d'internet des del 2008, quan internet encara no era a totes les cases i els primers iPhone tot just començaven a formar part del dia a dia.",
+"ab.p2":"En aquests anys he treballat amb projectes molt diferents: he llançat i promocionat serveis en línia, he muntat campanyes publicitàries, he desenvolupat xarxes socials, he treballat amb blogaires i he ajudat professionals a crear la seva marca personal i a convertir la seva audiència en una font d'ingressos.",
+"ab.p3":"Avui conec a fons el màrqueting digital i les eines publicitàries, des de Google Ads i Meta Ads fins a TikTok Ads i altres plataformes. Però per a mi la tecnologia i les eines només són mitjans. L'important és entendre què vols aconseguir exactament i construir un sistema que funcioni per a aquest objectiu.",
+"ab.p4":"També he treballat molt amb blogaires, experts i professionals, ajudant-los a trobar el seu posicionament, desenvolupar la seva marca personal i monetitzar la seva audiència. És possible que algunes de les persones amb qui he treballat ja les coneguis o les hagis vist a les xarxes socials.",
+"ab.h4":"No accepto projectes per acceptar projectes",
+"ab.p5":"No m'interessa vendre't un servei, emetre la factura i desaparèixer. La meva feina és entendre el teu projecte, comprendre els teus objectius i trobar una solució que realment ajudi a assolir-los.",
+"ab.p6":"Si veig que puc aportar i portar el projecte a un resultat, em poso a treballar. Si no ho veig, prefereixo dir-ho amb honestedat abans de començar a col·laborar.",
+"ab.fin":"El teu resultat és el resultat de la meva feina.",
+"ab.ph.k":"Foto","ab.ph.v":"Aquí hi anirà una fotografia — envia'm el fitxer i la col·loco en aquest espai.",
+"ab.tools":"Plataformes publicitàries",
+"co.h2":"Explica'm el teu projecte",
+"co.p":"Escriu-me a què et dediques i què vols aconseguir. Si veig que puc aportar i portar el projecte a un resultat, em poso a treballar.",
+"co.k1":"Correu","co.k4":"Idiomes de treball",
+"fm.name":"Nom","fm.mail":"Correu","fm.type":"Què t'interessa",
+"fm.o1":"SMM i gestió de xarxes socials","fm.o2":"Configuració de campanyes publicitàries","fm.o3":"Consultoria de màrqueting digital","fm.o4":"Xarxes socials per a particulars","fm.o5":"Marca personal a Instagram","fm.o6":"Consultoria de monetització de blog","fm.o7":"Una altra tasca",
+"fm.link":"Enllaç al teu perfil o web","fm.msg":"Explica'm la teva situació",
+"fm.consent":"He llegit i accepto la Política de Privacidad i el tractament de les meves dades per respondre aquesta consulta.",
+"fm.send":"Enviar consulta",
+"fm.sent":"S'obrirà el teu programa de correu amb el missatge preparat. Si no passa, escriu directament a hola@bravemarketing.es",
+"ft.blurb":"Màrqueting digital per a negocis i marques personals: xarxes socials, publicitat i marca personal.",
+"ft.sections":"Seccions","ft.contacts":"Contacte",
+"legal.note":"Plantilla — substitueix els camps ressaltats per les teves dades reals abans de publicar. El text es manté en espanyol perquè així ho exigeix la normativa espanyola."
+};
+
+I18N.en={
+"nav.services":"Services","nav.adv":"Advantages","nav.about":"About","nav.contact":"Contact",
+"cta.short":"Get in touch","cta.talk":"Discuss your project","cta.services":"Services and prices","cta.card":"Discuss","cta.task":"Discuss a task",
+"hero.tag":"SMM · Advertising · Personal branding",
+"hero.h1a":"Digital marketing for businesses and ","hero.h1b":"personal brands",
+"hero.sub":"18 years in digital projects: advertising, social media and personal branding. What matters is understanding what you want to achieve and building a system that works towards that goal.",
+"st.k1":"Experience","st.v1a":"18 years","st.v1b":"in digital, since 2008",
+"st.k2":"Who for","st.v2":"Businesses and individuals",
+"st.k3":"Advertising",
+"st.k4":"Format","st.v4":"Subscription, project or consulting",
+"lab.services":"Services","lab.adv":"Advantages","lab.about":"About","lab.contact":"Contact",
+"sv.h2":"What I do and what it costs",
+"sv.p":"Services are split into two tracks: for companies and for individuals. Each one can be booked separately.",
+"sv.note":"These aren't all of our services. If you need something specific, get in touch — we'll talk it through and propose a solution.",
+"sv.vat":"All prices are shown excluding VAT.",
+"vat":"VAT not included",
+"g1.t":"For companies","g1.p":"Business promotion: social media, advertising and analysis of growth points.",
+"c1.t":"SMM and social media management","c1.u":"per month",
+"c1.d":"We develop the promotion strategy and take over the full management of your social media — from creating content to engaging with your audience.",
+"c1.s":"What's included",
+"c1.p1":"We analyse your audience and the specifics of your business, build the content plan, produce and publish the content, and work on engagement and account growth.",
+"c1.p2":"We help you reach a new audience, raise brand awareness and turn social media into an effective promotion and sales tool.",
+"c2.t":"Ad campaign setup","c2.u":"one-off",
+"c2.d":"We create and set up the ad campaign for your business and budget, so you can run the advertising yourself and stay in control of the results.",
+"c2.s":"What's included",
+"c2.b1":"business and target audience analysis",
+"c2.b2":"advertising strategy",
+"c2.b3":"ad account and campaign setup",
+"c2.b4":"audience targeting",
+"c2.b5":"campaign structure",
+"c2.b6":"ad copy and creatives",
+"c2.b7":"goal and conversion tracking",
+"c2.b8":"launch and first campaign check",
+"c2.ak":"Add-on","c2.at":"Ongoing campaign management",
+"c2.ad":"Want us to keep managing the advertising after setup?",
+"c2.af":"10% of ad spend per month",
+"c2.as":"What management covers",
+"c2.c1":"continuous performance monitoring",
+"c2.c2":"results and conversion analysis",
+"c2.c3":"campaign optimisation",
+"c2.c4":"targeting and budget adjustments",
+"c2.c5":"new creatives",
+"c2.c6":"refreshed ad copy",
+"c2.c7":"pausing underperforming ads",
+"c2.c8":"testing new approaches",
+"c3.t":"Digital marketing and online sales consulting","c3.u":"per hour",
+"c3.d":"We go through your business, your current results and your growth points to find ways to increase online sales and digital marketing performance.",
+"c3.o":"You leave with concrete recommendations and a clear action plan.",
+"c3.s":"What we cover",
+"c3.b1":"promotion strategy",
+"c3.b2":"advertising and client acquisition",
+"c3.b3":"social media and content",
+"c3.b4":"sales funnel and conversions",
+"c3.b5":"website and online sales",
+"c3.b6":"the specific tasks and problems of your business",
+"g2.t":"For individuals","g2.p":"Personal accounts and personal branding: content, image and enquiries for your services.",
+"p1.t":"Social media management and growth","p1.u":"per month",
+"p1.d":"We take over the growth of your Instagram and Twitter — from creating content and shaping your image to attracting a new audience and promoting the profiles.",
+"p1.s":"What's included",
+"p1.p1":"The service includes regular posting using your existing photo and video archive, plus one short photo session a month with our photographer to create new material.",
+"p1.p2":"We also help you build and develop your image on social media, create the content strategy, find cross-promotion and collaboration opportunities with bloggers from our network, and work continuously on audience growth and engagement.",
+"p1.p3":"Your job is to create the content together with us. We handle everything else.",
+"p2.t":"Building a personal brand on Instagram","p2.u":"one-off",
+"p2.d":"We help you turn Instagram into a tool for promoting your services and attracting new clients.",
+"p2.s":"What's included",
+"p2.p1":"We define your strengths and positioning, package you as an expert, restyle the profile and build the content strategy. We map the client journey from first contact to enquiry: engaging content, a sales funnel through Instagram and WhatsApp, and automated communication.",
+"p2.p2":"We also set up targeted advertising within your budget to reach the right audience and generate real enquiries for your services.",
+"p3.t":"Blog monetisation and personal brand consulting","p3.u":"per hour",
+"p3.d":"For anyone who wants to grow their blog and personal brand on their own and earn from their audience, but doesn't know where to start or how to build an effective strategy.",
+"p3.o":"You leave with practical recommendations and a clear action plan you can carry out yourself.",
+"p3.s":"What we cover",
+"p3.b1":"positioning and personal brand",
+"p3.b2":"choosing platforms and content formats",
+"p3.b3":"ways to monetise your audience",
+"p3.b4":"growth and attracting new followers",
+"p3.b5":"creating content that helps you sell",
+"p3.b6":"finding brand deals and other income streams",
+"p3.b7":"specific questions and tasks in your project",
+"ad.h2":"Why people work with me",
+"a1.t":"Personal involvement",
+"a1.d":"I get personally involved in your project, learn the specifics of the business or personal brand, and oversee the key stages of the work.",
+"a2.t":"An integrated approach",
+"a2.d":"We don't just carry out isolated tasks — we build a complete system, from strategy and packaging through to promotion, audience growth and sales.",
+"a3.t":"Focused on results",
+"a3.d":"Every decision is made against the project's specific goals — audience growth, awareness, enquiries or sales. We review the results and adjust the strategy when needed.",
+"ab.h2":"Who runs your project","ab.lead":"18 years in digital",
+"ab.p1":"I've been creating, promoting and growing internet projects since 2008 — back when the internet wasn't in every home and the first iPhones were only starting to become part of everyday life.",
+"ab.p2":"Over those years I've worked with very different projects: launching and promoting online services, building advertising campaigns, growing social media accounts, working with bloggers, and helping specialists create personal brands and turn their audience into income.",
+"ab.p3":"Today I know digital marketing and advertising tools inside out — from Google Ads and Meta Ads to TikTok Ads and other platforms. But to me, technology and tools are only means. What matters is understanding exactly what you want to achieve and building a system that works towards it.",
+"ab.p4":"I've also worked extensively with bloggers, experts and specialists, helping them find their positioning, develop a personal brand and monetise their audience. Some of the people I've worked with you may already know, or have seen on social media.",
+"ab.h4":"I don't take on projects for the sake of it",
+"ab.p5":"I'm not interested in simply selling you a service, invoicing it and disappearing. My job is to understand your project, understand your goals and find a solution that actually helps you reach them.",
+"ab.p6":"If I can see that I can help and take the project to a result, I take the work on. If I can't, I'd rather say so honestly before we start working together.",
+"ab.fin":"Your result is the result of my work.",
+"ab.ph.k":"Photo","ab.ph.v":"A photograph goes here — send me the file and I'll place it.",
+"ab.tools":"Advertising platforms",
+"co.h2":"Tell me about your project",
+"co.p":"Tell me what you do and what you want to achieve. If I can see that I can help and take the project to a result, I take the work on.",
+"co.k1":"Email","co.k4":"Working languages",
+"fm.name":"Name","fm.mail":"Email","fm.type":"What you're interested in",
+"fm.o1":"SMM and social media management","fm.o2":"Ad campaign setup","fm.o3":"Digital marketing consulting","fm.o4":"Social media for individuals","fm.o5":"Personal brand on Instagram","fm.o6":"Blog monetisation consulting","fm.o7":"Something else",
+"fm.link":"Link to your profile or website","fm.msg":"Tell me about your situation",
+"fm.consent":"I have read and accept the Política de Privacidad and the processing of my data to answer this enquiry.",
+"fm.send":"Send enquiry",
+"fm.sent":"Your email client will open with the message ready. If it doesn't, write directly to hola@bravemarketing.es",
+"ft.blurb":"Digital marketing for businesses and personal brands: social media, advertising and personal branding.",
+"ft.sections":"Sections","ft.contacts":"Contact",
+"legal.note":"Template — replace the highlighted fields with your real details before publishing. The text stays in Spanish because Spanish law requires it."
+};
+
+var DEFAULTS={};
+document.querySelectorAll("[data-i18n]").forEach(function(el){DEFAULTS[el.getAttribute("data-i18n")]=el.textContent;});
+DEFAULTS["legal.note"]="Plantilla — sustituye los campos resaltados por tus datos reales antes de publicar. El texto se mantiene en español porque así lo exige la normativa española.";
+I18N.es=DEFAULTS;
+
+function setLang(code){
+  var dict=I18N[code]||I18N.es;
+  document.querySelectorAll("[data-i18n]").forEach(function(el){
+    var k=el.getAttribute("data-i18n");
+    var v=(dict[k]!==undefined)?dict[k]:DEFAULTS[k];
+    if(v!==undefined)el.textContent=v;
+  });
+  document.documentElement.setAttribute("lang",code);
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.setAttribute("aria-pressed",String(b.dataset.lang===code));
+  });
+  try{localStorage.setItem("bm-lang",code);}catch(e){}
+  var n=document.getElementById("legalnote");
+  if(n)n.textContent=(dict["legal.note"]!==undefined?dict["legal.note"]:DEFAULTS["legal.note"]);
+}
+document.querySelectorAll(".lang button").forEach(function(b){
+  b.addEventListener("click",function(){setLang(b.dataset.lang);});
+});
+var start="es";
+try{var sv=localStorage.getItem("bm-lang");if(sv&&I18N[sv])start=sv;}catch(e){}
+setLang(start);
+
+document.getElementById("yr").textContent=String(new Date().getFullYear());
+
+/* ==================================================================
+   3. Scrollspy + reveal + formulario
    ================================================================== */
 var links=Array.prototype.slice.call(document.querySelectorAll("nav.main a"));
 var targets=links.map(function(a){return document.querySelector(a.getAttribute("href"));}).filter(Boolean);
@@ -920,19 +1191,19 @@ document.getElementById("cform").addEventListener("submit",function(ev){
   ev.preventDefault();
   var f=ev.target;
   if(!f.checkValidity()){f.reportValidity();return;}
-  var body="Имя: "+document.getElementById("f-name").value
+  var body="Nombre: "+document.getElementById("f-name").value
     +"\nEmail: "+document.getElementById("f-mail").value
-    +"\nИнтересует: "+document.getElementById("f-type").value
-    +"\nПрофиль: "+document.getElementById("f-link").value
+    +"\nInterés: "+document.getElementById("f-type").value
+    +"\nPerfil: "+document.getElementById("f-link").value
     +"\n\n"+document.getElementById("f-msg").value;
   window.location.href="mailto:hola@bravemarketing.es?subject="
-    +encodeURIComponent("Заявка с сайта — "+document.getElementById("f-type").value)
+    +encodeURIComponent("Consulta web — "+document.getElementById("f-type").value)
     +"&body="+encodeURIComponent(body);
   document.getElementById("fsent").classList.add("on");
 });
 
 /* ==================================================================
-   3. Документы (всегда на испанском — этого требует закон Испании)
+   4. Documentos legales (siempre en español — lo exige la ley)
    ================================================================== */
 var DOCS={
 aviso:{t:"Aviso Legal",h:
@@ -986,15 +1257,16 @@ cookies:{t:"Política de Cookies",h:
 };
 
 
-var LEGAL_NOTE="Шаблон — перед публикацией замените выделенные поля на реальные данные. Текст остаётся на испанском, потому что этого требует законодательство Испании.";
-
 var ov=document.getElementById("ov"),ovb=document.getElementById("ovb"),ovt=document.getElementById("ovt"),lastFocus=null;
 function openDoc(key){
   var d=DOCS[key];if(!d)return;
   lastFocus=document.activeElement;
   ovt.textContent=d.t;
+  var lang=document.documentElement.getAttribute("lang")||"es";
+  var dict=I18N[lang]||I18N.es;
+  var note=(dict["legal.note"]!==undefined?dict["legal.note"]:DEFAULTS["legal.note"]);
   ovb.innerHTML='<div class="doc-note" id="legalnote"></div>'+d.h;
-  document.getElementById("legalnote").textContent=LEGAL_NOTE;
+  document.getElementById("legalnote").textContent=note;
   ov.classList.add("on");
   document.body.style.overflow="hidden";
   document.getElementById("ovx").focus();
