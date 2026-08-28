@@ -1,19 +1,17 @@
 <!doctype html>
-<html lang="es">
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="SMM y marketing digital para empresas y particulares. Gestion de redes sociales, contenido y campanas de pago desde Barcelona.">
+<meta name="description" content="Digital-маркетинг для бизнеса и личных брендов: SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.">
 <meta name="theme-color" content="#F0EFEA">
 <link rel="canonical" href="https://www.bravemarketing.es/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026%2026%22%3E%3Crect%20width%3D%2226%22%20height%3D%2226%22%20rx%3D%226%22%20fill%3D%22%2323221E%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-width%3D%222.1%22%3E%3Cellipse%20cx%3D%2213%22%20cy%3D%2213%22%20rx%3D%225%22%20ry%3D%229.4%22%20transform%3D%22rotate(-32%2013%2013)%22%20stroke%3D%22%23F6F5F1%22%2F%3E%3Cellipse%20cx%3D%2213%22%20cy%3D%2213%22%20rx%3D%225%22%20ry%3D%229.4%22%20transform%3D%22rotate(32%2013%2013)%22%20stroke%3D%22%23F0522B%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES">
-<meta property="og:locale:alternate" content="ca_ES">
-<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Brave Marketing">
-<meta property="og:title" content="Brave Marketing — SMM y marketing digital">
-<meta property="og:description" content="SMM y marketing digital para empresas y particulares. Gestion de redes sociales, contenido y campanas de pago desde Barcelona.">
+<meta property="og:title" content="Brave Marketing — digital-маркетинг для бизнеса и личных брендов">
+<meta property="og:description" content="SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.">
 <meta property="og:url" content="https://www.bravemarketing.es/">
 <meta name="twitter:card" content="summary_large_image">
 <title>Brave Marketing</title>
@@ -22,7 +20,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap">
 
 <style>
-/* ============ TOKENS — single committed light identity ============ */
+/* ============ TOKENS ============ */
 :root{
   --ground:#F0EFEA;
   --ground-2:#E7E5DE;
@@ -71,20 +69,14 @@ header{position:sticky;top:0;z-index:50;padding:14px 0;background:linear-gradien
 .brand .wm{display:flex;flex-direction:column;line-height:1}
 .brand .wm b{font-family:"Anton",sans-serif;font-weight:400;font-size:19px;letter-spacing:.005em;text-transform:uppercase}
 .brand .wm i{font-style:normal;font-size:8px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--sand);margin-top:2px}
-.draft{font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line-2);border-radius:100px;padding:5px 10px;flex:none}
 nav.main{display:flex;gap:4px;margin-left:auto;background:var(--surface);border-radius:100px;padding:6px;box-shadow:var(--shadow)}
 nav.main a{text-decoration:none;font-size:13.5px;font-weight:500;color:var(--ink-2);padding:9px 15px;border-radius:100px;transition:background .18s,color .18s;white-space:nowrap}
 nav.main a:hover{color:var(--ink);background:var(--ground-2)}
 nav.main a.on{background:var(--char);color:#F6F5F1}
-@media(max-width:1140px){nav.main{display:none}}
-.tools{display:flex;align-items:center;gap:8px;margin-left:auto;background:var(--surface);border-radius:100px;padding:6px;box-shadow:var(--shadow)}
-nav.main ~ .tools{margin-left:0}
-.lang{display:flex;gap:2px}
-.lang button{font-size:11.5px;font-weight:600;letter-spacing:.08em;background:none;border:0;padding:8px 10px;cursor:pointer;color:var(--ink-3);border-radius:100px;transition:background .16s,color .16s}
-.lang button:hover{color:var(--ink)}
-.lang button[aria-pressed="true"]{background:var(--verm);color:#fff}
-.hd .btn{flex:none}
-@media(max-width:520px){.tools .btn{display:none}.draft{display:none}}
+@media(max-width:1040px){nav.main{display:none}}
+.hd .btn{flex:none;margin-left:auto}
+nav.main ~ .btn{margin-left:0}
+@media(max-width:460px){.hd .btn{display:none}}
 
 /* ============ BUTTONS ============ */
 .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;cursor:pointer;font-size:12.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;padding:14px 24px;border-radius:100px;border:1.5px solid var(--char);background:var(--char);color:#F6F5F1;transition:transform .18s,background .18s,border-color .18s,color .18s}
@@ -106,10 +98,9 @@ nav.main ~ .tools{margin-left:0}
 .hero-in{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center}
 .tagline{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border-radius:100px;padding:9px 18px;box-shadow:var(--shadow);margin-bottom:34px}
 .tagline .dot{width:7px;height:7px;border-radius:50%;background:var(--verm);flex:none}
-.hero h1{font-size:clamp(40px,8.6vw,116px);max-width:15ch;margin:0 auto}
+.hero h1{font-size:clamp(38px,7.4vw,100px);max-width:16ch;margin:0 auto}
 .hero h1 .v{color:var(--verm)}
-.hero h1 .j{color:var(--jade)}
-.hero .sub{margin:30px auto 0;font-size:clamp(16px,1.7vw,19px);color:var(--ink-2);max-width:56ch}
+.hero .sub{margin:30px auto 0;font-size:clamp(16px,1.7vw,19px);color:var(--ink-2);max-width:58ch}
 .hero-cta{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap;justify-content:center}
 .hero-foot{display:flex;align-items:center;gap:26px;margin-top:52px;flex-wrap:wrap;justify-content:center}
 
@@ -122,15 +113,14 @@ nav.main ~ .tools{margin-left:0}
 
 /* ============ DATA STRIP ============ */
 .strip{background:var(--char);color:#EDEBE4;border-radius:var(--r);overflow:hidden;margin-top:8px}
-.strip-in{display:grid;grid-template-columns:repeat(6,1fr)}
+.strip-in{display:grid;grid-template-columns:repeat(4,1fr)}
 .strip-in div{padding:22px 20px;border-right:1px solid rgba(255,255,255,.1)}
 .strip-in div:last-child{border-right:0}
 .strip .k{font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#9C9891;display:block;margin-bottom:7px}
 .strip .v{font-size:14px;font-weight:600;line-height:1.35;display:block}
 .strip .v em{font-style:normal;color:var(--sand)}
-.strip .v .live{color:#5FD3AE}
-@media(max-width:1000px){.strip-in{grid-template-columns:repeat(3,1fr)}.strip-in div{border-bottom:1px solid rgba(255,255,255,.1)}.strip-in div:nth-child(3n){border-right:0}}
-@media(max-width:600px){.strip-in{grid-template-columns:repeat(2,1fr)}.strip-in div:nth-child(3n){border-right:1px solid rgba(255,255,255,.1)}.strip-in div:nth-child(2n){border-right:0}}
+@media(max-width:820px){.strip-in{grid-template-columns:1fr 1fr}.strip-in div{border-bottom:1px solid rgba(255,255,255,.1)}.strip-in div:nth-child(2n){border-right:0}}
+@media(max-width:460px){.strip-in{grid-template-columns:1fr}.strip-in div{border-right:0}}
 
 /* ============ SECTION SCAFFOLD ============ */
 section{padding:96px 0}
@@ -138,117 +128,105 @@ section{padding:96px 0}
 .shead{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:46px;flex-wrap:wrap}
 .shead .lab{display:flex;align-items:center;gap:9px;margin-bottom:16px}
 .shead .lab::before{content:"";width:22px;height:2px;background:var(--verm);flex:none}
-h2{font-size:clamp(30px,5vw,62px);max-width:17ch}
-.shead p{color:var(--ink-2);max-width:44ch;font-size:16.5px;padding-bottom:8px}
+h2{font-size:clamp(30px,5vw,62px);max-width:18ch}
+.shead p{color:var(--ink-2);max-width:46ch;font-size:16.5px;padding-bottom:8px}
 
-/* ============ SERVICES ============ */
-.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:980px){.svcs{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.svcs{grid-template-columns:1fr}}
-.svc{background:var(--surface);border-radius:var(--r);padding:28px 26px 26px;display:flex;flex-direction:column;gap:14px;transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden}
-.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.svc .ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--ground-2);color:var(--char);flex:none}
-.svc:nth-child(3n+1) .ico{background:#FBE0D7;color:var(--verm-dk)}
-.svc:nth-child(3n+2) .ico{background:#D9EDE5;color:var(--jade)}
-.svc:nth-child(3n+3) .ico{background:#F6E9CD;color:#8A6524}
-.svc .ico svg{width:22px;height:22px}
-.svc h3{font-size:20px;font-weight:700;letter-spacing:-.015em;margin:0;line-height:1.2}
-.svc > p{font-size:14.5px;color:var(--ink-2)}
-.svc ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
-.svc li{font-size:13.5px;color:var(--ink-2);display:flex;gap:10px;align-items:flex-start}
-.svc li::before{content:"";width:6px;height:6px;border-radius:50%;margin-top:7px;background:var(--verm);flex:none;opacity:.55}
-.svc footer{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:baseline}
-.svc footer .k{font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
-.svc footer b{font-size:13px;font-weight:600}
+/* ============ SERVICE GROUPS ============ */
+.sgrp + .sgrp{margin-top:72px}
+.sgrp-hd{display:flex;align-items:baseline;gap:16px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line-2);flex-wrap:wrap}
+.sgrp-hd .n{font-family:"Anton",sans-serif;font-weight:400;font-size:32px;line-height:.8;color:var(--verm);letter-spacing:-.02em;flex:none}
+.sgrp-hd h3{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(21px,3.2vw,32px);margin:0;letter-spacing:.005em;line-height:1}
+.sgrp-hd p{margin-left:auto;font-size:14px;color:var(--ink-3);max-width:36ch}
+@media(max-width:720px){.sgrp-hd p{margin-left:0;flex-basis:100%}}
 
-/* ============ METHOD ============ */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media(max-width:940px){.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.steps{grid-template-columns:1fr}}
-.step{background:var(--surface);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;gap:11px;min-height:212px}
-.step .n{font-family:"Anton",sans-serif;font-size:44px;line-height:.8;color:var(--ground-2);letter-spacing:-.02em}
-.step:nth-child(1) .n{color:var(--verm)}
-.step:nth-child(2) .n{color:var(--jade)}
-.step:nth-child(3) .n{color:var(--sand)}
-.step:nth-child(4) .n{color:var(--char)}
-.step h3{font-size:18px;font-weight:700;margin:0;letter-spacing:-.01em}
-.step p{font-size:14px;color:var(--ink-2)}
-.step .t{margin-top:auto;padding-top:12px;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+@media(max-width:1020px){.srv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.srv-grid{grid-template-columns:1fr}}
+.srv{background:var(--surface);border-radius:var(--r);padding:28px 26px;display:flex;flex-direction:column;gap:13px;transition:transform .22s,box-shadow .22s}
+.srv:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.srv .ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;flex:none}
+.srv .ico svg{width:22px;height:22px}
+.srv:nth-child(3n+1) .ico{background:#FBE0D7;color:var(--verm-dk)}
+.srv:nth-child(3n+2) .ico{background:#D9EDE5;color:var(--jade)}
+.srv:nth-child(3n+3) .ico{background:#F6E9CD;color:#8A6524}
+.srv h3{font-size:20.5px;font-weight:700;letter-spacing:-.018em;margin:0;line-height:1.22}
+.srv .price{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-top:-2px}
+.srv .price b{font-family:"Anton",sans-serif;font-weight:400;font-size:40px;line-height:1;letter-spacing:-.02em}
+.srv .price span{font-size:13.5px;font-weight:500;color:var(--ink-2)}
+.srv .vat{font-size:11.5px;color:var(--ink-3);margin-top:-9px}
+.srv > p{font-size:14.5px;color:var(--ink-2)}
+.srv .out{font-size:14px;color:var(--jade);font-weight:500;background:#E9F3EF;border-radius:10px;padding:12px 14px}
+.srv .chips{margin-top:2px}
 
-/* ============ PACKAGES ============ */
-.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:940px){.packs{grid-template-columns:1fr}}
-.pack{background:var(--surface);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;position:relative}
-.pack.hi{background:var(--char);color:#EDEBE4}
-.pack .art{height:150px;position:relative;background:var(--ground-2);overflow:hidden}
-.pack.hi .art{background:#1A1915}
-.pack .art canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.pack .tag{position:absolute;top:14px;left:14px;z-index:2;font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:var(--verm);color:#fff;border-radius:100px;padding:6px 12px}
-.pack .body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
-.pack h3{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;font-size:26px;letter-spacing:.005em;margin:0;line-height:1}
-.pack .price{display:flex;align-items:baseline;gap:8px}
-.pack .price b{font-family:"Anton",sans-serif;font-weight:400;font-size:38px;letter-spacing:-.02em;line-height:1}
-.pack .price span{font-size:13px;color:var(--ink-2)}
-.pack.hi .price span{color:#A6A29A}
-.pack > .body > p{font-size:14.5px;color:var(--ink-2)}
-.pack.hi .body > p{color:#B4B0A7}
-.pack ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;padding-top:6px}
-.pack li{font-size:14px;display:flex;gap:10px;align-items:flex-start}
-.pack li svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--jade)}
-.pack.hi li svg{color:#5FD3AE}
-.pack .body .btn{margin-top:auto;justify-content:center}
-.pack.hi .btn{background:var(--verm);border-color:var(--verm);color:#fff}
-.pack.hi .btn:hover{background:#fff;border-color:#fff;color:var(--char)}
+/* accordions inside cards */
+.acc{margin-top:auto;padding-top:4px}
+.srv details{border-top:1px solid var(--line)}
+.srv details + details{margin-top:2px}
+.srv summary{list-style:none;cursor:pointer;padding:15px 30px 0 0;position:relative;font-size:11.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--verm-dk)}
+.srv summary::-webkit-details-marker{display:none}
+.srv summary:hover{color:var(--verm)}
+.srv summary::after{content:"";position:absolute;right:8px;top:19px;width:8px;height:8px;border-right:2px solid var(--verm);border-bottom:2px solid var(--verm);transform:rotate(45deg);transition:transform .24s}
+.srv details[open] summary::after{transform:rotate(-135deg)}
+.srv details ul{margin:14px 0 6px;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.srv details li{font-size:13.5px;color:var(--ink-2);display:flex;gap:10px;align-items:flex-start}
+.srv details li::before{content:"";width:6px;height:6px;border-radius:50%;margin-top:7px;background:var(--verm);opacity:.55;flex:none}
+.srv details p{font-size:13.5px;color:var(--ink-2);margin-top:13px}
+.srv details p:last-child{margin-bottom:6px}
 
-/* ============ SECTORS ============ */
-.sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media(max-width:860px){.sectors{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.sectors{grid-template-columns:1fr}}
-.sector{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:100px;padding:16px 22px;transition:transform .2s}
-.sector:hover{transform:translateX(4px)}
-.sector svg{width:20px;height:20px;color:var(--verm);flex:none}
-.sector span{font-size:15px;font-weight:500}
+.addon{background:var(--ground);border-radius:12px;padding:16px 18px;margin-top:14px}
+.addon .k{font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:7px}
+.addon h4{font-size:15px;font-weight:700;margin:0 0 5px;letter-spacing:-.01em}
+.addon > p{font-size:13.5px;color:var(--ink-2)}
+.addon .fee{font-size:14px;font-weight:700;color:var(--verm-dk);margin-top:7px}
+.srv .addon details{border-top:1px solid var(--line-2);margin-top:11px}
+.srv .addon summary{padding-top:12px;font-size:11px}
+.srv .addon summary::after{top:16px}
+
+.srv .go{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--ink);transition:color .18s,gap .18s}
+.srv .go:hover{color:var(--verm);gap:12px}
+.srv .go svg{width:14px;height:14px}
+
+.svc-note{margin-top:34px;background:var(--surface);border-radius:var(--r);padding:24px 26px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.svc-note p{font-size:15px;color:var(--ink-2);max-width:62ch}
+.svc-note .btn{margin-left:auto}
+@media(max-width:720px){.svc-note .btn{margin-left:0}}
+.vat-all{margin-top:16px;font-size:12.5px;color:var(--ink-3)}
+
+/* ============ ADVANTAGES ============ */
+.advs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.advs{grid-template-columns:1fr}}
+.adv{background:var(--surface);border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column;gap:12px}
+.adv .n{font-family:"Anton",sans-serif;font-weight:400;font-size:46px;line-height:.8;letter-spacing:-.02em}
+.adv:nth-child(1) .n{color:var(--verm)}
+.adv:nth-child(2) .n{color:var(--jade)}
+.adv:nth-child(3) .n{color:var(--sand)}
+.adv h3{font-size:19px;font-weight:700;margin:0;letter-spacing:-.015em}
+.adv p{font-size:14.5px;color:var(--ink-2)}
 
 /* ============ ABOUT ============ */
-.about{display:grid;grid-template-columns:1.12fr .88fr;gap:52px;align-items:start}
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start}
 @media(max-width:900px){.about{grid-template-columns:1fr;gap:36px}}
-.bio p{font-size:16.5px;color:var(--ink-2);margin-bottom:17px;max-width:58ch}
-.bio p.lead{font-size:clamp(19px,2.2vw,25px);color:var(--ink);font-weight:500;line-height:1.4;letter-spacing:-.015em}
-.tl{margin-top:34px;display:flex;flex-direction:column;gap:2px}
-.tl-item{display:grid;grid-template-columns:104px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
-@media(max-width:520px){.tl-item{grid-template-columns:1fr;gap:4px}}
-.tl-item .y{font-size:11px;font-weight:600;letter-spacing:.13em;color:var(--verm);padding-top:3px}
-.tl-item h4{font-size:16px;font-weight:700;margin:0 0 3px;letter-spacing:-.01em}
-.tl-item p{font-size:14px;color:var(--ink-2);margin:0}
+.bio h3.dsp{font-size:clamp(28px,4.4vw,52px);margin-bottom:24px}
+.bio p{font-size:16.5px;color:var(--ink-2);margin-bottom:17px;max-width:60ch}
+.bio h4{font-size:clamp(19px,2.2vw,25px);font-weight:600;letter-spacing:-.015em;color:var(--ink);margin:34px 0 15px;line-height:1.3}
+.bio .fin{font-size:clamp(18px,2vw,22px);color:var(--ink);font-weight:600;letter-spacing:-.015em;border-left:3px solid var(--verm);padding-left:18px;margin-top:26px}
+.photo{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--ground-2);border:1.5px dashed var(--line-2);display:grid;place-items:center;text-align:center;padding:26px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo .hint{font-size:12.5px;color:var(--ink-3);line-height:1.5;max-width:24ch}
+.photo .hint b{display:block;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--verm-dk);margin-bottom:8px}
 .panel{background:var(--surface);border-radius:var(--r);padding:26px}
 .panel + .panel{margin-top:16px}
 .panel > h4{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin:0 0 16px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:13px;font-weight:500;background:var(--ground);border-radius:100px;padding:8px 14px;color:var(--ink-2)}
-.langbars{display:flex;flex-direction:column;gap:15px}
-.lb .top{display:flex;justify-content:space-between;font-size:14px;font-weight:500;margin-bottom:7px}
-.lb .top em{font-style:normal;color:var(--ink-3);font-size:12.5px;font-weight:600;letter-spacing:.08em}
-.lb .bar{height:6px;background:var(--ground);border-radius:100px;overflow:hidden}
-.lb .bar i{display:block;height:100%;border-radius:100px;background:var(--verm)}
-.lb:nth-child(2) .bar i{background:var(--jade)}
-.lb:nth-child(3) .bar i{background:var(--sand)}
-.lb:nth-child(4) .bar i{background:var(--char)}
-
-/* ============ FAQ ============ */
-.faq{border-top:1px solid var(--line-2)}
-details{border-bottom:1px solid var(--line-2)}
-summary{cursor:pointer;list-style:none;padding:24px 52px 24px 0;position:relative;font-size:clamp(17px,2vw,21px);font-weight:600;letter-spacing:-.015em}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"";position:absolute;right:14px;top:50%;width:13px;height:13px;margin-top:-9px;border-right:2px solid var(--verm);border-bottom:2px solid var(--verm);transform:rotate(45deg);transition:transform .24s}
-details[open] summary::after{transform:rotate(-135deg)}
-details .ans{padding:0 60px 26px 0;color:var(--ink-2);font-size:15.5px;max-width:74ch}
 
 /* ============ CONTACT ============ */
 .contact{background:var(--char);color:#EDEBE4;border-radius:22px;padding:56px;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;position:relative;overflow:hidden}
 @media(max-width:900px){.contact{grid-template-columns:1fr;gap:36px;padding:36px 26px}}
 .contact h2{color:#F6F5F1}
 .contact .lab{color:#9C9891}
-.contact .shead{margin-bottom:26px}
+.contact .shead{margin-bottom:26px;display:block}
+.contact .shead p{color:#B4B0A7;max-width:42ch;padding-bottom:0;margin-top:18px}
 .ck{position:absolute;right:-90px;bottom:-110px;width:340px;height:340px;pointer-events:none;opacity:.85}
 @media(max-width:900px){.ck{display:none}}
 .ways{display:flex;flex-direction:column;gap:10px;margin-top:26px;position:relative;z-index:1}
@@ -273,7 +251,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--verm);ba
 
 /* ============ FOOTER ============ */
 footer.site{padding:70px 0 34px}
-.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:44px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;padding-bottom:44px}
 @media(max-width:900px){.ft{grid-template-columns:1fr 1fr;gap:30px}}
 @media(max-width:560px){.ft{grid-template-columns:1fr}}
 .ft h4{font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin:0 0 15px}
@@ -304,19 +282,6 @@ footer.site{padding:70px 0 34px}
 .ph{background:#FBE0D7;color:var(--verm-dk);border-radius:5px;padding:1px 7px;font-weight:600;font-size:13.5px}
 .doc-note{background:var(--ground);border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13px;color:var(--ink-2);line-height:1.6}
 
-/* ============ WORKS / PORTAFOLIO ============ */
-.works{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:980px){.works{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.works{grid-template-columns:1fr}}
-.work{background:var(--surface);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
-.work:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.wart{position:relative;aspect-ratio:1/1;background:var(--ground-2);overflow:hidden}
-.wart canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.wf{position:absolute;top:14px;left:14px;z-index:2;font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:var(--char);color:#F6F5F1;border-radius:100px;padding:6px 12px}
-.wbody{padding:22px 22px 24px;display:flex;flex-direction:column;gap:7px}
-.wbody h3{font-size:18px;font-weight:700;letter-spacing:-.015em;margin:0}
-.wbody p{font-size:14px;color:var(--ink-2)}
-
 /* ============ REVEAL ============ */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .65s cubic-bezier(.2,.7,.3,1),transform .65s cubic-bezier(.2,.7,.3,1)}
 .rv.in{opacity:1;transform:none}
@@ -326,485 +291,514 @@ footer.site{padding:70px 0 34px}
 }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Brave Marketing","description":"SMM y marketing digital para empresas y particulares. Gestion de redes sociales, contenido y campanas de pago desde Barcelona.","url":"https://www.bravemarketing.es/","email":"hola@bravemarketing.es","telephone":"+34600000000","areaServed":"ES","availableLanguage":["es","ca","en"],"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsAbout":["Social media marketing","Meta Ads","Google Ads","Marca personal"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Brave Marketing","description":"Digital-маркетинг для бизнеса и личных брендов: SMM, реклама в Google Ads, Meta Ads и TikTok Ads, создание личного бренда и консультации.","url":"https://www.bravemarketing.es/","email":"hola@bravemarketing.es","areaServed":"ES","address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"knowsAbout":["SMM","Google Ads","Meta Ads","TikTok Ads","Личный бренд","Digital-маркетинг"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Услуги","itemListElement":[
+{"@type":"Offer","name":"SMM и ведение социальных сетей","price":"990","priceCurrency":"EUR","description":"Стратегия продвижения и комплексное ведение социальных сетей, ежемесячно."},
+{"@type":"Offer","name":"Настройка рекламных кампаний","price":"490","priceCurrency":"EUR","description":"Настройка кампаний в Google Ads, Meta Ads и TikTok Ads под бизнес и бюджет."},
+{"@type":"Offer","name":"Консультация по digital-маркетингу и онлайн-продажам","price":"60","priceCurrency":"EUR","description":"Час консультации: стратегия, реклама, воронка продаж и точки роста."},
+{"@type":"Offer","name":"Ведение и продвижение социальных сетей для частных лиц","price":"690","priceCurrency":"EUR","description":"Ведение Instagram и Twitter, контент, образ и рост аудитории, ежемесячно."},
+{"@type":"Offer","name":"Создание личного бренда в Instagram","price":"990","priceCurrency":"EUR","description":"Позиционирование, упаковка эксперта, контент-стратегия и таргетированная реклама."},
+{"@type":"Offer","name":"Консультация по монетизации блога и развитию личного бренда","price":"50","priceCurrency":"EUR","description":"Час консультации: позиционирование, площадки, монетизация аудитории."}
+]}}
 </script>
 </head>
 <body>
-<header>
+
+<a class="sr" href="#uslugi">Перейти к услугам</a>
+
+<!-- ================= HEADER ================= -->
+<header id="top">
   <div class="wrap hd">
     <a class="brand" href="#top">
-      <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
-        <ellipse cx="13" cy="13" rx="6" ry="11.2" transform="rotate(-32 13 13)" stroke="currentColor" stroke-width="2.1"/>
-        <ellipse cx="13" cy="13" rx="6" ry="11.2" transform="rotate(32 13 13)" stroke="#F0522B" stroke-width="2.1"/>
+      <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke-width="2.1">
+        <ellipse cx="13" cy="13" rx="5" ry="9.4" transform="rotate(-32 13 13)" stroke="#F6F5F1"/>
+        <ellipse cx="13" cy="13" rx="5" ry="9.4" transform="rotate(32 13 13)" stroke="#F0522B"/>
       </svg>
       <span class="wm"><b>Brave</b><i>Marketing</i></span>
     </a>
-    <span class="draft" data-i18n="draft">Borrador</span>
     <nav class="main">
-      <a href="#servicios" data-i18n="nav.services">Servicios</a>
-      <a href="#metodo" data-i18n="nav.method">Método</a>
-      <a href="#planes" data-i18n="nav.plans">Planes</a>
-      <a href="#trabajos" data-i18n="nav.works">Trabajos</a>
-      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#uslugi" data-i18n="nav.services">Услуги</a>
+      <a href="#preimushchestva" data-i18n="nav.adv">Преимущества</a>
+      <a href="#o-mne" data-i18n="nav.about">Обо мне</a>
+      <a href="#kontakty" data-i18n="nav.contact">Контакты</a>
     </nav>
-    <div class="tools">
-      <div class="lang" role="group" aria-label="Idioma / Llengua / Language">
-        <button type="button" data-lang="es" aria-pressed="true">ES</button>
-        <button type="button" data-lang="ca" aria-pressed="false">CA</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
-      </div>
-      <a class="btn sm" href="#contacto" data-i18n="cta.short">Contactar</a>
-    </div>
+    <a class="btn sm" href="#kontakty" data-i18n="cta.short">Связаться</a>
   </div>
 </header>
 
-<main id="top">
-
-  <!-- ================= HERO ================= -->
-  <div class="hero">
-    <div class="knots" aria-hidden="true">
-      <canvas id="k1"></canvas>
-      <canvas id="k2"></canvas>
-      <canvas id="k3"></canvas>
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="knots" aria-hidden="true">
+    <canvas id="k1"></canvas>
+    <canvas id="k2"></canvas>
+    <canvas id="k3"></canvas>
+  </div>
+  <div class="wrap hero-in">
+    <div class="tagline">
+      <span class="dot"></span>
+      <span class="lab" data-i18n="hero.tag">SMM · Реклама · Личный бренд</span>
     </div>
-    <div class="wrap hero-in">
-      <span class="tagline"><span class="dot"></span><span class="lab" data-i18n="hero.tag">SMM · Contenido · Publicidad</span></span>
-      <h1 class="dsp"><span data-i18n="hero.h1a">SMM y marketing </span><span class="v" data-i18n="hero.h1b">digital</span><span data-i18n="hero.h1c"> para empresas y particulares.</span></h1>
-      <p class="sub" data-i18n="hero.sub">Llevo redes sociales, contenido y campañas de pago para negocios pequeños y profesionales que venden por su nombre. Plan claro, calendario aprobado por ti y números cada mes.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#contacto"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4l6 4 6-4M2 3.5h12v9H2z" stroke="currentColor" stroke-width="1.4"/></svg><span data-i18n="cta.audit">Pedir una auditoría gratis</span></a>
-        <a class="btn ghost" href="#planes"><span data-i18n="cta.plans">Ver planes y precios</span></a>
-      </div>
-      <div class="hero-foot">
-        <div class="badge" aria-hidden="true">
-          <svg viewBox="0 0 120 120">
-            <defs><path id="cir" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-            <text><textPath href="#cir" startOffset="0">Brave · Marketing · Brave · Marketing · </textPath></text>
-          </svg>
-          <span class="ar">↓</span>
-        </div>
+
+    <h1 class="dsp">
+      <span data-i18n="hero.h1a">Digital-маркетинг для бизнеса и </span><span class="v" data-i18n="hero.h1b">личных брендов</span>
+    </h1>
+
+    <p class="sub" data-i18n="hero.sub">18 лет в интернет-проектах: реклама, социальные сети, личный бренд. Главное — понять, чего именно вы хотите добиться, и выстроить под эту цель работающую систему.</p>
+
+    <div class="hero-cta">
+      <a class="btn" href="#kontakty" data-i18n="cta.talk">Обсудить проект</a>
+      <a class="btn ghost" href="#uslugi" data-i18n="cta.services">Услуги и цены</a>
+    </div>
+
+    <div class="hero-foot">
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <defs><path id="cir" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+          <text><textPath href="#cir">Brave · Marketing · Brave · Marketing · </textPath></text>
+        </svg>
+        <span class="ar">&#8595;</span>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- ================= DATA STRIP ================= -->
+<!-- ================= DATA STRIP ================= -->
+<div class="wrap">
+  <div class="strip rv">
+    <div class="strip-in">
+      <div><span class="k" data-i18n="st.k1">Опыт</span><span class="v" data-i18n="st.v1"><em>18 лет</em> в digital, с 2008 года</span></div>
+      <div><span class="k" data-i18n="st.k2">Для кого</span><span class="v" data-i18n="st.v2">Компании и частные лица</span></div>
+      <div><span class="k" data-i18n="st.k3">Реклама</span><span class="v" data-i18n="st.v3">Google Ads · Meta Ads · TikTok Ads</span></div>
+      <div><span class="k" data-i18n="st.k4">Формат</span><span class="v" data-i18n="st.v4">Подписка, проект или консультация</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= УСЛУГИ ================= -->
+<section id="uslugi">
   <div class="wrap">
-    <div class="strip">
-      <div class="strip-in">
-        <div><span class="k" data-i18n="st.k1">Actividad</span><span class="v" data-i18n="st.v1">Marketing digital y SMM</span></div>
-        <div><span class="k" data-i18n="st.k2">Epígrafe IAE</span><span class="v"><em>844</em> — <span data-i18n="st.v2">Publicidad y RR. PP.</span></span></div>
-        <div><span class="k" data-i18n="st.k3">Ubicación</span><span class="v" data-i18n="st.v3">Barcelona · toda España</span></div>
-        <div><span class="k" data-i18n="st.k4">Idiomas</span><span class="v" data-i18n="st.v4">Español · Català · English</span></div>
-        <div><span class="k" data-i18n="st.k5">Modalidad</span><span class="v" data-i18n="st.v5">Suscripción o proyecto</span></div>
-        <div><span class="k" data-i18n="st.k6">Estado</span><span class="v"><span class="live" data-i18n="st.v6">Plazas abiertas</span></span></div>
+    <div class="shead rv">
+      <div>
+        <div class="lab" data-i18n="lab.services">Услуги</div>
+        <h2 class="dsp" data-i18n="sv.h2">Что я делаю и сколько это стоит</h2>
+      </div>
+      <p data-i18n="sv.p">Услуги разделены на два направления: для компаний и для частных лиц. Каждую можно взять отдельно.</p>
+    </div>
+
+    <!-- ---------- 01 ДЛЯ КОМПАНИЙ ---------- -->
+    <div class="sgrp rv">
+      <div class="sgrp-hd">
+        <span class="n">01</span>
+        <h3 data-i18n="g1.t">Для компаний</h3>
+        <p data-i18n="g1.p">Продвижение бизнеса: соцсети, реклама и разбор точек роста.</p>
+      </div>
+
+      <div class="srv-grid">
+
+        <!-- C1 — SMM -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>
+            </svg>
+          </div>
+          <h3 data-i18n="c1.t">SMM и ведение социальных сетей</h3>
+          <div class="price"><b>€990</b><span data-i18n="c1.u">в месяц</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="c1.d">Разработаем стратегию продвижения и возьмём на себя комплексное ведение ваших социальных сетей — от создания контента до взаимодействия с аудиторией.</p>
+          <div class="acc">
+            <details>
+              <summary data-i18n="c1.s">Что включено</summary>
+              <p data-i18n="c1.p1">Анализируем вашу аудиторию и особенности бизнеса, создаём контент-план, готовим и публикуем контент, работаем над вовлечённостью и развитием аккаунта.</p>
+              <p data-i18n="c1.p2">Поможем привлечь новую аудиторию, повысить узнаваемость бренда и превратить социальные сети в эффективный инструмент продвижения и продаж.</p>
+            </details>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- C2 — Реклама -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/>
+            </svg>
+          </div>
+          <h3 data-i18n="c2.t">Настройка рекламных кампаний</h3>
+          <div class="price"><b>€490</b><span data-i18n="c2.u">разово</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="c2.d">Создадим и настроим рекламную кампанию под ваш бизнес и бюджет, чтобы вы могли самостоятельно управлять рекламой и контролировать результаты.</p>
+          <div class="chips">
+            <span class="chip">Google Ads</span>
+            <span class="chip">Meta Ads</span>
+            <span class="chip">TikTok Ads</span>
+          </div>
+          <div class="acc">
+            <details>
+              <summary data-i18n="c2.s">Что включено</summary>
+              <ul>
+                <li data-i18n="c2.b1">анализ бизнеса и целевой аудитории</li>
+                <li data-i18n="c2.b2">разработка рекламной стратегии</li>
+                <li data-i18n="c2.b3">настройка рекламного кабинета и кампаний</li>
+                <li data-i18n="c2.b4">определение целевой аудитории</li>
+                <li data-i18n="c2.b5">создание структуры кампаний</li>
+                <li data-i18n="c2.b6">подготовка рекламных текстов и креативов</li>
+                <li data-i18n="c2.b7">настройка целей и конверсий</li>
+                <li data-i18n="c2.b8">запуск и первоначальная проверка кампании</li>
+              </ul>
+            </details>
+
+            <div class="addon">
+              <span class="k" data-i18n="c2.ak">Дополнительно</span>
+              <h4 data-i18n="c2.at">Ведение рекламных кампаний</h4>
+              <p data-i18n="c2.ad">Хотите, чтобы мы продолжали управлять рекламой после настройки?</p>
+              <p class="fee" data-i18n="c2.af">10% от рекламного бюджета в месяц</p>
+              <details>
+                <summary data-i18n="c2.as">Что входит в ведение</summary>
+                <ul>
+                  <li data-i18n="c2.c1">постоянный контроль эффективности</li>
+                  <li data-i18n="c2.c2">анализ результатов и конверсий</li>
+                  <li data-i18n="c2.c3">оптимизация рекламных кампаний</li>
+                  <li data-i18n="c2.c4">корректировка таргетинга и бюджета</li>
+                  <li data-i18n="c2.c5">создание новых креативов</li>
+                  <li data-i18n="c2.c6">обновление рекламных текстов</li>
+                  <li data-i18n="c2.c7">отключение неэффективных объявлений</li>
+                  <li data-i18n="c2.c8">тестирование новых подходов</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- C3 — Консультация -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M21 4v5h-5"/><path d="M12 8v4l3 2"/>
+            </svg>
+          </div>
+          <h3 data-i18n="c3.t">Консультация по digital-маркетингу и онлайн-продажам</h3>
+          <div class="price"><b>€60</b><span data-i18n="c3.u">в час</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="c3.d">Разберём ваш бизнес, текущие результаты и точки роста, чтобы найти способы увеличить онлайн-продажи и эффективность digital-маркетинга.</p>
+          <p class="out" data-i18n="c3.o">В результате вы получите конкретные рекомендации и понятный план дальнейших действий.</p>
+          <div class="acc">
+            <details>
+              <summary data-i18n="c3.s">Что разберём</summary>
+              <ul>
+                <li data-i18n="c3.b1">стратегию продвижения</li>
+                <li data-i18n="c3.b2">рекламу и привлечение клиентов</li>
+                <li data-i18n="c3.b3">социальные сети и контент</li>
+                <li data-i18n="c3.b4">воронку продаж и конверсии</li>
+                <li data-i18n="c3.b5">сайт и онлайн-продажи</li>
+                <li data-i18n="c3.b6">конкретные задачи и проблемы вашего бизнеса</li>
+              </ul>
+            </details>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ---------- 02 ДЛЯ ЧАСТНЫХ ЛИЦ ---------- -->
+    <div class="sgrp rv">
+      <div class="sgrp-hd">
+        <span class="n">02</span>
+        <h3 data-i18n="g2.t">Для частных лиц</h3>
+        <p data-i18n="g2.p">Личные аккаунты и личный бренд: контент, образ и заявки на ваши услуги.</p>
+      </div>
+
+      <div class="srv-grid">
+
+        <!-- P1 — Ведение соцсетей -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/>
+            </svg>
+          </div>
+          <h3 data-i18n="p1.t">Ведение и продвижение социальных сетей</h3>
+          <div class="price"><b>€690</b><span data-i18n="p1.u">в месяц</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="p1.d">Возьмём на себя развитие ваших Instagram и Twitter — от создания контента и формирования образа до привлечения новой аудитории и продвижения аккаунтов.</p>
+          <div class="acc">
+            <details>
+              <summary data-i18n="p1.s">Что включено</summary>
+              <p data-i18n="p1.p1">В услугу входит регулярная публикация контента с использованием ваших существующих фото- и видеоархивов, а также одна небольшая фотосессия в месяц с нашим фотографом для создания нового материала.</p>
+              <p data-i18n="p1.p2">Мы также поможем сформировать и развивать ваш образ в социальных сетях, разработаем контент-стратегию, найдём возможности для взаимного пиара и коллабораций с блогерами из нашей базы и будем постоянно работать над ростом аудитории и вовлечённости.</p>
+              <p data-i18n="p1.p3">Ваша задача — создавать контент вместе с нами. Всё остальное мы берём на себя.</p>
+            </details>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- P2 — Личный бренд -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="p2.t">Создание личного бренда в Instagram</h3>
+          <div class="price"><b>€990</b><span data-i18n="p2.u">разово</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="p2.d">Поможем превратить Instagram в инструмент продвижения ваших услуг и привлечения новых клиентов.</p>
+          <div class="acc">
+            <details>
+              <summary data-i18n="p2.s">Что включено</summary>
+              <p data-i18n="p2.p1">Определим ваши сильные стороны и позиционирование, упакуем вас как эксперта, оформим аккаунт и разработаем контент-стратегию. Создадим путь клиента от первого знакомства с вами до заявки на услугу: вовлекающий контент, продающая воронка через Instagram и WhatsApp и автоматизация коммуникации.</p>
+              <p data-i18n="p2.p2">Также настроим таргетированную рекламу под ваш бюджет, чтобы привлекать целевую аудиторию и получать реальные заявки на ваши услуги.</p>
+            </details>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <!-- P3 — Консультация -->
+        <article class="srv">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.5 18h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.6l.1.6h5.2l.1-.6c.1-.6.4-1.2.9-1.6A6 6 0 0 0 12 3z"/>
+            </svg>
+          </div>
+          <h3 data-i18n="p3.t">Консультация по монетизации блога и развитию личного бренда</h3>
+          <div class="price"><b>€50</b><span data-i18n="p3.u">в час</span></div>
+          <div class="vat" data-i18n="vat">НДС не включён</div>
+          <p data-i18n="p3.d">Для тех, кто хочет самостоятельно развивать свой блог, личный бренд и зарабатывать на своей аудитории, но не знает, с чего начать или как выстроить эффективную стратегию.</p>
+          <p class="out" data-i18n="p3.o">Вы получите практические рекомендации и понятный план действий, который сможете реализовать самостоятельно.</p>
+          <div class="acc">
+            <details>
+              <summary data-i18n="p3.s">Что разберём</summary>
+              <ul>
+                <li data-i18n="p3.b1">позиционирование и создание личного бренда</li>
+                <li data-i18n="p3.b2">выбор подходящих площадок и форматов контента</li>
+                <li data-i18n="p3.b3">способы монетизации аудитории</li>
+                <li data-i18n="p3.b4">продвижение и привлечение новых подписчиков</li>
+                <li data-i18n="p3.b5">создание контента, который помогает продавать</li>
+                <li data-i18n="p3.b6">поиск рекламных интеграций и других источников дохода</li>
+                <li data-i18n="p3.b7">конкретные вопросы и задачи вашего проекта</li>
+              </ul>
+            </details>
+          </div>
+          <a class="go" href="#kontakty">
+            <span data-i18n="cta.card">Обсудить</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="svc-note rv">
+      <p data-i18n="sv.note">Это не все наши возможности. Если вам нужно что-то особенное — свяжитесь с нами, обсудим задачу и предложим решение.</p>
+      <a class="btn" href="#kontakty" data-i18n="cta.task">Обсудить задачу</a>
+    </div>
+    <p class="vat-all" data-i18n="sv.vat">Все цены указаны без НДС.</p>
+  </div>
+</section>
+
+<!-- ================= ПРЕИМУЩЕСТВА ================= -->
+<section id="preimushchestva">
+  <div class="wrap">
+    <div class="shead rv">
+      <div>
+        <div class="lab" data-i18n="lab.adv">Преимущества</div>
+        <h2 class="dsp" data-i18n="ad.h2">Почему со мной работают</h2>
+      </div>
+    </div>
+
+    <div class="advs rv">
+      <article class="adv">
+        <span class="n">01</span>
+        <h3 data-i18n="a1.t">Личное участие</h3>
+        <p data-i18n="a1.d">Я лично погружаюсь в ваш проект, разбираюсь в специфике бизнеса или личного бренда и контролирую ключевые этапы работы.</p>
+      </article>
+      <article class="adv">
+        <span class="n">02</span>
+        <h3 data-i18n="a2.t">Комплексный подход</h3>
+        <p data-i18n="a2.d">Не просто выполняем отдельные задачи, а выстраиваем полноценную систему: от стратегии и упаковки до продвижения, привлечения аудитории и продаж.</p>
+      </article>
+      <article class="adv">
+        <span class="n">03</span>
+        <h3 data-i18n="a3.t">Фокус на результат</h3>
+        <p data-i18n="a3.d">Все решения принимаются с учётом конкретных целей проекта — роста аудитории, узнаваемости, заявок или продаж. Мы анализируем результаты и корректируем стратегию по мере необходимости.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ОБО МНЕ ================= -->
+<section id="o-mne">
+  <div class="wrap">
+    <div class="shead rv">
+      <div>
+        <div class="lab" data-i18n="lab.about">Обо мне</div>
+        <h2 class="dsp" data-i18n="ab.h2">Кто ведёт ваш проект</h2>
+      </div>
+    </div>
+
+    <div class="about rv">
+      <div class="bio">
+        <h3 class="dsp" data-i18n="ab.lead">18 лет в digital</h3>
+        <p data-i18n="ab.p1">Я занимаюсь созданием, продвижением и развитием интернет-проектов с 2008 года — ещё в те времена, когда интернет был далеко не в каждом доме, а первые iPhone только начинали становиться частью повседневной жизни.</p>
+        <p data-i18n="ab.p2">За эти годы я работал с совершенно разными проектами: запускал и продвигал интернет-сервисы, выстраивал рекламные кампании, развивал социальные сети, работал с блогерами и помогал специалистам создавать личные бренды и превращать аудиторию в источник дохода.</p>
+        <p data-i18n="ab.p3">Сегодня я глубоко разбираюсь в digital-маркетинге и рекламных инструментах — от Google Ads и Meta Ads до TikTok Ads и других платформ. Но для меня технологии и инструменты — это только средства. Главное — понять, чего именно вы хотите добиться, и выстроить под эту цель работающую систему.</p>
+        <p data-i18n="ab.p4">Я также много работал с блогерами, экспертами и специалистами, помогая им находить своё позиционирование, развивать личный бренд и монетизировать аудиторию. Возможно, некоторых людей, с которыми я работал, вы уже знаете или видели в социальных сетях.</p>
+
+        <h4 data-i18n="ab.h4">Я не беру проекты ради самого проекта</h4>
+        <p data-i18n="ab.p5">Мне неинтересно просто продать вам услугу, выставить счёт и исчезнуть. Моя задача — разобраться в вашем проекте, понять ваши цели и найти решение, которое действительно поможет их достичь.</p>
+        <p data-i18n="ab.p6">Если я вижу, что могу быть полезен и привести проект к результату — я берусь за работу. Если не вижу такой возможности, я предпочту честно сказать об этом ещё до начала сотрудничества.</p>
+
+        <p class="fin" data-i18n="ab.fin">Ваш результат — это и есть результат моей работы.</p>
+      </div>
+
+      <div>
+        <!-- ФОТО: замените блок .photo на <div class="photo"><img src="foto.jpg" alt="..."></div> -->
+        <div class="photo">
+          <span class="hint"><b data-i18n="ab.ph.k">Фото</b><span data-i18n="ab.ph.v">Здесь будет фотография — пришлите файл, вставлю на это место.</span></span>
+        </div>
+        <div class="panel" style="margin-top:16px">
+          <h4 data-i18n="ab.tools">Рекламные платформы</h4>
+          <div class="chips">
+            <span class="chip">Google Ads</span>
+            <span class="chip">Meta Ads</span>
+            <span class="chip">TikTok Ads</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ================= SERVICIOS ================= -->
-  <section id="servicios">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.services">Servicios</span>
-          <h2 class="dsp" data-i18n="sv.h2">Seis servicios, sin paquetes vagos</h2>
+<!-- ================= КОНТАКТЫ ================= -->
+<section id="kontakty">
+  <div class="wrap">
+    <div class="contact rv">
+      <canvas class="ck" id="k4" aria-hidden="true"></canvas>
+
+      <div>
+        <div class="shead">
+          <div class="lab" data-i18n="lab.contact">Контакты</div>
+          <h2 class="dsp" data-i18n="co.h2">Расскажите о проекте</h2>
+          <p data-i18n="co.p">Напишите, чем вы занимаетесь и чего хотите добиться. Если я вижу, что могу быть полезен и привести проект к результату — берусь за работу.</p>
         </div>
-        <p data-i18n="sv.p">Cada servicio se contrata por separado o dentro de un plan mensual. El alcance se fija por escrito antes de empezar.</p>
+
+        <div class="ways">
+          <a class="way" href="mailto:hola@bravemarketing.es">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 5 8-5"/></svg></span>
+            <span><span class="k" data-i18n="co.k1">Email</span><span class="v">hola@bravemarketing.es</span></span>
+          </a>
+          <!-- TODO: подставить реальный номер вместо прочерков (здесь и в футере) -->
+          <a class="way" href="#kontakty">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15.5v3a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19 19 0 0 1-6-6A19.5 19.5 0 0 1 1.3 3 2 2 0 0 1 3.3 1h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7.4 8.8a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.5 2z"/></svg></span>
+            <span><span class="k" data-i18n="co.k2">WhatsApp</span><span class="v">+34 ___ ___ ___</span></span>
+          </a>
+          <a class="way" href="#kontakty">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4L3 11l5 2 2 6 3-4 5 4z"/><path d="M8 13l9-6"/></svg></span>
+            <span><span class="k" data-i18n="co.k3">Telegram</span><span class="v">@bravemarketing</span></span>
+          </a>
+        </div>
       </div>
-      <div class="svcs rv">
 
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="11" cy="11" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="6" r="1.2" fill="currentColor"/></svg></span>
-          <h3 data-i18n="s1.t">Gestión de redes sociales</h3>
-          <p data-i18n="s1.d">Publicación constante y comunidad viva en Instagram, TikTok y LinkedIn.</p>
-          <ul><li data-i18n="s1.b1">Calendario mensual que apruebas tú</li><li data-i18n="s1.b2">Publicación y respuesta a comentarios</li><li data-i18n="s1.b3">Informe de resultados cada mes</li></ul>
-          <footer><span class="k" data-i18n="lbl.format">Formato</span><b data-i18n="s1.f">Suscripción mensual</b></footer>
-        </article>
-
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 18V4a1 1 0 011-1h9l5 5v10a1 1 0 01-1 1H4a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M13 3v5h5M7 12h8M7 15h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-          <h3 data-i18n="s2.t">Estrategia y plan de contenidos</h3>
-          <p data-i18n="s2.d">Qué publicar, en qué formato y con qué tono — decidido antes de grabar nada.</p>
-          <ul><li data-i18n="s2.b1">Análisis de competencia y público</li><li data-i18n="s2.b2">Líneas temáticas y tono de voz</li><li data-i18n="s2.b3">Guiones para Reels y carruseles</li></ul>
-          <footer><span class="k" data-i18n="lbl.term">Plazo</span><b data-i18n="s2.f">2 semanas</b></footer>
-        </article>
-
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="8.2" stroke="currentColor" stroke-width="1.7"/><circle cx="11" cy="11" r="4.4" stroke="currentColor" stroke-width="1.7"/><circle cx="11" cy="11" r="1.5" fill="currentColor"/></svg></span>
-          <h3 data-i18n="s3.t">Publicidad de pago</h3>
-          <p data-i18n="s3.d">Campañas en Meta Ads y Google Ads con presupuesto bajo control.</p>
-          <ul><li data-i18n="s3.b1">Segmentación y creatividades</li><li data-i18n="s3.b2">Pruebas A/B de anuncios</li><li data-i18n="s3.b3">Coste por resultado revisado cada semana</li></ul>
-          <footer><span class="k" data-i18n="lbl.term">Plazo</span><b data-i18n="s3.f">Desde 1 semana</b></footer>
-        </article>
-
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><rect x="2.5" y="4.5" width="17" height="13" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M9 8.6l4.6 2.4L9 13.4V8.6z" fill="currentColor"/></svg></span>
-          <h3 data-i18n="s4.t">Producción de contenido</h3>
-          <p data-i18n="s4.d">Reels, carruseles y textos listos para publicar, sin sesión de fotos cara.</p>
-          <ul><li data-i18n="s4.b1">Guion, montaje y subtítulos</li><li data-i18n="s4.b2">Diseño de carruseles</li><li data-i18n="s4.b3">Textos adaptados a cada red</li></ul>
-          <footer><span class="k" data-i18n="lbl.format">Formato</span><b data-i18n="s4.f">Por paquete</b></footer>
-        </article>
-
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><circle cx="11" cy="7.6" r="3.6" stroke="currentColor" stroke-width="1.7"/><path d="M3.6 19c.6-4 3.6-6.2 7.4-6.2S17.8 15 18.4 19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
-          <h3 data-i18n="s5.t">Marca personal</h3>
-          <p data-i18n="s5.d">Para profesionales y autónomos que venden por su propio nombre.</p>
-          <ul><li data-i18n="s5.b1">Posicionamiento y mensaje central</li><li data-i18n="s5.b2">Perfil optimizado y bio que convierte</li><li data-i18n="s5.b3">Plan de publicaciones propio</li></ul>
-          <footer><span class="k" data-i18n="lbl.term">Plazo</span><b data-i18n="s5.f">3–4 semanas</b></footer>
-        </article>
-
-        <article class="svc">
-          <span class="ico"><svg viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 19h16M6 19V11M10.6 19V6M15.2 19v-5.6M19 19V8.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>
-          <h3 data-i18n="s6.t">Analítica e informes</h3>
-          <p data-i18n="s6.d">Qué funciona y qué no, con números y una decisión concreta al final.</p>
-          <ul><li data-i18n="s6.b1">Panel de métricas en Looker Studio</li><li data-i18n="s6.b2">Informe mensual comentado</li><li data-i18n="s6.b3">Recomendaciones para el mes siguiente</li></ul>
-          <footer><span class="k" data-i18n="lbl.format">Formato</span><b data-i18n="s6.f">Incluido en el plan</b></footer>
-        </article>
-
-      </div>
+      <form id="cform" novalidate>
+        <div class="f-two">
+          <div class="f-row"><label for="f-name" data-i18n="fm.name">Имя</label><input id="f-name" type="text" required></div>
+          <div class="f-row"><label for="f-mail" data-i18n="fm.mail">Email</label><input id="f-mail" type="email" required></div>
+        </div>
+        <div class="f-row">
+          <label for="f-type" data-i18n="fm.type">Что вас интересует</label>
+          <select id="f-type">
+            <option>SMM и ведение социальных сетей</option>
+            <option>Настройка рекламных кампаний</option>
+            <option>Консультация по digital-маркетингу</option>
+            <option>Ведение соцсетей для частных лиц</option>
+            <option>Создание личного бренда в Instagram</option>
+            <option>Консультация по монетизации блога</option>
+            <option>Другая задача</option>
+          </select>
+        </div>
+        <div class="f-row"><label for="f-link" data-i18n="fm.link">Ссылка на профиль или сайт</label><input id="f-link" type="text" placeholder="instagram.com/..."></div>
+        <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Расскажите о задаче</label><textarea id="f-msg"></textarea></div>
+        <label class="consent"><input type="checkbox" id="f-ok" required><span data-i18n="fm.consent">Я прочитал(а) и принимаю Política de Privacidad и обработку моих данных для ответа на это обращение.</span></label>
+        <button class="btn" type="submit" style="width:100%;justify-content:center" data-i18n="fm.send">Отправить</button>
+        <div class="sent" id="fsent" data-i18n="fm.sent">Откроется ваша почтовая программа с готовым письмом. Если этого не произошло — напишите напрямую на hola@bravemarketing.es</div>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= MÉTODO ================= -->
-  <section id="metodo">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.method">Cómo trabajo</span>
-          <h2 class="dsp" data-i18n="mt.h2">Cuatro pasos, cada mes igual</h2>
-        </div>
-        <p data-i18n="mt.p">El orden importa: nada se publica hasta que el plan está aprobado, y nada se repite si los números dicen que no funciona.</p>
-      </div>
-      <div class="steps rv">
-        <div class="step"><span class="n">01</span><h3 data-i18n="m1.t">Diagnóstico</h3><p data-i18n="m1.d">Reviso tus perfiles, tu competencia y a quién quieres llegar de verdad.</p><span class="t" data-i18n="m1.x">45 minutos · gratis</span></div>
-        <div class="step"><span class="n">02</span><h3 data-i18n="m2.t">Estrategia</h3><p data-i18n="m2.d">Plan de contenidos, formatos y calendario, aprobados por escrito.</p><span class="t" data-i18n="m2.x">1 semana</span></div>
-        <div class="step"><span class="n">03</span><h3 data-i18n="m3.t">Producción y publicación</h3><p data-i18n="m3.d">Creo el contenido, tú lo revisas y se publica según el calendario.</p><span class="t" data-i18n="m3.x">Cada semana</span></div>
-        <div class="step"><span class="n">04</span><h3 data-i18n="m4.t">Medición y ajuste</h3><p data-i18n="m4.d">Informe con números reales y decisiones para el mes siguiente.</p><span class="t" data-i18n="m4.x">Cada mes</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PLANES ================= -->
-  <section id="planes">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.plans">Planes</span>
-          <h2 class="dsp" data-i18n="pl.h2">Precios claros desde el primer día</h2>
-        </div>
-        <p data-i18n="pl.p">Sin permanencia. Se factura cada mes desde España y se puede parar avisando con 30 días.</p>
-      </div>
-      <div class="packs rv">
-
-        <article class="pack">
-          <div class="art"><canvas class="pk" data-p="2" data-q="3" data-dark="#8A6524" data-light="#F2DCA8"></canvas></div>
-          <div class="body">
-            <h3 data-i18n="p1.t">Esencial</h3>
-            <div class="price"><b>390 €</b><span data-i18n="lbl.month">/ mes</span></div>
-            <p data-i18n="p1.d">Presencia constante en una red social, sin huecos ni improvisación.</p>
-            <ul>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p1.b1">12 publicaciones al mes</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p1.b2">1 red social a elegir</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p1.b3">Calendario y textos incluidos</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p1.b4">Informe mensual</span></li>
-            </ul>
-            <a class="btn ghost" href="#contacto" data-i18n="cta.pick">Elegir plan</a>
-          </div>
-        </article>
-
-        <article class="pack hi">
-          <div class="art"><span class="tag" data-i18n="lbl.popular">Más elegido</span><canvas class="pk" data-p="3" data-q="4" data-dark="#7A2410" data-light="#FF9070"></canvas></div>
-          <div class="body">
-            <h3 data-i18n="p2.t">Crecimiento</h3>
-            <div class="price"><b>690 €</b><span data-i18n="lbl.month">/ mes</span></div>
-            <p data-i18n="p2.d">Contenido en dos redes más campañas de pago que traen solicitudes.</p>
-            <ul>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p2.b1">20 publicaciones al mes</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p2.b2">2 redes sociales</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p2.b3">Reels y carruseles producidos</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p2.b4">Gestión de Meta Ads</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p2.b5">Informe cada dos semanas</span></li>
-            </ul>
-            <a class="btn" href="#contacto" data-i18n="cta.pick">Elegir plan</a>
-          </div>
-        </article>
-
-        <article class="pack">
-          <div class="art"><canvas class="pk" data-p="2" data-q="5" data-dark="#0B5A42" data-light="#7FE0C0"></canvas></div>
-          <div class="body">
-            <h3 data-i18n="p3.t">Marca personal</h3>
-            <div class="price"><b>890 €</b><span data-i18n="lbl.once">/ proyecto</span></div>
-            <p data-i18n="p3.d">Proyecto puntual para profesionales y autónomos, con formación incluida.</p>
-            <ul>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p3.b1">Posicionamiento y mensaje</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p3.b2">Perfiles reescritos y optimizados</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p3.b3">Plan de contenidos para 3 meses</span></li>
-              <li><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.4l3.2 3.2L13 5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="p3.b4">2 sesiones de formación</span></li>
-            </ul>
-            <a class="btn ghost" href="#contacto" data-i18n="cta.pick">Elegir plan</a>
-          </div>
-        </article>
-
-      </div>
-      <p class="lab" style="margin-top:22px" data-i18n="pl.note">Precios sin IVA · Facturación española · La inversión publicitaria se paga aparte</p>
-    </div>
-  </section>
-
-  <!-- ================= TRABAJOS / PORTAFOLIO ================= -->
-  <section id="trabajos">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.works">Portafolio</span>
-          <h2 class="dsp" data-i18n="wk.h2">Formatos que produzco</h2>
-        </div>
-        <p data-i18n="wk.p">Cada pieza se diseña para un objetivo concreto, no para rellenar el calendario.</p>
-      </div>
-      <div class="works rv">
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="2" data-q="3" data-tilt="0.4" data-dark="#8A6524" data-light="#F4E1B4"></canvas><span class="wf" data-i18n="wk1.f">Reel</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk1.s">Hostelería</span><h3 data-i18n="wk1.t">Una receta en 20 segundos</h3><p data-i18n="wk1.d">Gancho en el primer segundo, subtítulos quemados y una llamada clara al final.</p></div>
-        </article>
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="3" data-q="4" data-tilt="1.1" data-dark="#8E2A11" data-light="#FF9A78"></canvas><span class="wf" data-i18n="wk2.f">Carrusel</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk2.s">Belleza</span><h3 data-i18n="wk2.t">Antes y después</h3><p data-i18n="wk2.d">Seis diapositivas con una sola idea en cada pantalla.</p></div>
-        </article>
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="2" data-q="5" data-tilt="2.0" data-dark="#0B5A42" data-light="#7FE0C0"></canvas><span class="wf" data-i18n="wk3.f">Campaña</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk3.s">E-commerce</span><h3 data-i18n="wk3.t">Meta Ads de temporada</h3><p data-i18n="wk3.d">Tres creatividades y dos públicos a prueba durante catorce días.</p></div>
-        </article>
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="3" data-q="5" data-tilt="2.8" data-dark="#7A2410" data-light="#FF8A64"></canvas><span class="wf" data-i18n="wk4.f">Publicación</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk4.s">Servicios</span><h3 data-i18n="wk4.t">Prueba social</h3><p data-i18n="wk4.d">Una reseña real convertida en pieza gráfica reutilizable.</p></div>
-        </article>
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="2" data-q="7" data-tilt="3.5" data-dark="#7A5A1E" data-light="#EFD79E"></canvas><span class="wf" data-i18n="wk5.f">Story</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk5.s">Retail</span><h3 data-i18n="wk5.t">Encuesta y enlace</h3><p data-i18n="wk5.d">Interacción diaria que alimenta el alcance del perfil.</p></div>
-        </article>
-
-        <article class="work">
-          <div class="wart"><canvas class="wc" data-p="4" data-q="3" data-tilt="4.2" data-dark="#0E6B4E" data-light="#90E8CC"></canvas><span class="wf" data-i18n="wk6.f">Perfil</span></div>
-          <div class="wbody"><span class="lab" data-i18n="wk6.s">Marca personal</span><h3 data-i18n="wk6.t">Bio y destacados</h3><p data-i18n="wk6.d">La primera pantalla que decide si te siguen o no.</p></div>
-        </article>
-
-      </div>
-      <p class="lab" style="margin-top:22px" data-i18n="wk.note">Piezas de muestra de los formatos habituales · Los trabajos de clientes se publican con su permiso</p>
-    </div>
-  </section>
-
-  <!-- ================= SECTORES ================= -->
-  <section id="sectores">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.who">Para quién</span>
-          <h2 class="dsp" data-i18n="wh.h2">Negocios pequeños y profesionales</h2>
-        </div>
-        <p data-i18n="wh.p">Trabajo con equipos de 1 a 20 personas en España y en la Unión Europea, y con particulares que construyen su marca personal.</p>
-      </div>
-      <div class="sectors rv">
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 7h14l-1 10H4L3 7zM7 7V5a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span data-i18n="w1">Restaurantes y hostelería</span></div>
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2.5" y="6" width="15" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M7 6V4.5A2.5 2.5 0 0112 4.5V6" stroke="currentColor" stroke-width="1.7"/></svg><span data-i18n="w2">Tiendas y e-commerce</span></div>
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3l2.1 4.4 4.9.6-3.6 3.4.9 4.8L10 13.9 5.7 16.2l.9-4.8L3 8l4.9-.6L10 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-i18n="w3">Belleza y bienestar</span></div>
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 17V8.4L10 3l7 5.4V17H3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 17v-5h4v5" stroke="currentColor" stroke-width="1.7"/></svg><span data-i18n="w4">Inmobiliarias</span></div>
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="7" r="3.3" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 17c.6-3.6 3.2-5.6 6.5-5.6s5.9 2 6.5 5.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span data-i18n="w5">Profesionales autónomos</span></div>
-        <div class="sector"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3l8 4-8 4-8-4 8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M5 9.2V14c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5V9.2" stroke="currentColor" stroke-width="1.7"/></svg><span data-i18n="w6">Academias y formación</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SOBRE MÍ ================= -->
-  <section id="sobre-mi">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.about">Sobre mí</span>
-          <h2 class="dsp" data-i18n="ab.h2">Quién está detrás de Brave</h2>
-        </div>
-      </div>
-      <div class="about">
-        <div class="bio">
-          <p class="lead" data-i18n="ab.p1">Brave Marketing es un estudio de una sola persona. Llevo redes sociales y campañas de pago para negocios pequeños y para profesionales que venden por su nombre.</p>
-          <p data-i18n="ab.p2">Mi forma de trabajar es sencilla: primero entendemos a quién le hablamos, después definimos el plan de contenidos y solo entonces publicamos. Cada mes revisamos los números juntos y ajustamos lo que haga falta. Nada de publicar por publicar.</p>
-          <p data-i18n="ab.p3">Atiendo en español, inglés y ruso, y estoy aprendiendo catalán para el día a día en Barcelona. Facturación española, contrato por escrito en cada proyecto y comunicación directa conmigo, sin intermediarios ni gestores de cuenta.</p>
-          <div class="tl">
-            <div class="tl-item"><span class="y">2017 — 2020</span><div><h4 data-i18n="tl1.t">Community manager</h4><p data-i18n="tl1.d">Agencia de marketing. Cuentas de hostelería y retail, hasta 8 perfiles a la vez.</p></div></div>
-            <div class="tl-item"><span class="y">2020 — 2023</span><div><h4 data-i18n="tl2.t">SMM manager</h4><p data-i18n="tl2.d">Marca de e-commerce. Contenido, campañas de pago y equipo de 4 personas.</p></div></div>
-            <div class="tl-item"><span class="y">2023 — 2025</span><div><h4 data-i18n="tl3.t">Freelance</h4><p data-i18n="tl3.d">Redes y campañas para pymes de España y la Unión Europea.</p></div></div>
-            <div class="tl-item"><span class="y">2026</span><div><h4 data-i18n="tl4.t">Alta como autónomo en España</h4><p data-i18n="tl4.d">Actividad declarada en el epígrafe IAE 844 — publicidad y relaciones públicas.</p></div></div>
-          </div>
-        </div>
-        <div>
-          <div class="panel">
-            <h4 data-i18n="pan.tools">Herramientas de trabajo</h4>
-            <div class="chips">
-              <span class="chip">Meta Business Suite</span><span class="chip">Google Ads</span><span class="chip">GA4</span>
-              <span class="chip">Looker Studio</span><span class="chip">Canva</span><span class="chip">CapCut</span>
-              <span class="chip">Later</span><span class="chip">Notion</span><span class="chip">Figma</span>
-            </div>
-          </div>
-          <div class="panel">
-            <h4 data-i18n="pan.langs">Idiomas de trabajo</h4>
-            <div class="langbars">
-              <div class="lb"><div class="top"><span data-i18n="lg.es">Español</span><em>B2 · DELE</em></div><div class="bar"><i style="width:74%"></i></div></div>
-              <div class="lb"><div class="top"><span data-i18n="lg.en">Inglés</span><em>C1</em></div><div class="bar"><i style="width:88%"></i></div></div>
-              <div class="lb"><div class="top"><span data-i18n="lg.ca">Catalán</span><em data-i18n="lg.basic">Básico · en progreso</em></div><div class="bar"><i style="width:38%"></i></div></div>
-              <div class="lb"><div class="top"><span data-i18n="lg.ru">Ruso</span><em data-i18n="lg.native">Nativo</em></div><div class="bar"><i style="width:100%"></i></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= FAQ ================= -->
-  <section id="faq">
-    <div class="wrap">
-      <div class="shead">
-        <div>
-          <span class="lab" data-i18n="lab.faq">Preguntas</span>
-          <h2 class="dsp" data-i18n="fq.h2">Lo que preguntan antes de empezar</h2>
-        </div>
-      </div>
-      <div class="faq rv">
-        <details><summary data-i18n="q1">¿Trabajas con clientes fuera de Barcelona?</summary><div class="ans" data-i18n="a1">Sí. Trabajo en remoto con toda España y con clientes de la Unión Europea. En Barcelona y alrededores también hago la reunión inicial en persona si lo prefieres.</div></details>
-        <details><summary data-i18n="q2">¿Hay permanencia en los planes mensuales?</summary><div class="ans" data-i18n="a2">No. Los planes se facturan mes a mes y se pueden parar avisando con 30 días de antelación. El contenido ya producido y los accesos se quedan contigo.</div></details>
-        <details><summary data-i18n="q3">¿El presupuesto de publicidad está incluido?</summary><div class="ans" data-i18n="a3">No. La inversión en Meta Ads o Google Ads se paga aparte y directamente desde tu cuenta, para que veas cada euro. Mi trabajo es la gestión de esas campañas.</div></details>
-        <details><summary data-i18n="q4">¿Emites factura?</summary><div class="ans" data-i18n="a4">Sí. Estoy dado de alta como autónomo en España, en el epígrafe IAE 844, y emito factura con IVA. Cada colaboración lleva contrato de prestación de servicios por escrito.</div></details>
-        <details><summary data-i18n="q5">¿Necesito fotógrafo o estudio?</summary><div class="ans" data-i18n="a5">En la mayoría de casos no. Trabajo con material grabado con móvil, contenido de archivo y diseño gráfico. Si el proyecto pide producción profesional, lo decimos antes y se presupuesta aparte.</div></details>
-        <details><summary data-i18n="q6">¿Cuándo se ven resultados?</summary><div class="ans" data-i18n="a6">En publicidad de pago, las primeras solicitudes suelen llegar en 2–3 semanas. En contenido orgánico el plazo realista son 3 meses. No prometo cifras concretas antes de ver tus datos.</div></details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CONTACTO ================= -->
-  <section id="contacto">
-    <div class="wrap">
-      <div class="contact">
-        <canvas class="ck" id="k4" aria-hidden="true"></canvas>
-        <div>
-          <div class="shead" style="display:block">
-            <span class="lab" data-i18n="lab.contact">Contacto</span>
-            <h2 class="dsp" data-i18n="co.h2">Empecemos por una auditoría gratis</h2>
-          </div>
-          <p style="color:#B4B0A7;max-width:42ch;font-size:16px" data-i18n="co.p">Reviso tus perfiles y te digo por escrito qué cambiaría, sin compromiso. Respondo en menos de 24 horas laborables.</p>
-          <div class="ways">
-            <a class="way" href="mailto:hola@bravemarketing.es">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2.6 5.4L10 11l7.4-5.6" stroke="currentColor" stroke-width="1.6"/></svg></span>
-              <span><span class="k">Email</span><span class="v">hola@bravemarketing.es</span></span>
-            </a>
-            <a class="way" href="#contacto">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 17l1.2-3.6A7 7 0 1110 17H3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-              <span><span class="k">WhatsApp</span><span class="v">+34 600 00 00 00</span></span>
-            </a>
-            <a class="way" href="#contacto">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M17.5 3.5L2.8 9.2l4 1.4 1.6 4.6 2.2-3 3.7 2.7 3.2-11.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-              <span><span class="k">Telegram</span><span class="v">@bravemarketing</span></span>
-            </a>
-            <a class="way" href="#contacto">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 18s6.2-5.1 6.2-9.4A6.2 6.2 0 003.8 8.6C3.8 12.9 10 18 10 18z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="10" cy="8.4" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg></span>
-              <span><span class="k" data-i18n="co.k4">Ubicación</span><span class="v" data-i18n="co.v4">Barcelona, España</span></span>
-            </a>
-            <a class="way" href="#sobre-mi">
-              <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.4" stroke="currentColor" stroke-width="1.6"/><path d="M2.6 10h14.8M10 2.6c3.7 3.9 3.7 10.9 0 14.8-3.7-3.9-3.7-10.9 0-14.8z" stroke="currentColor" stroke-width="1.6"/></svg></span>
-              <span><span class="k" data-i18n="co.k5">Idiomas de trabajo</span><span class="v" data-i18n="co.v5">Español · Català · English · Русский</span></span>
-            </a>
-          </div>
-        </div>
-        <form id="cform" novalidate>
-          <div class="f-two">
-            <div class="f-row"><label for="f-name" data-i18n="fm.name">Nombre</label><input id="f-name" type="text" required></div>
-            <div class="f-row"><label for="f-mail" data-i18n="fm.mail">Email</label><input id="f-mail" type="email" required></div>
-          </div>
-          <div class="f-row">
-            <label for="f-type" data-i18n="fm.type">Qué te interesa</label>
-            <select id="f-type">
-              <option data-i18n="fm.o1">Gestión de redes sociales</option>
-              <option data-i18n="fm.o2">Publicidad de pago</option>
-              <option data-i18n="fm.o3">Estrategia y contenido</option>
-              <option data-i18n="fm.o4">Marca personal</option>
-              <option data-i18n="fm.o5">Auditoría gratuita</option>
-              <option data-i18n="fm.o6">Todavía no lo tengo claro</option>
-            </select>
-          </div>
-          <div class="f-row"><label for="f-link" data-i18n="fm.link">Enlace a tu perfil o web</label><input id="f-link" type="text" placeholder="instagram.com/..."></div>
-          <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Cuéntame tu situación</label><textarea id="f-msg"></textarea></div>
-          <label class="consent"><input type="checkbox" id="f-ok" required><span data-i18n="fm.consent">He leído y acepto la Política de Privacidad y el tratamiento de mis datos para responder a esta consulta.</span></label>
-          <button class="btn" type="submit" style="width:100%;justify-content:center" data-i18n="fm.send">Enviar consulta</button>
-          <div class="sent" id="fsent" data-i18n="fm.sent">Se abrirá tu programa de correo con el mensaje preparado. Si no ocurre, escribe directamente a hola@bravemarketing.es</div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-</main>
-
+<!-- ================= FOOTER ================= -->
 <footer class="site">
   <div class="wrap">
     <div class="ft">
       <div>
         <a class="brand" href="#top" style="display:inline-flex">
-          <svg viewBox="0 0 26 26" fill="none" aria-hidden="true">
-            <ellipse cx="13" cy="13" rx="6" ry="11.2" transform="rotate(-32 13 13)" stroke="currentColor" stroke-width="2.1"/>
-            <ellipse cx="13" cy="13" rx="6" ry="11.2" transform="rotate(32 13 13)" stroke="#F0522B" stroke-width="2.1"/>
+          <svg viewBox="0 0 26 26" aria-hidden="true" fill="none" stroke-width="2.1">
+            <ellipse cx="13" cy="13" rx="5" ry="9.4" transform="rotate(-32 13 13)" stroke="#F6F5F1"/>
+            <ellipse cx="13" cy="13" rx="5" ry="9.4" transform="rotate(32 13 13)" stroke="#F0522B"/>
           </svg>
           <span class="wm"><b>Brave</b><i>Marketing</i></span>
         </a>
-        <p class="blurb" data-i18n="ft.blurb">SMM y marketing digital para empresas y particulares. Trabajador autónomo con alta en España.</p>
+        <p class="blurb" data-i18n="ft.blurb">Digital-маркетинг для бизнеса и личных брендов: соцсети, реклама и личный бренд.</p>
       </div>
       <div>
-        <h4 data-i18n="ft.nav">Secciones</h4>
+        <h4 data-i18n="ft.sections">Разделы</h4>
         <ul>
-          <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-          <li><a href="#metodo" data-i18n="nav.method">Método</a></li>
-          <li><a href="#planes" data-i18n="nav.plans">Planes</a></li>
-          <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+          <li><a href="#uslugi" data-i18n="nav.services">Услуги</a></li>
+          <li><a href="#preimushchestva" data-i18n="nav.adv">Преимущества</a></li>
+          <li><a href="#o-mne" data-i18n="nav.about">Обо мне</a></li>
+          <li><a href="#kontakty" data-i18n="nav.contact">Контакты</a></li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="ft.contact">Contacto</h4>
+        <h4 data-i18n="ft.contacts">Контакты</h4>
         <ul>
           <li><a href="mailto:hola@bravemarketing.es">hola@bravemarketing.es</a></li>
-          <li><a href="#contacto">+34 600 00 00 00</a></li>
-          <li><a href="#contacto">@bravemarketing</a></li>
-          <li><a href="#contacto" data-i18n="co.v4">Barcelona, España</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="ft.legalh">Legal</h4>
-        <ul>
-          <li><button type="button" data-doc="aviso">Aviso Legal</button></li>
-          <li><button type="button" data-doc="priv">Política de Privacidad</button></li>
-          <li><button type="button" data-doc="cookies">Política de Cookies</button></li>
+          <li><a href="#kontakty">+34 ___ ___ ___</a></li>
+          <li><a href="#kontakty">@bravemarketing</a></li>
         </ul>
       </div>
     </div>
-    <div class="ftbig" aria-hidden="true">Brave*</div>
+
+    <div class="ftbig" aria-hidden="true">Brave</div>
+
     <div class="legal">
-      <span>© <span id="yr">2026</span> Brave Marketing · <span data-i18n="ft.nif">NIF 00000000-X</span></span>
-      <span class="grp"><span data-i18n="ft.made">Hecho en Barcelona</span></span>
+      <span data-i18n="ft.copy">© 2026 Brave Marketing</span>
+      <span class="grp">
+        <button type="button" data-doc="aviso">Aviso Legal</button>
+        <button type="button" data-doc="priv">Política de Privacidad</button>
+        <button type="button" data-doc="cookies">Política de Cookies</button>
+      </span>
     </div>
   </div>
 </footer>
 
+<!-- ================= MODAL ================= -->
 <div class="overlay" id="ov" role="dialog" aria-modal="true" aria-labelledby="ovt">
   <div class="doc">
-    <div class="doc-hd"><h3 id="ovt">Aviso Legal</h3><button type="button" id="ovx" aria-label="Cerrar">✕</button></div>
+    <div class="doc-hd"><h3 id="ovt">Aviso Legal</h3><button type="button" id="ovx" aria-label="Cerrar">&#10005;</button></div>
     <div class="doc-body" id="ovb"></div>
   </div>
 </div>
 
-<span class="sr" data-i18n="legal.note">Plantilla — sustituye los campos resaltados por tus datos reales antes de publicar. El texto se mantiene en español porque así lo exige la normativa española.</span>
-
 <script>
 /* ==================================================================
-   1. ABSTRACCIÓN — torus knot renderer (shared engine)
+   1. Torus knot renderer (фоновая графика)
    ================================================================== */
 function hexRgb(h){h=h.replace("#","");return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
 function mixRgb(a,b,t){return "rgb("+Math.round(a[0]+(b[0]-a[0])*t)+","+Math.round(a[1]+(b[1]-a[1])*t)+","+Math.round(a[2]+(b[2]-a[2])*t)+")";}
@@ -868,22 +862,6 @@ addKnot("k2",{p:3,q:4,R:72,r:30,thick:23,tilt:2.1,dark:"#0B5A42",light:"#7FE0C0"
 addKnot("k3",{p:2,q:5,R:70,r:30,thick:22,tilt:4.0,dark:"#8E2A11",light:"#FF9A78"},true);
 addKnot("k4",{p:3,q:2,R:76,r:32,thick:24,tilt:1.2,dark:"#7A2410",light:"#FF8A64"},false);
 
-Array.prototype.forEach.call(document.querySelectorAll("canvas.wc"),function(cv){
-  addKnot(cv,{
-    p:parseInt(cv.dataset.p,10),q:parseInt(cv.dataset.q,10),
-    R:82,r:34,thick:24,tilt:parseFloat(cv.dataset.tilt||"1"),samples:320,
-    dark:cv.dataset.dark,light:cv.dataset.light
-  },false);
-});
-
-Array.prototype.forEach.call(document.querySelectorAll("canvas.pk"),function(cv){
-  addKnot(cv,{
-    p:parseInt(cv.dataset.p,10),q:parseInt(cv.dataset.q,10),
-    R:90,r:38,thick:26,tilt:1.4,samples:340,
-    dark:cv.dataset.dark,light:cv.dataset.light
-  },false);
-});
-
 function resizeAll(){
   animated.concat(statics).forEach(function(k){k.resize();});
   statics.forEach(function(k){k.draw(0.9);});
@@ -898,7 +876,7 @@ function frame(){
   }
 }
 
-/* pause hero animation when scrolled away */
+/* пауза анимации, когда герой ушёл из вида */
 if("IntersectionObserver" in window){
   var heroEl=document.querySelector(".hero");
   if(heroEl){
@@ -915,196 +893,7 @@ window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(resiz
 if(document.fonts&&document.fonts.ready){document.fonts.ready.then(resizeAll);}
 
 /* ==================================================================
-   2. i18n — ES base, EN, RU
-   ================================================================== */
-var I18N={es:{},en:{},ca:{}};
-
-I18N.en={
-"draft":"Draft",
-"nav.services":"Services","nav.method":"Method","nav.plans":"Plans","nav.works":"Work","nav.about":"About","nav.faq":"FAQ",
-"lab.works":"Portfolio",
-"wk.h2":"Formats I produce",
-"wk.p":"Every piece is designed for one specific goal, not to fill up the calendar.",
-"wk.note":"Sample pieces of the formats I work with · Client work is published with their permission",
-"wk1.f":"Reel","wk1.s":"Hospitality","wk1.t":"A recipe in 20 seconds","wk1.d":"A hook in the first second, burned-in subtitles and one clear call at the end.",
-"wk2.f":"Carousel","wk2.s":"Beauty","wk2.t":"Before and after","wk2.d":"Six slides with a single idea on each screen.",
-"wk3.f":"Campaign","wk3.s":"E-commerce","wk3.t":"Seasonal Meta Ads","wk3.d":"Three creatives and two audiences tested over fourteen days.",
-"wk4.f":"Post","wk4.s":"Services","wk4.t":"Social proof","wk4.d":"A real review turned into a reusable graphic piece.",
-"wk5.f":"Story","wk5.s":"Retail","wk5.t":"Poll and link","wk5.d":"Daily interaction that feeds the profile's reach.",
-"wk6.f":"Profile","wk6.s":"Personal brand","wk6.t":"Bio and highlights","wk6.d":"The first screen that decides whether people follow you.",
-"lg.ca":"Catalan","lg.basic":"Basic · improving",
-"co.k5":"Working languages","co.v5":"Spanish · Catalan · English · Russian",
-"cta.short":"Get in touch","cta.audit":"Get a free audit","cta.plans":"See plans and prices","cta.pick":"Choose plan",
-"hero.tag":"SMM · Content · Advertising",
-"hero.h1a":"SMM and ","hero.h1b":"digital","hero.h1c":" marketing for businesses and individuals.",
-"hero.sub":"I run social media, content and paid campaigns for small businesses and for professionals who sell under their own name. A clear plan, a calendar you approve, and real numbers every month.",
-"st.k1":"Activity","st.v1":"Digital marketing and SMM",
-"st.k2":"Spanish IAE code","st.v2":"Advertising and PR",
-"st.k3":"Location","st.v3":"Barcelona · all of Spain",
-"st.k4":"Languages","st.v4":"Spanish · Catalan · English",
-"st.k5":"Engagement","st.v5":"Subscription or project",
-"st.k6":"Availability","st.v6":"Slots open",
-"lab.services":"Services","lab.method":"How I work","lab.plans":"Plans","lab.who":"Who for","lab.about":"About","lab.faq":"Questions","lab.contact":"Contact",
-"lbl.format":"Format","lbl.term":"Timeline","lbl.month":"/ month","lbl.once":"/ project","lbl.popular":"Most chosen",
-"sv.h2":"Six services, no vague bundles",
-"sv.p":"Each service is booked on its own or inside a monthly plan. The scope is agreed in writing before anything starts.",
-"s1.t":"Social media management","s1.d":"Consistent posting and a living community on Instagram, TikTok and LinkedIn.","s1.b1":"A monthly calendar you approve","s1.b2":"Posting and replying to comments","s1.b3":"A results report every month","s1.f":"Monthly subscription",
-"s2.t":"Strategy and content plan","s2.d":"What to post, in what format and in what tone — decided before anything is filmed.","s2.b1":"Competitor and audience analysis","s2.b2":"Content pillars and tone of voice","s2.b3":"Scripts for Reels and carousels","s2.f":"2 weeks",
-"s3.t":"Paid advertising","s3.d":"Meta Ads and Google Ads campaigns with the budget under control.","s3.b1":"Targeting and creatives","s3.b2":"A/B testing of ads","s3.b3":"Cost per result reviewed weekly","s3.f":"From 1 week",
-"s4.t":"Content production","s4.d":"Reels, carousels and copy ready to publish — no expensive photo shoot.","s4.b1":"Script, editing and subtitles","s4.b2":"Carousel design","s4.b3":"Copy adapted to each network","s4.f":"By package",
-"s5.t":"Personal branding","s5.d":"For professionals and freelancers who sell under their own name.","s5.b1":"Positioning and core message","s5.b2":"Optimised profile and a bio that converts","s5.b3":"Your own posting plan","s5.f":"3–4 weeks",
-"s6.t":"Analytics and reporting","s6.d":"What works and what doesn't, with numbers and one concrete decision at the end.","s6.b1":"Metrics dashboard in Looker Studio","s6.b2":"Monthly report with commentary","s6.b3":"Recommendations for the month ahead","s6.f":"Included in the plan",
-"mt.h2":"Four steps, the same every month",
-"mt.p":"The order matters: nothing gets published until the plan is approved, and nothing gets repeated if the numbers say it didn't work.",
-"m1.t":"Diagnosis","m1.d":"I review your profiles, your competitors and who you actually want to reach.","m1.x":"45 minutes · free",
-"m2.t":"Strategy","m2.d":"Content plan, formats and calendar, approved in writing.","m2.x":"1 week",
-"m3.t":"Production and posting","m3.d":"I create the content, you review it, and it goes out on schedule.","m3.x":"Every week",
-"m4.t":"Measure and adjust","m4.d":"A report with real numbers and decisions for the month ahead.","m4.x":"Every month",
-"pl.h2":"Clear prices from day one",
-"pl.p":"No lock-in. Invoiced monthly from Spain and cancellable with 30 days' notice.",
-"p1.t":"Essential","p1.d":"A steady presence on one social network, with no gaps and no improvising.","p1.b1":"12 posts per month","p1.b2":"1 network of your choice","p1.b3":"Calendar and copy included","p1.b4":"Monthly report",
-"p2.t":"Growth","p2.d":"Content on two networks plus paid campaigns that bring in enquiries.","p2.b1":"20 posts per month","p2.b2":"2 social networks","p2.b3":"Reels and carousels produced","p2.b4":"Meta Ads management","p2.b5":"Report every two weeks",
-"p3.t":"Personal brand","p3.d":"A one-off project for professionals and freelancers, training included.","p3.b1":"Positioning and message","p3.b2":"Profiles rewritten and optimised","p3.b3":"A 3-month content plan","p3.b4":"2 training sessions",
-"pl.note":"Prices exclude VAT · Spanish invoicing · Ad spend is paid separately",
-"wh.h2":"Small businesses and professionals",
-"wh.p":"I work with teams of 1 to 20 people in Spain and the European Union, and with individuals building a personal brand.",
-"w1":"Restaurants and hospitality","w2":"Shops and e-commerce","w3":"Beauty and wellness","w4":"Real estate","w5":"Freelance professionals","w6":"Academies and training",
-"ab.h2":"Who is behind Brave",
-"ab.p1":"Brave Marketing is a one-person studio. I run social media and paid campaigns for small businesses and for professionals who sell under their own name.",
-"ab.p2":"My way of working is simple: first we understand who we're talking to, then we define the content plan, and only then do we publish. Every month we go through the numbers together and adjust what needs adjusting. No posting for the sake of posting.",
-"ab.p3":"I work in Spanish, English and Russian, and I'm learning Catalan for everyday life in Barcelona. Spanish invoicing, a written contract on every project, and you talk directly to me — no middlemen, no account managers.",
-"tl1.t":"Community manager","tl1.d":"Marketing agency. Hospitality and retail accounts, up to 8 profiles at a time.",
-"tl2.t":"SMM manager","tl2.d":"E-commerce brand. Content, paid campaigns and a team of 4.",
-"tl3.t":"Freelance","tl3.d":"Social media and campaigns for small companies across Spain and the EU.",
-"tl4.t":"Registered self-employed in Spain","tl4.d":"Activity declared under IAE code 844 — advertising and public relations.",
-"pan.tools":"Working tools","pan.langs":"Working languages",
-"lg.es":"Spanish","lg.en":"English","lg.ru":"Russian","lg.native":"Native",
-"fq.h2":"What people ask before starting",
-"q1":"Do you work with clients outside Barcelona?","a1":"Yes. I work remotely across Spain and with clients in the European Union. In and around Barcelona I'm also happy to do the first meeting in person.",
-"q2":"Is there a minimum contract on the monthly plans?","a2":"No. Plans are invoiced month by month and can be stopped with 30 days' notice. The content already produced and all accesses stay with you.",
-"q3":"Is the ad budget included?","a3":"No. Meta Ads or Google Ads spend is paid separately and directly from your own account, so you see every euro. My work is managing those campaigns.",
-"q4":"Do you issue invoices?","a4":"Yes. I'm registered as self-employed in Spain under IAE code 844 and invoice with VAT. Every engagement comes with a written service agreement.",
-"q5":"Do I need a photographer or a studio?","a5":"In most cases, no. I work with phone-shot footage, stock material and graphic design. If a project genuinely needs professional production, we say so upfront and quote it separately.",
-"q6":"When will I see results?","a6":"With paid advertising, the first enquiries usually arrive within 2–3 weeks. For organic content the realistic horizon is 3 months. I don't promise specific figures before seeing your data.",
-"co.h2":"Let's start with a free audit",
-"co.p":"I'll review your profiles and tell you in writing what I would change, with no obligation. I reply within 24 working hours.",
-"co.k4":"Location","co.v4":"Barcelona, Spain",
-"fm.name":"Name","fm.mail":"Email","fm.type":"What you're after","fm.link":"Link to your profile or website","fm.msg":"Tell me about your situation",
-"fm.o1":"Social media management","fm.o2":"Paid advertising","fm.o3":"Strategy and content","fm.o4":"Personal branding","fm.o5":"Free audit","fm.o6":"Not sure yet",
-"fm.consent":"I have read and accept the Privacy Policy and the processing of my data to answer this enquiry.",
-"fm.send":"Send enquiry","fm.sent":"Your email app will open with the message ready. If it doesn't, write directly to hola@bravemarketing.es",
-"ft.blurb":"SMM and digital marketing for businesses and individuals. Registered self-employed in Spain.",
-"ft.nav":"Sections","ft.contact":"Contact","ft.legalh":"Legal","ft.nif":"Tax ID 00000000-X","ft.made":"Made in Barcelona",
-"legal.note":"Template — replace the highlighted fields with your real details before publishing. The text stays in Spanish because Spanish law requires it."
-};
-
-I18N.ca={
-"draft":"Esborrany",
-"nav.services":"Serveis","nav.method":"Mètode","nav.plans":"Plans","nav.works":"Treballs","nav.about":"Sobre mi","nav.faq":"FAQ",
-"cta.short":"Contactar","cta.audit":"Demana una auditoria gratuïta","cta.plans":"Veure plans i preus","cta.pick":"Triar pla",
-"hero.tag":"SMM · Contingut · Publicitat",
-"hero.h1a":"SMM i màrqueting ","hero.h1b":"digital","hero.h1c":" per a empreses i particulars.",
-"hero.sub":"Porto xarxes socials, contingut i campanyes de pagament per a negocis petits i per a professionals que venen amb el seu propi nom. Pla clar, calendari que aproves tu i números cada mes.",
-"st.k1":"Activitat","st.v1":"Màrqueting digital i SMM",
-"st.k2":"Epígraf IAE","st.v2":"Publicitat i RP",
-"st.k3":"Ubicació","st.v3":"Barcelona · tot Espanya",
-"st.k4":"Idiomes","st.v4":"Espanyol · Català · English",
-"st.k5":"Modalitat","st.v5":"Subscripció o projecte",
-"st.k6":"Estat","st.v6":"Places obertes",
-"lab.services":"Serveis","lab.method":"Com treballo","lab.plans":"Plans","lab.works":"Portafolis","lab.who":"Per a qui","lab.about":"Sobre mi","lab.faq":"Preguntes","lab.contact":"Contacte",
-"lbl.format":"Format","lbl.term":"Termini","lbl.month":"/ mes","lbl.once":"/ projecte","lbl.popular":"Més triat",
-"sv.h2":"Sis serveis, sense paquets vagues",
-"sv.p":"Cada servei es contracta per separat o dins d'un pla mensual. L'abast es fixa per escrit abans de començar.",
-"s1.t":"Gestió de xarxes socials","s1.d":"Publicació constant i comunitat viva a Instagram, TikTok i LinkedIn.","s1.b1":"Calendari mensual que aproves tu","s1.b2":"Publicació i resposta als comentaris","s1.b3":"Informe de resultats cada mes","s1.f":"Subscripció mensual",
-"s2.t":"Estratègia i pla de continguts","s2.d":"Què publicar, en quin format i amb quin to — decidit abans de gravar res.","s2.b1":"Anàlisi de competència i públic","s2.b2":"Línies temàtiques i to de veu","s2.b3":"Guions per a Reels i carrusels","s2.f":"2 setmanes",
-"s3.t":"Publicitat de pagament","s3.d":"Campanyes a Meta Ads i Google Ads amb el pressupost sota control.","s3.b1":"Segmentació i creativitats","s3.b2":"Proves A/B d'anuncis","s3.b3":"Cost per resultat revisat cada setmana","s3.f":"Des d'1 setmana",
-"s4.t":"Producció de contingut","s4.d":"Reels, carrusels i textos a punt per publicar, sense sessió de fotos cara.","s4.b1":"Guió, muntatge i subtítols","s4.b2":"Disseny de carrusels","s4.b3":"Textos adaptats a cada xarxa","s4.f":"Per paquet",
-"s5.t":"Marca personal","s5.d":"Per a professionals i autònoms que venen amb el seu propi nom.","s5.b1":"Posicionament i missatge central","s5.b2":"Perfil optimitzat i bio que converteix","s5.b3":"Pla de publicacions propi","s5.f":"3–4 setmanes",
-"s6.t":"Analítica i informes","s6.d":"Què funciona i què no, amb números i una decisió concreta al final.","s6.b1":"Panell de mètriques a Looker Studio","s6.b2":"Informe mensual comentat","s6.b3":"Recomanacions per al mes següent","s6.f":"Inclòs al pla",
-"mt.h2":"Quatre passos, iguals cada mes",
-"mt.p":"L'ordre importa: no es publica res fins que el pla està aprovat, i no es repeteix res si els números diuen que no ha funcionat.",
-"m1.t":"Diagnòstic","m1.d":"Reviso els teus perfils, la teva competència i a qui vols arribar de debò.","m1.x":"45 minuts · gratis",
-"m2.t":"Estratègia","m2.d":"Pla de continguts, formats i calendari, aprovats per escrit.","m2.x":"1 setmana",
-"m3.t":"Producció i publicació","m3.d":"Creo el contingut, tu el revises i es publica segons el calendari.","m3.x":"Cada setmana",
-"m4.t":"Mesura i ajust","m4.d":"Informe amb números reals i decisions per al mes següent.","m4.x":"Cada mes",
-"pl.h2":"Preus clars des del primer dia",
-"pl.p":"Sense permanència. Es factura cada mes des d'Espanya i es pot aturar avisant amb 30 dies.",
-"p1.t":"Essencial","p1.d":"Presència constant en una xarxa social, sense buits ni improvisació.","p1.b1":"12 publicacions al mes","p1.b2":"1 xarxa social a triar","p1.b3":"Calendari i textos inclosos","p1.b4":"Informe mensual",
-"p2.t":"Creixement","p2.d":"Contingut en dues xarxes més campanyes de pagament que porten sol·licituds.","p2.b1":"20 publicacions al mes","p2.b2":"2 xarxes socials","p2.b3":"Reels i carrusels produïts","p2.b4":"Gestió de Meta Ads","p2.b5":"Informe cada dues setmanes",
-"p3.t":"Marca personal","p3.d":"Projecte puntual per a professionals i autònoms, amb formació inclosa.","p3.b1":"Posicionament i missatge","p3.b2":"Perfils reescrits i optimitzats","p3.b3":"Pla de continguts per a 3 mesos","p3.b4":"2 sessions de formació",
-"pl.note":"Preus sense IVA · Facturació espanyola · La inversió publicitària es paga a part",
-"wk.h2":"Formats que produeixo",
-"wk.p":"Cada peça es dissenya per a un objectiu concret, no per omplir el calendari.",
-"wk.note":"Peces de mostra dels formats habituals · Els treballs de clients es publiquen amb el seu permís",
-"wk1.f":"Reel","wk1.s":"Hostaleria","wk1.t":"Una recepta en 20 segons","wk1.d":"Ganxo al primer segon, subtítols incrustats i una crida clara al final.",
-"wk2.f":"Carrusel","wk2.s":"Bellesa","wk2.t":"Abans i després","wk2.d":"Sis diapositives amb una sola idea a cada pantalla.",
-"wk3.f":"Campanya","wk3.s":"E-commerce","wk3.t":"Meta Ads de temporada","wk3.d":"Tres creativitats i dos públics a prova durant catorze dies.",
-"wk4.f":"Publicació","wk4.s":"Serveis","wk4.t":"Prova social","wk4.d":"Una ressenya real convertida en peça gràfica reutilitzable.",
-"wk5.f":"Story","wk5.s":"Retail","wk5.t":"Enquesta i enllaç","wk5.d":"Interacció diària que alimenta l'abast del perfil.",
-"wk6.f":"Perfil","wk6.s":"Marca personal","wk6.t":"Bio i destacats","wk6.d":"La primera pantalla que decideix si et segueixen o no.",
-"wh.h2":"Negocis petits i professionals",
-"wh.p":"Treballo amb equips d'1 a 20 persones a Espanya i a la Unió Europea, i amb particulars que construeixen la seva marca personal.",
-"w1":"Restaurants i hostaleria","w2":"Botigues i e-commerce","w3":"Bellesa i benestar","w4":"Immobiliàries","w5":"Professionals autònoms","w6":"Acadèmies i formació",
-"ab.h2":"Qui hi ha darrere de Brave",
-"ab.p1":"Brave Marketing és un estudi d'una sola persona. Porto xarxes socials i campanyes de pagament per a negocis petits i per a professionals que venen amb el seu nom.",
-"ab.p2":"La meva manera de treballar és senzilla: primer entenem a qui parlem, després definim el pla de continguts i només llavors publiquem. Cada mes revisem els números junts i ajustem el que calgui. Res de publicar per publicar.",
-"ab.p3":"Atenc en espanyol, anglès i rus, i estic aprenent català per al dia a dia a Barcelona. Facturació espanyola, contracte per escrit a cada projecte i comunicació directa amb mi, sense intermediaris ni gestors de comptes.",
-"tl1.t":"Community manager","tl1.d":"Agència de màrqueting. Comptes d'hostaleria i retail, fins a 8 perfils alhora.",
-"tl2.t":"SMM manager","tl2.d":"Marca d'e-commerce. Contingut, campanyes de pagament i equip de 4 persones.",
-"tl3.t":"Autònom","tl3.d":"Xarxes i campanyes per a pimes d'Espanya i de la Unió Europea.",
-"tl4.t":"Alta com a autònom a Espanya","tl4.d":"Activitat declarada a l'epígraf IAE 844 — publicitat i relacions públiques.",
-"pan.tools":"Eines de treball","pan.langs":"Idiomes de treball",
-"lg.es":"Espanyol","lg.en":"Anglès","lg.ca":"Català","lg.ru":"Rus","lg.native":"Natiu","lg.basic":"Bàsic · en progrés",
-"fq.h2":"El que pregunten abans de començar",
-"q1":"Treballes amb clients fora de Barcelona?","a1":"Sí. Treballo en remot amb tot Espanya i amb clients de la Unió Europea. A Barcelona i rodalies també faig la reunió inicial en persona si ho prefereixes.",
-"q2":"Hi ha permanència als plans mensuals?","a2":"No. Els plans es facturen mes a mes i es poden aturar avisant amb 30 dies d'antelació. El contingut ja produït i tots els accessos es queden amb tu.",
-"q3":"El pressupost de publicitat està inclòs?","a3":"No. La inversió a Meta Ads o Google Ads es paga a part i directament des del teu compte, perquè en vegis cada euro. La meva feina és la gestió d'aquestes campanyes.",
-"q4":"Emets factura?","a4":"Sí. Estic donat d'alta com a autònom a Espanya, a l'epígraf IAE 844, i emeto factura amb IVA. Cada col·laboració porta contracte de prestació de serveis per escrit.",
-"q5":"Necessito fotògraf o estudi?","a5":"En la majoria de casos, no. Treballo amb material gravat amb mòbil, contingut d'arxiu i disseny gràfic. Si el projecte demana producció professional, ho diem abans i es pressuposta a part.",
-"q6":"Quan es veuen resultats?","a6":"En publicitat de pagament, les primeres sol·licituds solen arribar en 2–3 setmanes. En contingut orgànic el termini realista són 3 mesos. No prometo xifres concretes abans de veure les teves dades.",
-"co.h2":"Comencem amb una auditoria gratuïta",
-"co.p":"Reviso els teus perfils i et dic per escrit què canviaria, sense compromís. Responc en menys de 24 hores laborables.",
-"co.k4":"Ubicació","co.v4":"Barcelona, Espanya",
-"co.k5":"Idiomes de treball","co.v5":"Espanyol · Català · English · Rus",
-"fm.name":"Nom","fm.mail":"Correu","fm.type":"Què t'interessa","fm.link":"Enllaç al teu perfil o web","fm.msg":"Explica'm la teva situació",
-"fm.o1":"Gestió de xarxes socials","fm.o2":"Publicitat de pagament","fm.o3":"Estratègia i contingut","fm.o4":"Marca personal","fm.o5":"Auditoria gratuïta","fm.o6":"Encara no ho tinc clar",
-"fm.consent":"He llegit i accepto la Política de Privacitat i el tractament de les meves dades per respondre aquesta consulta.",
-"fm.send":"Enviar consulta","fm.sent":"S'obrirà el teu programa de correu amb el missatge preparat. Si no passa, escriu directament a hola@bravemarketing.es",
-"ft.blurb":"SMM i màrqueting digital per a empreses i particulars. Treballador autònom donat d'alta a Espanya.",
-"ft.nav":"Seccions","ft.contact":"Contacte","ft.legalh":"Legal","ft.nif":"NIF 00000000-X","ft.made":"Fet a Barcelona",
-"legal.note":"Plantilla — substitueix els camps ressaltats per les teves dades reals abans de publicar. El text es manté en espanyol perquè així ho exigeix la normativa espanyola."
-};
-
-var DEFAULTS={};
-document.querySelectorAll("[data-i18n]").forEach(function(el){DEFAULTS[el.getAttribute("data-i18n")]=el.textContent;});
-I18N.es=DEFAULTS;
-
-function setLang(code){
-  var dict=I18N[code]||I18N.es;
-  document.querySelectorAll("[data-i18n]").forEach(function(el){
-    var k=el.getAttribute("data-i18n");
-    var v=(dict[k]!==undefined)?dict[k]:DEFAULTS[k];
-    if(v!==undefined)el.textContent=v;
-  });
-  document.documentElement.setAttribute("lang",code);
-  document.querySelectorAll(".lang button").forEach(function(b){
-    b.setAttribute("aria-pressed",String(b.dataset.lang===code));
-  });
-  try{localStorage.setItem("bm-lang",code);}catch(e){}
-  var n=document.getElementById("legalnote");
-  if(n)n.textContent=(dict["legal.note"]!==undefined?dict["legal.note"]:DEFAULTS["legal.note"]);
-}
-document.querySelectorAll(".lang button").forEach(function(b){
-  b.addEventListener("click",function(){setLang(b.dataset.lang);});
-});
-var start="es";
-try{var sv=localStorage.getItem("bm-lang");if(sv&&I18N[sv])start=sv;}catch(e){}
-setLang(start);
-
-document.getElementById("yr").textContent=String(new Date().getFullYear());
-
-/* ==================================================================
-   3. Scrollspy + reveal + form
+   2. Scrollspy + reveal + форма
    ================================================================== */
 var links=Array.prototype.slice.call(document.querySelectorAll("nav.main a"));
 var targets=links.map(function(a){return document.querySelector(a.getAttribute("href"));}).filter(Boolean);
@@ -1131,19 +920,19 @@ document.getElementById("cform").addEventListener("submit",function(ev){
   ev.preventDefault();
   var f=ev.target;
   if(!f.checkValidity()){f.reportValidity();return;}
-  var body="Nombre: "+document.getElementById("f-name").value
+  var body="Имя: "+document.getElementById("f-name").value
     +"\nEmail: "+document.getElementById("f-mail").value
-    +"\nInterés: "+document.getElementById("f-type").value
-    +"\nPerfil: "+document.getElementById("f-link").value
+    +"\nИнтересует: "+document.getElementById("f-type").value
+    +"\nПрофиль: "+document.getElementById("f-link").value
     +"\n\n"+document.getElementById("f-msg").value;
   window.location.href="mailto:hola@bravemarketing.es?subject="
-    +encodeURIComponent("Consulta web — "+document.getElementById("f-type").value)
+    +encodeURIComponent("Заявка с сайта — "+document.getElementById("f-type").value)
     +"&body="+encodeURIComponent(body);
   document.getElementById("fsent").classList.add("on");
 });
 
 /* ==================================================================
-   4. Documentos legales (siempre en español)
+   3. Документы (всегда на испанском — этого требует закон Испании)
    ================================================================== */
 var DOCS={
 aviso:{t:"Aviso Legal",h:
@@ -1196,16 +985,16 @@ cookies:{t:"Política de Cookies",h:
 +'<p>Esta política se actualizará si en el futuro se incorporan servicios de terceros como Google Analytics o el píxel de Meta. En ese caso se mostrará el correspondiente banner de consentimiento. Última actualización: <span class="ph">fecha</span>.</p>'}
 };
 
+
+var LEGAL_NOTE="Шаблон — перед публикацией замените выделенные поля на реальные данные. Текст остаётся на испанском, потому что этого требует законодательство Испании.";
+
 var ov=document.getElementById("ov"),ovb=document.getElementById("ovb"),ovt=document.getElementById("ovt"),lastFocus=null;
 function openDoc(key){
   var d=DOCS[key];if(!d)return;
   lastFocus=document.activeElement;
   ovt.textContent=d.t;
-  var lang=document.documentElement.getAttribute("lang")||"es";
-  var dict=I18N[lang]||I18N.es;
-  var note=(dict["legal.note"]!==undefined?dict["legal.note"]:DEFAULTS["legal.note"]);
   ovb.innerHTML='<div class="doc-note" id="legalnote"></div>'+d.h;
-  document.getElementById("legalnote").textContent=note;
+  document.getElementById("legalnote").textContent=LEGAL_NOTE;
   ov.classList.add("on");
   document.body.style.overflow="hidden";
   document.getElementById("ovx").focus();
