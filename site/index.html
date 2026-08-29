@@ -223,10 +223,9 @@ h2{font-size:clamp(30px,5vw,62px);max-width:18ch}
 .bio p{font-size:16.5px;color:var(--ink-2);margin-bottom:17px;max-width:60ch}
 .bio h4{font-size:clamp(19px,2.2vw,25px);font-weight:600;letter-spacing:-.015em;color:var(--ink);margin:34px 0 15px;line-height:1.3}
 .bio .fin{font-size:clamp(18px,2vw,22px);color:var(--ink);font-weight:600;letter-spacing:-.015em;border-left:3px solid var(--verm);padding-left:18px;margin-top:26px}
-.photo{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--ground-2);border:1.5px dashed var(--line-2);display:grid;place-items:center;text-align:center;padding:26px}
+/* 3/4 — родные пропорции снимка, кадр не обрезается */
+.photo{position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;background:var(--ground-2)}
 .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.photo .hint{font-size:12.5px;color:var(--ink-3);line-height:1.5;max-width:24ch}
-.photo .hint b{display:block;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--verm-dk);margin-bottom:8px}
 .panel{background:var(--surface);border-radius:var(--r);padding:26px}
 .panel + .panel{margin-top:16px}
 .panel > h4{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin:0 0 16px}
@@ -775,9 +774,11 @@ footer.site{padding:70px 0 34px}
         <p class="fin" data-i18n="ab.fin">Tu resultado es el resultado de mi trabajo.</p>
       </div>
 
-      <!-- FOTO: sustituir el contenido por <img src="foto.jpg" alt="..."> -->
       <div class="photo">
-        <span class="hint"><b data-i18n="ab.ph.k">Foto</b><span data-i18n="ab.ph.v">Aquí irá una fotografía — envíame el archivo y la coloco en este espacio.</span></span>
+        <picture>
+          <source srcset="hero.webp" type="image/webp">
+          <img src="hero.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="Retrato del responsable de Brave Marketing">
+        </picture>
       </div>
       <div class="panel">
         <h4 data-i18n="ab.tools">Plataformas publicitarias</h4>
@@ -1123,7 +1124,6 @@ I18N.ca={
 "ab.p5":"No m'interessa vendre't un servei, emetre la factura i desaparèixer. La meva feina és entendre el teu projecte, comprendre els teus objectius i trobar una solució que realment ajudi a assolir-los.",
 "ab.p6":"Si veig que puc aportar i portar el projecte a un resultat, em poso a treballar. Si no ho veig, prefereixo dir-ho amb honestedat abans de començar a col·laborar.",
 "ab.fin":"El teu resultat és el resultat de la meva feina.",
-"ab.ph.k":"Foto","ab.ph.v":"Aquí hi anirà una fotografia — envia'm el fitxer i la col·loco en aquest espai.",
 "ab.tools":"Plataformes publicitàries",
 "co.h2":"Explica'm el teu projecte",
 "co.p":"Escriu-me a què et dediques i què vols aconseguir. Si veig que puc aportar i portar el projecte a un resultat, em poso a treballar.",
@@ -1234,7 +1234,6 @@ I18N.en={
 "ab.p5":"I'm not interested in simply selling you a service, invoicing it and disappearing. My job is to understand your project, understand your goals and find a solution that actually helps you reach them.",
 "ab.p6":"If I can see that I can help and take the project to a result, I take the work on. If I can't, I'd rather say so honestly before we start working together.",
 "ab.fin":"Your result is the result of my work.",
-"ab.ph.k":"Photo","ab.ph.v":"A photograph goes here — send me the file and I'll place it.",
 "ab.tools":"Advertising platforms",
 "co.h2":"Tell me about your project",
 "co.p":"Tell me what you do and what you want to achieve. If I can see that I can help and take the project to a result, I take the work on.",
