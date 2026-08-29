@@ -673,9 +673,9 @@ footer.site{padding:70px 0 34px}
           </div>
           <p style="color:#B4B0A7;max-width:42ch;font-size:16px" data-i18n="co.p">Reviso tus perfiles y te digo por escrito qué cambiaría, sin compromiso. Respondo en menos de 24 horas laborables.</p>
           <div class="ways">
-            <a class="way" href="mailto:hola@bravemarketing.es">
+            <a class="way" href="mailto:hola@bravemarketing.online">
               <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2.6 5.4L10 11l7.4-5.6" stroke="currentColor" stroke-width="1.6"/></svg></span>
-              <span><span class="k">Email</span><span class="v">hola@bravemarketing.es</span></span>
+              <span><span class="k">Email</span><span class="v">hola@bravemarketing.online</span></span>
             </a>
             <a class="way" href="#contacto">
               <span class="ic"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 17l1.2-3.6A7 7 0 1110 17H3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
@@ -715,7 +715,7 @@ footer.site{padding:70px 0 34px}
           <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Cuéntame tu situación</label><textarea id="f-msg"></textarea></div>
           <label class="consent"><input type="checkbox" id="f-ok" required><span data-i18n="fm.consent">He leído y acepto la Política de Privacidad y el tratamiento de mis datos para responder a esta consulta.</span></label>
           <button class="btn" type="submit" style="width:100%;justify-content:center" data-i18n="fm.send">Enviar consulta</button>
-          <div class="sent" id="fsent" data-i18n="fm.sent">Se abrirá tu programa de correo con el mensaje preparado. Si no ocurre, escribe directamente a hola@bravemarketing.es</div>
+          <div class="sent" id="fsent" data-i18n="fm.sent">Se abrirá tu programa de correo con el mensaje preparado. Si no ocurre, escribe directamente a hola@bravemarketing.online</div>
         </form>
       </div>
     </div>
@@ -748,7 +748,7 @@ footer.site{padding:70px 0 34px}
       <div>
         <h4 data-i18n="ft.contact">Contacto</h4>
         <ul>
-          <li><a href="mailto:hola@bravemarketing.es">hola@bravemarketing.es</a></li>
+          <li><a href="mailto:hola@bravemarketing.online">hola@bravemarketing.online</a></li>
           <li><a href="#contacto">+34 600 00 00 00</a></li>
           <li><a href="#contacto">@bravemarketing</a></li>
           <li><a href="#contacto" data-i18n="co.v4">Barcelona, España</a></li>
@@ -970,7 +970,7 @@ I18N.en={
 "fm.name":"Name","fm.mail":"Email","fm.type":"What you're after","fm.link":"Link to your profile or website","fm.msg":"Tell me about your situation",
 "fm.o1":"Social media management","fm.o2":"Paid advertising","fm.o3":"Strategy and content","fm.o4":"Personal branding","fm.o5":"Free audit","fm.o6":"Not sure yet",
 "fm.consent":"I have read and accept the Privacy Policy and the processing of my data to answer this enquiry.",
-"fm.send":"Send enquiry","fm.sent":"Your email app will open with the message ready. If it doesn't, write directly to hola@bravemarketing.es",
+"fm.send":"Send enquiry","fm.sent":"Your email app will open with the message ready. If it doesn't, write directly to hola@bravemarketing.online",
 "ft.blurb":"SMM and digital marketing for businesses and individuals. Registered self-employed in Spain.",
 "ft.nav":"Sections","ft.contact":"Contact","ft.legalh":"Legal","ft.nif":"Tax ID 00000000-X","ft.made":"Made in Barcelona",
 "legal.note":"Template — replace the highlighted fields with your real details before publishing. The text stays in Spanish because Spanish law requires it."
@@ -1047,7 +1047,7 @@ I18N.ca={
 "fm.name":"Nom","fm.mail":"Correu","fm.type":"Què t'interessa","fm.link":"Enllaç al teu perfil o web","fm.msg":"Explica'm la teva situació",
 "fm.o1":"Gestió de xarxes socials","fm.o2":"Publicitat de pagament","fm.o3":"Estratègia i contingut","fm.o4":"Marca personal","fm.o5":"Auditoria gratuïta","fm.o6":"Encara no ho tinc clar",
 "fm.consent":"He llegit i accepto la Política de Privacitat i el tractament de les meves dades per respondre aquesta consulta.",
-"fm.send":"Enviar consulta","fm.sent":"S'obrirà el teu programa de correu amb el missatge preparat. Si no passa, escriu directament a hola@bravemarketing.es",
+"fm.send":"Enviar consulta","fm.sent":"S'obrirà el teu programa de correu amb el missatge preparat. Si no passa, escriu directament a hola@bravemarketing.online",
 "ft.blurb":"SMM i màrqueting digital per a empreses i particulars. Treballador autònom donat d'alta a Espanya.",
 "ft.nav":"Seccions","ft.contact":"Contacte","ft.legalh":"Legal","ft.nif":"NIF 00000000-X","ft.made":"Fet a Barcelona",
 "legal.note":"Plantilla — substitueix els camps ressaltats per les teves dades reals abans de publicar. El text es manté en espanyol perquè així ho exigeix la normativa espanyola."
@@ -1114,7 +1114,7 @@ document.getElementById("cform").addEventListener("submit",function(ev){
     +"\nInterés: "+document.getElementById("f-type").value
     +"\nPerfil: "+document.getElementById("f-link").value
     +"\n\n"+document.getElementById("f-msg").value;
-  window.location.href="mailto:hola@bravemarketing.es?subject="
+  window.location.href="mailto:hola@bravemarketing.online?subject="
     +encodeURIComponent("Consulta web — "+document.getElementById("f-type").value)
     +"&body="+encodeURIComponent(body);
   document.getElementById("fsent").classList.add("on");
@@ -1131,7 +1131,7 @@ aviso:{t:"Aviso Legal",h:
 +'<li><b>Nombre comercial:</b> Brave Marketing</li>'
 +'<li><b>NIF / NIE:</b> <span class="ph">00000000-X</span></li>'
 +'<li><b>Domicilio a efectos de notificaciones:</b> <span class="ph">Calle, número, código postal, ciudad</span></li>'
-+'<li><b>Correo electrónico:</b> <span class="ph">hola@bravemarketing.es</span></li>'
++'<li><b>Correo electrónico:</b> <span class="ph">hola@bravemarketing.online</span></li>'
 +'<li><b>Actividad:</b> servicios de publicidad, marketing digital y gestión de redes sociales (epígrafe IAE 844)</li>'
 +'<li><b>Dominio web:</b> <span class="ph">www.bravemarketing.es</span></li></ul>'
 +'<h4>2. Objeto y condiciones de uso</h4>'
@@ -1148,7 +1148,7 @@ priv:{t:"Política de Privacidad",h:
 +'<ul><li><b>Responsable:</b> <span class="ph">Nombre y apellidos</span> (Brave Marketing)</li>'
 +'<li><b>NIF / NIE:</b> <span class="ph">00000000-X</span></li>'
 +'<li><b>Dirección:</b> <span class="ph">Calle, número, código postal, ciudad</span></li>'
-+'<li><b>Contacto:</b> <span class="ph">hola@bravemarketing.es</span></li></ul>'
++'<li><b>Contacto:</b> <span class="ph">hola@bravemarketing.online</span></li></ul>'
 +'<h4>2. Finalidad del tratamiento</h4>'
 +'<p>Los datos facilitados mediante el formulario de contacto o por correo electrónico se tratan con la única finalidad de atender su consulta, elaborar un presupuesto y mantener la relación profesional que, en su caso, se derive de ella.</p>'
 +'<h4>3. Base jurídica</h4>'
@@ -1158,7 +1158,7 @@ priv:{t:"Política de Privacidad",h:
 +'<h4>5. Destinatarios</h4>'
 +'<p>No se ceden datos a terceros salvo obligación legal. Se utilizan proveedores que actúan como encargados del tratamiento, con contrato suscrito conforme al artículo 28 del RGPD: <span class="ph">proveedor de alojamiento web</span>, <span class="ph">proveedor de correo electrónico</span> y las plataformas publicitarias empleadas en las campañas contratadas.</p>'
 +'<h4>6. Derechos de las personas interesadas</h4>'
-+'<p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <span class="ph">hola@bravemarketing.es</span>, adjuntando copia de un documento identificativo. También puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa.</p>'
++'<p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a <span class="ph">hola@bravemarketing.online</span>, adjuntando copia de un documento identificativo. También puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es) si considera que el tratamiento no se ajusta a la normativa.</p>'
 +'<h4>7. Seguridad</h4>'
 +'<p>Se aplican las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos y evitar su alteración, pérdida o acceso no autorizado, conforme al RGPD y a la Ley Orgánica 3/2018 (LOPDGDD).</p>'},
 
