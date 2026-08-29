@@ -233,8 +233,8 @@ h2{font-size:clamp(30px,5vw,62px);max-width:18ch}
 .chip{font-size:13px;font-weight:500;background:var(--ground);border-radius:100px;padding:8px 14px;color:var(--ink-2)}
 
 /* ============ CONTACT ============ */
-.contact{background:var(--char);color:#EDEBE4;border-radius:22px;padding:56px;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;position:relative;overflow:hidden}
-@media(max-width:900px){.contact{grid-template-columns:1fr;gap:36px;padding:36px 26px}}
+.contact{background:var(--char);color:#EDEBE4;border-radius:22px;padding:40px;display:grid;grid-template-columns:1fr 1.4fr;gap:36px;position:relative;overflow:hidden}
+@media(max-width:900px){.contact{grid-template-columns:1fr;gap:26px;padding:26px 18px}}
 .contact h2{color:#F6F5F1}
 .contact .lab{color:#9C9891}
 .contact .shead{margin-bottom:26px;display:block}
@@ -248,16 +248,18 @@ a.way:hover{background:rgba(255,255,255,.13)}
 .way .ic svg{width:17px;height:17px}
 .way .k{font-size:9.5px;font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:#9C9891;display:block}
 .way .v{font-size:15px;font-weight:600}
-form{background:var(--surface);border-radius:var(--r);padding:28px;position:relative;z-index:1}
-.f-row{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+form{background:var(--surface);border-radius:var(--r);padding:22px;position:relative;z-index:1}
+.f-row{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}
 .f-row label{font-size:9.5px;font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:var(--ink-3)}
-input,select,textarea{font:inherit;font-size:15px;background:var(--ground);border:1.5px solid transparent;color:var(--ink);border-radius:10px;padding:13px 15px;width:100%}
-textarea{min-height:108px;resize:vertical}
+input,select,textarea{font:inherit;font-size:15px;background:var(--ground);border:1.5px solid transparent;color:var(--ink);border-radius:10px;padding:11px 13px;width:100%}
+textarea{min-height:92px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--verm);background:var(--surface)}
-.f-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-two{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 @media(max-width:520px){.f-two{grid-template-columns:1fr}}
-.consent{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;color:var(--ink-3);margin:2px 0 20px;cursor:pointer}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--ink-3);margin:2px 0 16px;cursor:pointer}
 .consent input{width:16px;height:16px;flex:none;margin-top:2px;padding:0;accent-color:var(--verm)}
+.privlink{background:none;border:0;padding:0;font:inherit;color:var(--ink-2);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.privlink:hover{color:var(--verm)}
 .sent{display:none;background:#D9EDE5;color:#0F6248;border-radius:10px;padding:14px 16px;font-size:14px;margin-top:15px}
 .sent.on{display:block}
 .sent.err{background:#FBE0D7;color:var(--verm-dk)}
@@ -280,21 +282,21 @@ footer.site{padding:70px 0 34px}
 .legal button:hover{color:var(--verm)}
 
 /* ============ MODAL ============ */
-.overlay{position:fixed;inset:0;z-index:90;background:rgba(23,22,20,.55);backdrop-filter:blur(4px);display:none;padding:26px;overflow-y:auto}
+.overlay{position:fixed;inset:0;z-index:90;background:rgba(23,22,20,.55);backdrop-filter:blur(4px);display:none;padding:16px;overflow-y:auto}
 .overlay.on{display:block}
-.doc{max-width:780px;margin:0 auto;background:var(--surface);border-radius:18px;box-shadow:var(--shadow)}
-.doc-hd{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 26px;border-bottom:1px solid var(--line);background:var(--surface);border-radius:18px 18px 0 0}
+.doc{max-width:1000px;margin:0 auto;background:var(--surface);border-radius:18px;box-shadow:var(--shadow)}
+.doc-hd{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 22px;border-bottom:1px solid var(--line);background:var(--surface);border-radius:18px 18px 0 0}
 .doc-hd h3{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;font-size:21px;margin:0;letter-spacing:.005em}
 .doc-hd button{background:var(--ground);border:0;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:17px;line-height:1;color:var(--ink-2);flex:none}
 .doc-hd button:hover{background:var(--verm);color:#fff}
-.doc-body{padding:26px 30px 34px}
+.doc-body{padding:20px 24px 26px}
 .doc-body h4{font-size:15.5px;font-weight:700;margin:24px 0 8px}
 .doc-body h4:first-child{margin-top:0}
 .doc-body p{font-size:14.5px;color:var(--ink-2);margin-bottom:10px}
 .doc-body ul{margin:0 0 12px;padding-left:20px;font-size:14.5px;color:var(--ink-2)}
 .doc-body li{margin-bottom:6px}
 .ph{background:#FBE0D7;color:var(--verm-dk);border-radius:5px;padding:1px 7px;font-weight:600;font-size:13.5px}
-.doc-note{background:var(--ground);border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13px;color:var(--ink-2);line-height:1.6}
+.doc-note{background:var(--ground);border-radius:10px;padding:12px 14px;margin-bottom:18px;font-size:13px;color:var(--ink-2);line-height:1.6}
 
 /* ============ ФОНОВАЯ ГРАФИКА В РАЗДЕЛАХ ============ */
 /* Те же торические узлы, что в первом экране, — чтобы язык был один.
@@ -374,6 +376,31 @@ footer.site{padding:70px 0 34px}
 @media(max-width:400px){
   .tagline{padding:8px 14px}
   .tagline .lab{font-size:10px;letter-spacing:.14em}
+}
+
+/* ============ БАННЕР COOKIES ============ */
+.cbar{position:fixed;left:0;right:0;bottom:0;z-index:80;padding:14px;pointer-events:none}
+.cbar[hidden]{display:none}
+.cbar-in{max-width:980px;margin:0 auto;background:var(--char);color:#EDEBE4;border-radius:16px;
+  box-shadow:0 18px 44px -18px rgba(23,22,20,.6);padding:18px 22px;
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;pointer-events:auto}
+.cbar p{font-size:13.5px;line-height:1.5;color:#C4C0B7;flex:1 1 360px}
+.cbar-act{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+/* Принять и отказаться — одинаково доступны в один клик: этого требует AEPD */
+.cbar .btn{padding:11px 20px;font-size:11px}
+.cbar .btn:not(.ghost){background:var(--verm);border-color:var(--verm);color:#fff}
+.cbar .btn:not(.ghost):hover{background:#fff;border-color:#fff;color:var(--char)}
+.cbar .btn.ghost{background:transparent;color:#EDEBE4;border-color:rgba(255,255,255,.42)}
+.cbar .btn.ghost:hover{background:rgba(255,255,255,.14);border-color:#fff;color:#fff}
+.cbar .privlink{color:#9C9891;font-size:12.5px}
+.cbar .privlink:hover{color:var(--sand)}
+@media(max-width:720px){
+  .cbar{padding:10px}
+  .cbar-in{padding:16px 18px;gap:14px}
+  .cbar p{flex:1 1 100%;font-size:13px}
+  .cbar-act{width:100%}
+  .cbar-act .btn{flex:1 1 0;justify-content:center}
+  .cbar .privlink{flex:1 1 100%;text-align:center;margin-top:2px}
 }
 
 /* ============ REVEAL ============ */
@@ -860,7 +887,7 @@ footer.site{padding:70px 0 34px}
         </div>
         <div class="f-row"><label for="f-link" data-i18n="fm.link">Enlace a tu perfil o web</label><input id="f-link" name="perfil" type="text" placeholder="instagram.com/..."></div>
         <div class="f-row"><label for="f-msg" data-i18n="fm.msg">Cuéntame tu situación</label><textarea id="f-msg" name="message"></textarea></div>
-        <label class="consent"><input type="checkbox" id="f-ok" name="consentimiento" value="si" required><span data-i18n="fm.consent">He leído y acepto la Política de Privacidad y el tratamiento de mis datos para responder a esta consulta.</span></label>
+        <label class="consent"><input type="checkbox" id="f-ok" name="consentimiento" value="si" required><span id="consent-txt">He leído y acepto la <button type="button" class="privlink" data-doc="priv">Política de Privacidad</button> y el tratamiento de mis datos para responder a esta consulta.</span></label>
         <input type="hidden" name="_subject" value="Nueva consulta desde bravemarketing.online">
         <input type="hidden" name="idioma" id="f-lang" value="es">
         <!-- ловушка для ботов: люди это поле не видят и не заполняют -->
@@ -914,6 +941,7 @@ footer.site{padding:70px 0 34px}
         <button type="button" data-doc="aviso">Aviso Legal</button>
         <button type="button" data-doc="priv">Política de Privacidad</button>
         <button type="button" data-doc="cookies">Política de Cookies</button>
+        <button type="button" id="ck-cfg" data-i18n="ck.cfg">Configurar cookies</button>
       </span>
     </div>
   </div>
@@ -924,6 +952,18 @@ footer.site{padding:70px 0 34px}
   <div class="doc">
     <div class="doc-hd"><h3 id="ovt">Aviso Legal</h3><button type="button" id="ovx" aria-label="Cerrar">&#10005;</button></div>
     <div class="doc-body" id="ovb"></div>
+  </div>
+</div>
+
+<!-- ================= BANNER DE COOKIES ================= -->
+<div class="cbar" id="cbar" role="region" aria-label="Cookies" hidden>
+  <div class="cbar-in">
+    <p data-i18n="ck.txt">Usamos almacenamiento técnico necesario para que la web funcione. Con tu consentimiento, usaremos además cookies de analítica para saber cómo se navega por el sitio.</p>
+    <div class="cbar-act">
+      <button type="button" class="btn sm ghost" id="ck-rej" data-i18n="ck.rej">Rechazar</button>
+      <button type="button" class="btn sm" id="ck-acc" data-i18n="ck.acc">Aceptar</button>
+      <button type="button" class="privlink" data-doc="cookies" data-i18n="ck.more">Política de Cookies</button>
+    </div>
   </div>
 </div>
 
@@ -1137,13 +1177,15 @@ I18N.ca={
 "fm.name":"Nom","fm.mail":"Correu","fm.type":"Què t'interessa",
 "fm.o1":"SMM i gestió de xarxes socials","fm.o2":"Configuració de campanyes publicitàries","fm.o3":"Consultoria de màrqueting digital","fm.o4":"Xarxes socials per a particulars","fm.o5":"Marca personal a Instagram","fm.o6":"Consultoria de monetització de blog","fm.o7":"Una altra tasca",
 "fm.link":"Enllaç al teu perfil o web","fm.msg":"Explica'm la teva situació",
-"fm.consent":"He llegit i accepto la Política de Privacidad i el tractament de les meves dades per respondre aquesta consulta.",
+"fm.consent":"He llegit i accepto la %s i el tractament de les meves dades per respondre aquesta consulta.",
 "fm.send":"Enviar consulta",
 "fm.sent":"Gràcies! La teva consulta s'ha enviat. Et responc en menys de 24 hores laborables.",
 "fm.err":"No s'ha pogut enviar el formulari. Escriu-me directament a hola@bravemarketing.online o per WhatsApp.",
 "fm.wait":"Enviant…",
 "ft.blurb":"Màrqueting digital per a negocis i marques personals: xarxes socials, publicitat i marca personal.",
 "ft.sections":"Seccions","ft.contacts":"Contacte",
+"ck.txt":"Fem servir emmagatzematge tècnic necessari perquè el web funcioni. Amb el teu consentiment, també farem servir galetes d'analítica per saber com es navega pel lloc.",
+"ck.acc":"Acceptar","ck.rej":"Rebutjar","ck.more":"Política de Cookies","ck.cfg":"Configurar galetes",
 "legal.note":"Plantilla — substitueix els camps ressaltats per les teves dades reals abans de publicar. El text es manté en espanyol perquè així ho exigeix la normativa espanyola."
 };
 
@@ -1247,18 +1289,22 @@ I18N.en={
 "fm.name":"Name","fm.mail":"Email","fm.type":"What you're interested in",
 "fm.o1":"SMM and social media management","fm.o2":"Ad campaign setup","fm.o3":"Digital marketing consulting","fm.o4":"Social media for individuals","fm.o5":"Personal brand on Instagram","fm.o6":"Blog monetisation consulting","fm.o7":"Something else",
 "fm.link":"Link to your profile or website","fm.msg":"Tell me about your situation",
-"fm.consent":"I have read and accept the Política de Privacidad and the processing of my data to answer this enquiry.",
+"fm.consent":"I have read and accept the %s and the processing of my data to answer this enquiry.",
 "fm.send":"Send enquiry",
 "fm.sent":"Thanks! Your enquiry has been sent. I reply within 24 working hours.",
 "fm.err":"The form could not be sent. Write to me directly at hola@bravemarketing.online or on WhatsApp.",
 "fm.wait":"Sending…",
 "ft.blurb":"Digital marketing for businesses and personal brands: social media, advertising and personal branding.",
 "ft.sections":"Sections","ft.contacts":"Contact",
+"ck.txt":"We use technical storage that is necessary for the site to work. With your consent, we will also use analytics cookies to understand how the site is browsed.",
+"ck.acc":"Accept","ck.rej":"Reject","ck.more":"Política de Cookies","ck.cfg":"Cookie settings",
 "legal.note":"Template — replace the highlighted fields with your real details before publishing. The text stays in Spanish because Spanish law requires it."
 };
 
 var DEFAULTS={};
 document.querySelectorAll("[data-i18n]").forEach(function(el){DEFAULTS[el.getAttribute("data-i18n")]=el.textContent;});
+DEFAULTS["fm.consent"]="He leído y acepto la %s y el tratamiento de mis datos para responder a esta consulta.";
+DEFAULTS["fm.privlink"]="Política de Privacidad";
 DEFAULTS["fm.sent"]="¡Gracias! Tu consulta se ha enviado. Te respondo en menos de 24 horas laborables.";
 DEFAULTS["fm.err"]="No se ha podido enviar el formulario. Escríbeme directamente a hola@bravemarketing.online o por WhatsApp.";
 DEFAULTS["fm.wait"]="Enviando…";
@@ -1272,6 +1318,20 @@ function setLang(code){
     var v=(dict[k]!==undefined)?dict[k]:DEFAULTS[k];
     if(v!==undefined)el.textContent=v;
   });
+  /* Строку согласия собираем вручную: внутри неё живая ссылка на документ,
+     а обычная подстановка текста её бы стёрла. */
+  var ct=document.getElementById("consent-txt");
+  if(ct){
+    var tpl=(dict["fm.consent"]!==undefined?dict["fm.consent"]:DEFAULTS["fm.consent"])||"";
+    var parts=tpl.split("%s");
+    var lnk=document.createElement("button");
+    lnk.type="button";lnk.className="privlink";lnk.setAttribute("data-doc","priv");
+    lnk.textContent=(dict["fm.privlink"]!==undefined?dict["fm.privlink"]:DEFAULTS["fm.privlink"]);
+    ct.textContent="";
+    ct.appendChild(document.createTextNode(parts[0]));
+    ct.appendChild(lnk);
+    if(parts[1])ct.appendChild(document.createTextNode(parts[1]));
+  }
   document.documentElement.setAttribute("lang",code);
   var lf=document.getElementById("f-lang");if(lf)lf.value=code;
   document.querySelectorAll(".lang button").forEach(function(b){
@@ -1291,7 +1351,32 @@ setLang(start);
 document.getElementById("yr").textContent=String(new Date().getFullYear());
 
 /* ==================================================================
-   3. Scrollspy + reveal + formulario
+   3. Баннер cookies — LSSI-CE ст. 22.2 и RGPD
+   ================================================================== */
+var CK_KEY="bm-cookies",cbar=document.getElementById("cbar");
+
+function ckGet(){try{return localStorage.getItem(CK_KEY);}catch(e){return null;}}
+function ckSet(v){try{localStorage.setItem(CK_KEY,v);}catch(e){}}
+
+/* Сюда подключается Google Analytics или пиксель Meta, когда понадобятся.
+   Функция вызывается ТОЛЬКО после явного согласия — до него ни один
+   сторонний скрипт грузиться не должен, иначе баннер теряет смысл. */
+function loadAnalytics(){}
+
+if(ckGet()==="yes")loadAnalytics();
+if(!ckGet())cbar.hidden=false;
+
+document.getElementById("ck-acc").addEventListener("click",function(){
+  ckSet("yes");loadAnalytics();cbar.hidden=true;
+});
+document.getElementById("ck-rej").addEventListener("click",function(){
+  ckSet("no");cbar.hidden=true;
+});
+var ckCfg=document.getElementById("ck-cfg");
+if(ckCfg)ckCfg.addEventListener("click",function(){cbar.hidden=false;});
+
+/* ==================================================================
+   4. Scrollspy + reveal + formulario
    ================================================================== */
 var links=Array.prototype.slice.call(document.querySelectorAll("nav.main a"));
 var targets=links.map(function(a){return document.querySelector(a.getAttribute("href"));}).filter(Boolean);
@@ -1400,12 +1485,14 @@ cookies:{t:"Política de Cookies",h:
 '<h4>1. Qué son las cookies</h4>'
 +'<p>Una cookie es un pequeño archivo que el sitio web guarda en su navegador para recordar información sobre su visita, como el idioma seleccionado.</p>'
 +'<h4>2. Cookies utilizadas en este sitio</h4>'
-+'<p>Este sitio emplea únicamente almacenamiento técnico propio, necesario para recordar el idioma elegido. No se usan cookies de analítica, publicidad ni seguimiento de terceros, por lo que no se requiere consentimiento previo conforme al artículo 22.2 de la LSSI-CE.</p>'
-+'<ul><li><b>bm-lang</b> — técnica, propia, permanente. Guarda el idioma seleccionado (ES / EN / RU).</li></ul>'
++'<p>Este sitio emplea almacenamiento técnico propio, necesario para recordar el idioma elegido y su decisión sobre cookies. Este almacenamiento no requiere consentimiento previo conforme al artículo 22.2 de la LSSI-CE.</p>'
++'<p>Al entrar por primera vez se muestra un banner de consentimiento. Si usted lo acepta, se activarán cookies de analítica que permiten conocer de forma agregada cómo se navega por la web. Si lo rechaza, no se instalará ninguna cookie de analítica ni de publicidad. Puede cambiar su decisión cuando quiera desde el enlace <b>Configurar cookies</b> del pie de página.</p>'
++'<ul><li><b>bm-lang</b> — técnica, propia, permanente. Guarda el idioma seleccionado (ES / CA / EN).</li>'
++'<li><b>bm-cookies</b> — técnica, propia, permanente. Guarda su decisión sobre el banner de cookies.</li></ul>'
 +'<h4>3. Cómo desactivarlas</h4>'
 +'<p>Puede borrar o bloquear el almacenamiento local desde la configuración de su navegador. Hacerlo no impide usar el sitio: solo hará que el idioma vuelva al valor por defecto en cada visita.</p>'
 +'<h4>4. Actualizaciones</h4>'
-+'<p>Esta política se actualizará si en el futuro se incorporan servicios de terceros como Google Analytics o el píxel de Meta. En ese caso se mostrará el correspondiente banner de consentimiento. Última actualización: <span class="ph">fecha</span>.</p>'}
++'<p>Esta política se ampliará con el detalle de cada cookie concreta cuando se incorporen servicios de terceros como Google Analytics o el píxel de Meta. Última actualización: <span class="ph">fecha</span>.</p>'}
 };
 
 
@@ -1428,8 +1515,9 @@ function closeDoc(){
   document.body.style.overflow="";
   if(lastFocus)lastFocus.focus();
 }
-document.querySelectorAll("[data-doc]").forEach(function(b){
-  b.addEventListener("click",function(){openDoc(b.dataset.doc);});
+document.addEventListener("click",function(e){
+  var b=e.target&&e.target.closest?e.target.closest("[data-doc]"):null;
+  if(b){e.preventDefault();openDoc(b.dataset.doc);}
 });
 document.getElementById("ovx").addEventListener("click",closeDoc);
 ov.addEventListener("click",function(e){if(e.target===ov)closeDoc();});
