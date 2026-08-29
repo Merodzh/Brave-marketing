@@ -297,6 +297,33 @@ footer.site{padding:70px 0 34px}
 .ph{background:#FBE0D7;color:var(--verm-dk);border-radius:5px;padding:1px 7px;font-weight:600;font-size:13.5px}
 .doc-note{background:var(--ground);border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13px;color:var(--ink-2);line-height:1.6}
 
+/* ============ ФОНОВАЯ ГРАФИКА В РАЗДЕЛАХ ============ */
+/* Те же торические узлы, что в первом экране, — чтобы язык был один.
+   overflow:hidden не даёт им вылезти за край и создать горизонтальную прокрутку. */
+#servicios,#ventajas{position:relative;overflow:hidden}
+#servicios > .wrap,#ventajas > .wrap{position:relative;z-index:1}
+.deco{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.34}
+.deco canvas{position:absolute;display:block}
+
+#d1{width:420px;height:420px;left:-165px;top:150px}
+#d2{width:360px;height:360px;right:-140px;bottom:90px}
+#d3{width:400px;height:400px;right:-150px;top:20px}
+
+@media(max-width:1180px){
+  #d1{width:300px;height:300px;left:-125px;top:120px}
+  #d2{width:260px;height:260px;right:-108px;bottom:60px}
+  #d3{width:290px;height:290px;right:-120px;top:10px}
+}
+
+/* На телефоне карточки занимают всю ширину и перекрыли бы узлы,
+   поэтому переносим их к заголовкам разделов, где есть свободное место. */
+@media(max-width:720px){
+  .deco{opacity:.3}
+  #d1{width:210px;height:210px;left:auto;right:-85px;top:-10px}
+  #d2{width:190px;height:190px;left:auto;right:-78px;bottom:auto;top:50%}
+  #d3{width:200px;height:200px;right:-80px;top:-14px}
+}
+
 /* ============ MOBILE / TABLET REFINEMENTS ============ */
 
 /* Ниже 1080px основная навигация уезжает во вторую строку шапки
@@ -449,6 +476,10 @@ footer.site{padding:70px 0 34px}
 
 <!-- ================= SERVICIOS ================= -->
 <section id="servicios">
+  <div class="deco" aria-hidden="true">
+    <canvas class="bg" id="d1" data-p="2" data-q="3" data-tilt="0.7" data-dark="#0B5A42" data-light="#7FE0C0"></canvas>
+    <canvas class="bg" id="d2" data-p="3" data-q="4" data-tilt="2.4" data-dark="#8A6524" data-light="#F4E1B4"></canvas>
+  </div>
   <div class="wrap">
     <div class="shead rv">
       <div>
@@ -688,6 +719,9 @@ footer.site{padding:70px 0 34px}
 
 <!-- ================= VENTAJAS ================= -->
 <section id="ventajas">
+  <div class="deco" aria-hidden="true">
+    <canvas class="bg" id="d3" data-p="2" data-q="5" data-tilt="3.6" data-dark="#8E2A11" data-light="#FF9A78"></canvas>
+  </div>
   <div class="wrap">
     <div class="shead rv">
       <div>
@@ -951,6 +985,15 @@ addKnot("k1",{p:2,q:3,R:74,r:32,thick:26,tilt:0.6,dark:"#8A6524",light:"#F4E1B4"
 addKnot("k2",{p:3,q:4,R:72,r:30,thick:23,tilt:2.1,dark:"#0B5A42",light:"#7FE0C0"},true);
 addKnot("k3",{p:2,q:5,R:70,r:30,thick:22,tilt:4.0,dark:"#8E2A11",light:"#FF9A78"},true);
 addKnot("k4",{p:3,q:2,R:76,r:32,thick:24,tilt:1.2,dark:"#7A2410",light:"#FF8A64"},false);
+
+/* фоновые узлы в разделах — рисуются один раз, без анимации */
+Array.prototype.forEach.call(document.querySelectorAll("canvas.bg"),function(cv){
+  addKnot(cv,{
+    p:parseInt(cv.dataset.p,10),q:parseInt(cv.dataset.q,10),
+    R:78,r:33,thick:24,tilt:parseFloat(cv.dataset.tilt||"1"),samples:300,
+    dark:cv.dataset.dark,light:cv.dataset.light
+  },false);
+});
 
 function resizeAll(){
   animated.concat(statics).forEach(function(k){k.resize();});
